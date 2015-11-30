@@ -13,7 +13,8 @@ var scored=0;
 function addRect(){
 	var cl=parseInt(Math.random()*1000000);
 	var color='#'+cl;
-	var RectColor='#'+(parseInt(Math.random()*1000000)==cl?parseInt(Math.random()*1000000)+200:parseInt(Math.random()*1000000));
+	var rectCl=parseInt(Math.random()*1000000);
+	var RectColor='#'+(rectCl==cl?parseInt(Math.random()*1000000):rectCl);
 	var x=parseInt(Math.random()*n);
 	var y=parseInt(Math.random()*n);
 	for(var indexX=0;indexX<n;indexX++){
