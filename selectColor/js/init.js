@@ -14,7 +14,7 @@ function addRect(){
 	var cl=parseInt(Math.random()*1000000);
 	var color='#'+cl;
 	var rectCl=parseInt(Math.random()*1000000);
-	var RectColor='#'+(rectCl==cl?parseInt(Math.random()*2000000):rectCl);
+	var RectColor='#'+(rectCl===cl?parseInt(Math.random()*2000000):rectCl);
 	console.log(color,RectColor)
 	var x=parseInt(Math.random()*n);
 	var y=parseInt(Math.random()*n);
