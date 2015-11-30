@@ -15,6 +15,7 @@ function addRect(){
 	var color='#'+cl;
 	var rectCl=parseInt(Math.random()*1000000);
 	var RectColor='#'+(rectCl==cl?parseInt(Math.random()*1000000):rectCl);
+	console.log(color,RectColor)
 	var x=parseInt(Math.random()*n);
 	var y=parseInt(Math.random()*n);
 	for(var indexX=0;indexX<n;indexX++){
