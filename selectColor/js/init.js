@@ -1,8 +1,8 @@
-var canvas=document.getElementById('cas');
+var canvas=document.getElementById('canvas');
 var canvasW=canvas.width=600;
 var canvasH=canvas.height=600;
 var scoredDom=document.getElementById('scored');
-var stage=new createjs.Stage('cas');
+var stage=new createjs.Stage('canvas');
 createjs.Ticker.setFPS(30);
 createjs.Ticker.addEventListener("tick",stage);
 var gameView=new createjs.Container();
