@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="msapplication-tap-highlight" content="no">
+    <sctip src="js/jquery-2.0.3.min.js"></sctip>
+    <!-- // <script src="https://code.createjs.com/createjs-2015.05.21.min.js"></script> -->
+    <!-- // <script src="https://code.createjs.com/easeljs-0.8.1.min.js"></script> -->
+    <script src="js/easeljs-0.8.1.min.js"></script>
+    <!-- // <script src="js/tweenjs-0.6.1.min.js"></script> -->
+    <script src="js/preloadjs-0.4.1.min.js"></script>
+	<script src="person.js"></script>
+	<script src="otherThings.js"></script>
+    <script src="drawBtn.js"></script>
+    <script src="js/add.js"></script>
+    
+
+    <!-- // <script src="https://code.createjs.com/soundjs-0.6.1.min.js"></script> -->
+    <style type="text/css" media="screen">
+    	*{margin:0;padding:0;}
+    	/*canvas{width: 100%;height:100%;}*/
+    }
+    	
+    </style>
+</head>
+<body>
+    <canvas id="gameView"  width="700" height="500" ></canvas>
+    <script>
+		var stage , C_W , C_H , loader;
+		var man , ground , sky;
+    	function init(){
+			var canvas=document.getElementById('gameView');
+
+			stage=new createjs.Stage('gameView');
+
+			C_W = stage.canvas.width;
+			C_H = stage.canvas.height;
+			var manifest=[
+				{src:'images/road_title.jpg',id:'bg'},
+				{src:'images/hero.png',id:'car'},
+				{src:'images/coins.png',id:'coin'}
+			]
+			loader=new createjs.LoadQueue(true);
+			loader.addEventListener('complete',handleComplete);
+			loader.loadManifest(manifest);
+
+			// drawLoading();
+		}
+		function drawLoading(){
+			var ctx=stage.canvas.getContext('2d');
+			ctx.textAlign='center';
+			ctx.textBaseline='middle';
+			ctx.fillStyle='#000000';
+			ctx.fillRect(0,0,C_W,C_H);
+			ctx.fillStyle='#ffffff';
+			ctx.font='30px Arial';
+			ctx.fillText('loading...',C_W/2,C_H/2);
+		}
+
+		function handleComplete(){
+			// for(var i=0;i<3;i++){
+				// var d=new DrawBtn();
+				// stage.addChild(d);
+				// d.setBtnType(2);
+			// }
+			var bgimage=loader.getResult('bg');
+			sky = new createjs.Shape();
+			sky.graphics.bf(bgimage).drawRect(0,0,C_W,C_H);
+			sky.setTransform(0,0,1,C_H/bgimage.height);
+			stage.addChild(sky);
+
+
+
+			//该框为判定角色的判定区域
+			// kuang = new createjs.Shape();
+			// kuang.graphics.beginStroke("rgba(255,0,0,0.5)").drawRect(0 , 0 , man.size().w , man.picsize().h*1.5);
+			// stage.addChild(kuang);
+		}
+		init();
+    </script>
+</body>
+</html>
