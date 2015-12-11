@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>HTML5 Tab选项卡动画切换特效 - 站长图库</title>
+
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/tabs.css" />
+<link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
+
+<script src="js/modernizr.custom.js"></script>
+
+</head>
+<body>
+<br>
+<section>
+	<div class="tabs tabs-style-circlefill">
+		<nav>
+			<ul>
+				<li><a href="#section-circlefill-1" class="icon icon-plug"><span>Connect</span></a></li>
+				<li><a href="#section-circlefill-2" class="icon icon-gift"><span>Gifts</span></a></li>
+				<li><a href="#section-circlefill-3" class="icon icon-box"><span>Boxes</span></a></li>
+				<li><a href="#section-circlefill-4" class="icon icon-date"><span>Prints</span></a></li>
+				<li><a href="#section-circlefill-5" class="icon icon-plane"><span>Fun</span></a></li>
+			</ul>
+		</nav>
+		<div class="content-wrap">
+			<section id="section-circlefill-1"><p>1</p></section>
+			<section id="section-circlefill-2"><p>2</p></section>
+			<section id="section-circlefill-3"><p>3</p></section>
+			<section id="section-circlefill-4"><p>4</p></section>
+			<section id="section-circlefill-5"><p>5</p></section>
+		</div><!-- /content -->
+	</div><!-- /tabs -->
+</section>
+
+<script src="js/cbpFWTabs.js"></script>
+<script>
+	(function() {
+
+		[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+			new CBPFWTabs( el );
+		});
+
+	})();
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<script src='http://www.zztuku.com/plus/ad_js.php?aid=58' language='javascript'></script>
+<p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
+<p>代码整理：<a href="http://www.zztuku.com" target="_blank">站长图库</a></p>
+</div>
+</body>
+</html>
