@@ -1,0 +1,6 @@
+﻿webkit-mask蒙版在webkit内核中失效
+
+
+原因：webkit-mask和css3动画起冲突
+
+解决：在webkit-mask蒙版的外层在包一层，把动画效果写在外层上
