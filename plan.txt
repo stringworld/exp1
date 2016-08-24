@@ -1,0 +1,100 @@
+﻿es6
+	变量的解构赋值
+		数组
+		对象
+		字符串
+		数值
+		布尔
+		函数
+	正则
+	数组
+		Array.form()
+		Array.of()
+		copyWithin()实例化
+		find()
+		findIndex()
+		fill()
+		entries()
+		keys()
+		values()
+		includes()
+	函数
+		书写格式
+		与解构赋值默认值结合使用
+		作用域
+		rest参数
+		扩展运算符(...) 应用
+			合并数组
+			与解构赋值结合
+			函数的返回值
+			字符串
+			Iterator
+			map,set
+			name
+		代替数组的apply
+		箭头函数
+		函数绑定
+		尾调用优化
+		尾递归
+		递归函数的改写
+	object
+		Object.is()
+		Object.assign()
+		Object.setPrototypeOf()
+		Object.getPrototypeOf()
+		Object.getOwnPropertyDescriptors()
+	Promise
+		Promise.prototype.then()
+		Promise.prototype.catch()
+		Promise.all()
+		Promise.race()
+		Promise.resolve()
+		Promise.reject()
+	async
+	class
+		class基本用法
+		class继承
+		getter()
+		setter()
+		generator()
+		class静态方法
+		class静态属性和实例属性
+		new.target属性
+		mixin模式的实现
+	修饰器
+	module
+		use strict
+		export
+		import
+		模块的整体加载
+		export default
+		模块的继承
+		es6模块加载的实质
+		循环加载
+		commonjs
+	
+	
+rdeux
+	基础
+		action
+		reducer
+		store
+		数据流
+		搭配react
+	高级
+		异步store
+		异步数据流
+		mid dleware
+		搭配react router
+react 
+
+react native
+
+angularjs
+
+gulp
+
+webpack
+
+nodejs
+
