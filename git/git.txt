@@ -2,3 +2,8 @@
 
 git config --global user.name "stringworld"
 git config --global user.email "1009189483@qq.com"
+
+缓存账号和密码
+git config --global credential.helper store
+
+git pull origin master && git add . && git commit -m 'update data message' && git push origin master
