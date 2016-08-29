@@ -1,0 +1,10 @@
+{
+    "compilerOptions":{
+        "target":"ES6",
+        "module":"commonjs"
+    },
+    "files":[
+        "wpes6/lib/app.js",
+        "typings/node/dode.d.ts"
+    ]
+}
