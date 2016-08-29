@@ -1,1 +1,3 @@
-﻿sbdpohnabjknlfkdjbnlkdbnkfnblkdnbsndbk
+﻿配置默认的git：
+git config --global user.name "stringworld"
+git config --global user.email "1009189483@qq.com"
