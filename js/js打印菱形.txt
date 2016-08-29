@@ -1,0 +1,17 @@
+﻿var temp=9;
+var num = (temp%2==0?temp-1:temp);
+var num1 = -num + 1;
+var stemp = 4;
+var str = "\n";
+for (var i = num1; i < num; i += stemp) {
+    var space = Math.abs(i);
+    for (var j = 0; j <= space / 2; j++) {
+        str += " ";
+    }
+    while (space < num) {
+        str += "*";
+        space ++
+    }
+    str += "\n";
+}
+console.log(str)
