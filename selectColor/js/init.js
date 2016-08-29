@@ -31,7 +31,7 @@ function addRect() {
 			if (rect.getRectType() == 2) {
 				rect.addEventListener('click', function () {
 					if (n < 7) {
-						// ++n;
+						//  ++n;
 					}
 					++n;
 					scoredDom.innerText = '得分：' + ++scored;
