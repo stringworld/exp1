@@ -52,37 +52,81 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
+	var _test = __webpack_require__(1);
+
+	var p = new _test.person('zhang', 20); // export default class Library {
+	//   constructor() {
+	//     this._name = 'Library';
+	//   }
+	//   get name() {
+	//     return this._name;
+	//   }
+	// }
+
+	console.log(p.multiply(1, 4));
+	console.log(p.name);
+	console.log(p.age);
+	// console.log(p.getName(2, 4))
+	// console.log(age)
+
+/***/ },
+/* 1 */
+/***/ function(module, exports) {
+
+	"use strict";
+
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var Library = function () {
-	  function Library() {
-	    _classCallCheck(this, Library);
+	// var name = 'zhang';
+	// var age = 'jun';
 
-	    this._name = 'Library';
-	  }
+	// // export { name, age };
 
-	  _createClass(Library, [{
-	    key: 'name',
-	    get: function get() {
-	      return this._name;
+	// export function multiply(x, y) {
+	//     return x * y;
+	// };
+
+	// export function getName() {
+	//     return name;
+	// }
+
+	// export function getAge() {
+	//     return age;
+	// }
+
+	var person = function () {
+	    function person(name, age) {
+	        _classCallCheck(this, person);
+
+	        this.name = name;
+	        this.age = age;
 	    }
-	  }]);
 
-	  return Library;
+	    _createClass(person, [{
+	        key: "multiply",
+	        value: function multiply(x, y) {
+	            return x * y;
+	        }
+	    }]);
+
+	    return person;
 	}();
 
-	exports.default = Library;
-	module.exports = exports['default'];
+	;
+
+	// var p = new person('zhang', '20');
+	exports.person = person;
+	// console.log(p)
 
 /***/ }
 /******/ ])

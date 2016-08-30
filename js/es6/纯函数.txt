@@ -1,0 +1,61 @@
+﻿http://www.th7.cn/web/js/201605/167247.shtml
+
+http://blog.csdn.net/hongweigg/article/details/44035283
+
+https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976#.waylj0ett
+
+https://www.youtube.com/watch?v=m3svKOdZijA
+
+
+
+
+//  pure function
+var values = {
+    a: 1
+};
+
+function impureFunction(items) {
+    var b = 1;
+    items.a = items.a * b + 2;
+    return items.a;
+}
+var c = impureFunction(values);
+export {
+    c
+}
+// pure function
+var values = {
+    a: 1
+};
+
+function pureFunction(a) {
+    var b = 1;
+    a = a * b + 2;
+    return a;
+}
+var c = pureFunction(values.a);
+
+
+// nopure function
+var values = {
+    a: 1
+};
+var b = 1;
+
+function impureFunction(a) {
+    a = a * b + 2;
+    return a;
+}
+var c = impureFunction(values.a);
+
+// pure function
+var values = {
+    a: 1
+};
+var b = 1;
+
+function pureFunction(a, c) {
+    a = a * c + 2;
+    return a;
+}
+var c = pureFunction(values.a, b);
