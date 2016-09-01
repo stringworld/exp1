@@ -1,15 +1,12 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <style>
+    <title>todo-reflux</title>
+  </head>
+  <body>
+    <div id="app"></div>
 
-    </style>
-</head>
-
-<body>
     <div>
       <p>
         Clicked: <span id="value1">0</span> times
@@ -24,7 +21,8 @@
         <button name="decrement" data-id="two">-</button>
       </p>
     </div>
-    <script src="lib/Library.js"></script>
-</body>
-
+    
+    <script src="dist/vendors.js"></script>
+    <script src="dist/app.js"></script>
+  </body>
 </html>
