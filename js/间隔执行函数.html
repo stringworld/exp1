@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        function throttle(method, delay, duration) {
+            var begin = new Date();
+            var timer = null;
+            return function() {
+                var current = new Date(),
+                    args = Array.prototype.slice.call(arguments),
+                    context = this;
+                clearTimeout(timer);
+                if (current - begin >= duration) {
+                    method.apply(context, args);
+                    begin = current;
+                } else {
+                    timer = setTimeout(function() {
+                        method.apply(context, args);
+                    }, delay);
+                }
+            }
+        }
+
+        $(window).resize(throttle(lg, 2000, 2000));
+        var n = 1;
+
+        function lg() {
+            console.log(n++);
+        }
+    </script>
+</body>
+
+</html>

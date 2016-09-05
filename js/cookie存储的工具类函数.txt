@@ -1,0 +1,33 @@
+﻿var cookie = {
+    getTopDomain : function() {
+        var top = window.location.host, list = {
+            'com.cn' : 1,
+            'net.cn' : 1,
+            'gov.cn' : 1,
+            'com.hk' : 1
+        }, arr = top.split('.');
+        //配置最常用的地区域名名单
+        arr.length > 2 && function() {
+            top = (list[arr.slice(-2).join('.')] ? arr.slice(-3) : arr.slice(-2)).join('.');
+        }();
+        return top;
+    },
+    get : function(key) {
+        var ret = document.cookie.match(new RegExp("(?:^|;\\s)" + key + "=(.*?)(?:;\\s|$)"));
+        return ret ? ret[1] : "";
+    },
+    save : function(key, value, expires) {
+        document.cookie = key + "=" + value + ";path=/;domain=" + this.getTopDomain() + ( expires ? ";expires=" + expires : '');
+    },
+    remove:function(key){
+    //功能没有实现
+        this.save(key,1,-1)
+    }
+}
+//保存 格式：cookie.save(key,value,time)
+cookie.save('cookie_','测试',3600)
+//获取 cookie  格式： cookie.get(key)
+console.log(cookie.get('cookie_'))
+//移除
+cookie.remove('cookie_')
+console.log(cookie.get('cookie_'))

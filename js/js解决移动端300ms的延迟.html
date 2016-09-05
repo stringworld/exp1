@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>fastclick说明书</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <script src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+</head>
+<body>
+    <div>
+        <h2><a href="https://github.com/ftlabs/fastclick">下载地址</a></h2>
+        <h2><a href="https://segmentfault.com/a/1190000005850383">原理解析</a></h2>
+    </div>
+    <button id="click">click me!</button>
+    <script type="text/javascript">
+        if ('addEventListener' in document) {
+            document.addEventListener('DOMContentLoaded', function(){
+                FastClick.attach(document.body);
+            }, false);
+        }
+        document.querySelector("#click").addEventListener("click",function(){
+            alert("click me!");
+        },false)
+    </script>
+</body>
+</html>
