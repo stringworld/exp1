@@ -1,0 +1,39 @@
+﻿/*
+    action 类型
+*/
+
+export const ADD_TODO = 'ADD_TODO';
+export const TOGGLE_TODO = 'TOGGLE_TODO';
+export const SET_VISIBILITY_FILTERS = 'SET_VISIBILITY_FILTERS';
+
+/**
+ * 其他的常量
+ */
+export const VisibilityFilters = {
+    SHOW_ALL: 'SHOW_ALL',
+    SHOW_COMPLETED: 'SHOW_COMPLETED',
+    SHOW_ACTIVE: 'SHOW_ACTIVE'
+}
+
+/**
+ * action 创建函数
+ */
+export function addToDo(text) {
+    return {
+        type: 'ADD_TODO',
+        text
+    }
+}
+
+export function toggleToDo(index) {
+    return {
+        type: 'TOGGLE_TODO',
+        index
+    }
+}
+export function setVisiblityFilters(filters) {
+    return {
+        type: 'SET_VISIBILITY_FILTERS',
+        filters
+    }
+}

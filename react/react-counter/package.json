@@ -3,11 +3,9 @@
     "version": "0.0.0",
     "description": "Redux counter example",
     "scripts": {
-        "start": "node server.js",
         "build": "webpack --mode=build",
-        "test": "NODE_ENV=test mocha --recursive --compilers js:babel-core/register --require ./test/setup.js",
-        "dev":"webpack --progress --colors --watch --mode=dev"
-
+        "dev": "webpack --progress --colors --watch --mode=dev",
+        "test": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
     },
     "repository": {
         "type": "git",
