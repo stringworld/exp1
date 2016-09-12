@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .content{width:500px;height:500px;background-color: #cccccc;}
+        .content_img{float:left;width:100px;height:100px;margin-right:10px;}
+        .content_txt{overflow: auto;zoom: 1;width:300px;height:100px;background:yellow;}
+
+        .content_box {border: 5px solid #fcc;width: 300px;background:yellow;overflow: hidden;}
+        .box_child {border: 5px solid #f66;width:100px;height: 100px;float: left;}
+
+        .content_box_{width:500px;background-color:red;overflow:hidden;}
+        .content_box_ p{background-color: #cccccc;margin:10px 0;}
+        .newbfc{overflow: hidden;}
+    </style>
+</head>
+<body>
+    <div class="content_box_">
+        <p>margin垂直重叠--1</p>
+        <p>margin垂直重叠--2</p>
+        <div class="newbfc">
+            <p>margin垂直重叠--3</p>
+        </div>
+    </div>
+
+
+
+<!--     <div class="content_box">
+        <div class="box_child">box_child--1</div>
+        <div class="box_child">box_child--2</div>
+    </div> -->
+<!--     <div id="A" style="display:inline-block;"> 
+        <div id="red" style="background: red;width: 100px;height: 100px;float: left;"></div> 
+        <div id="orange" style="background: orange;width: 100px;height: 100px;float: left;"></div> 
+    </div> 
+    <div id="B"> 
+        <div id="yellow" style="background: yellow;width: 100px;height: 100px;float: left;"></div>
+        <div id="green" style="background: green;width: 100px;height: 100px;float: left;"></div> 
+    </div> -->
+
+<!--     <div class="content">
+        <img class="content_img" src="http://www.w3school.com.cn/i/eg_tulip.jpg" />
+        <div class="content_txt">
+            <p>测试文字1</p>
+            <p>测试文字2</p>
+            <p>测试文字3</p>
+        </div>
+    </div> -->
+</body>
+</html>
