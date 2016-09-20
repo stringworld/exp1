@@ -25,8 +25,8 @@ class person {
     }
 };
 
-// var p = new person('zhang', '20');
-export { person }
+var p = new person('zhang', '20');
+// export { person }
 // console.log(p)
 
 // Array.prototype.unique_ = function() {

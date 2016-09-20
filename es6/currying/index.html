@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul>li {
+            float: left;
+            width: 150px;
+            padding: 5px;
+            outline: #cccccc solid 1px;
+            /*outline: medium;*/
+            /*box-sizing: border-box;*/
+            list-style-type: none;
+            border-width: 1px;
+        }
+        
+        ul > li:not(:last-child)::after {
+            content: ",";
+            /*border-bottom: none;*/
+        }
+        
+        .nav li:not(:last-child) {
+            /*border-bottom: none;*/
+        }
+        
+        a[href^="http"]:empty::before {
+            content: attr(href);
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li>this is li 1</li>
+        <li>this is li 2</li>
+        <li>this is li 3</li>
+        <li>this is li 4</li>
+        <li>this is li 5</li>
+        <li>this is li 6</li>
+    </ul>
+    <p></p>
+    <!--<a href="http://www.baidu.com/"></a>-->
+    <script src="index.js"></script>
+</body>
+
+</html>
