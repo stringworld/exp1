@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="http://www.ui3g.com/demos/show/1273/css/default.css" />
+        <link rel="stylesheet" type="text/css" href="http://www.ui3g.com/demos/show/1273/css/component.css" />
+        <script src="http://www.ui3g.com/demos/show/1273/js/modernizr.custom.js"></script>
+    </head>
+    <body class="cbp-spmenu-push">
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+            <h3>Menu-----</h3>
+            <a href="http://www.ui3g.com" target="_blank">Celery seakale</a>
+            <a href="http://www.ui3g.com" target="_blank">Dulse daikon</a>
+            <a href="http://www.ui3g.com" target="_blank">Zucchini garlic</a>
+            <a href="http://www.ui3g.com" target="_blank">Catsear azuki bean</a>
+            <a href="http://www.ui3g.com" target="_blank">Dandelion bunya</a>
+            <a href="http://www.ui3g.com" target="_blank">Rutabaga</a>
+        </nav>
+        <div class="container">
+            <header class="clearfix">
+                <h1>Slide and Push Menus</h1>
+            </header>
+            <div class="main">
+                <section class="buttonset">
+                    <h2>Push Menus</h2>
+                    <!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+                    <button id="showLeftPush">Show/Hide Left Push Menu</button>
+                </section>
+            </div>
+        </div>
+        <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+        <script src="http://www.ui3g.com/demos/show/1273/js/classie.js"></script>
+        <script>
+            var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+                showLeftPush = document.getElementById( 'showLeftPush' ),
+                body = document.body;
+
+            showLeftPush.onclick = function() {
+                classie.toggle( this, 'active' );
+                classie.toggle( body, 'cbp-spmenu-push-toright' );
+                classie.toggle( menuLeft, 'cbp-spmenu-open' );
+                disableOther( 'showLeftPush' );
+            };
+
+
+            function disableOther( button ) {
+                if( button !== 'showLeftPush' ) {
+                    classie.toggle( showLeftPush, 'disabled' );
+                }
+            }
+        </script>
+    </body>
+</html>
