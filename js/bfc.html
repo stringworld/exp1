@@ -14,9 +14,34 @@
         .content_box_{width:500px;background-color:red;overflow:hidden;}
         .content_box_ p{background-color: #cccccc;margin:10px 0;}
         .newbfc{overflow: hidden;}
+        .c-main:before{
+            content: '';
+            border-top: 9px solid transparent;/*方框上部分背景颜色为透明*/
+            border-bottom: 9px solid transparent;/*方框下部分背景为透明*/
+            border-right: 9px solid #eee;/*箭头背景颜色*/
+            position: absolute;/*绝对定位1*/
+            top: 25px;/*距离顶部位置偏移量2*/
+            left: -9px;/*距离左边位置偏移量3*/ /*123都是控制显示位置的*/
+        }
+        .c-main:after{
+            content: '';
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid #fbfdfb;/*箭头背景颜色，覆盖前面的#eee颜色，使其颜色与整体颜色一致*/
+            position: absolute;
+            top: 27px;
+            left: -7px;
+        }
     </style>
 </head>
 <body>
+<div class="c-main" style="padding: 20px 15px; line-height: 25px; margin-top: -2px; margin-left: 32px;margin-right: 32px; border-radius: 3px; position: relative; background: #fbfdfb; border: 1px #eee solid; font-size: 15px;">
+    <img src="http://www.mizuiren.com/wp-content/themes/QIUYE/images/smilies/icon_razz.gif" alt="表情" />
+     一句话，培养丰富的精神世界，才是最重要滴 
+     <img src="http://www.mizuiren.com/wp-content/themes/QIUYE/images/smilies/icon_lol.gif" alt="表情" />
+ </div>
+
+<p></p>
     <h2>分栏布局</h2>
     <div class="content">
         <img class="content_img" src="http://www.w3school.com.cn/i/eg_tulip.jpg" />

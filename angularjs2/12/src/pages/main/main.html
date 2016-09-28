@@ -1,0 +1,42 @@
+<div class="e-call-main" ng-controller="e_call_main">
+    <div class="e-call-main-left" ng-class="{'e-call-main-left-open':show_menu}">
+        <div class="logo">
+            <img src="./images/logo.png" alt="logo">
+        </div>
+        <img class="e-call-left" ng-class="{'e-call-left-show':show_menu}" src="./images/left.png" ng-click="hideLeftPush()">
+        <ul>
+            <li class="ali-center li-height" ng-click="showLeftPush()" ng-class="{'hover-0384BB': hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+                <img class="menu-ico" src="./images/menu_1.png" alt="">
+                <span class="menu-text">操作菜单</span>
+                <img class="menu-ico" src="./images/arrow-l.png" alt="<">
+            </li>
+        </ul>
+        <!--菜单-->
+        <div>
+            <menu-List menulist='menudata' greet="sayHello(name)"></menu-List>
+        </div>
+
+    </div>
+    <div class="e-call-main-right" ng-class="{'e-call-main-right-toright':show_menu}">
+        <!--电话呼叫栏-->
+        <nav class="e-call-nav">
+            <h1>电话呼叫栏的信息</h1>
+
+
+        </nav>
+
+        <!--主页面的view-->
+        <div>
+            <nav>
+                <div ng-repeat="navdata in menudata">
+                    <a ui-sref="{{navdata.roteUrl}}" ng-if="!navdata.isShow">
+                        {{navdata.menuText}}
+                        <span ng-click="menuClose($index)">close</span>
+                    </a>
+                </div>
+            </nav>
+            <div ui-view="page3" class="{{pageClass.index}}" ng-show="'main.page3' | includedByState"></div>
+            <div ui-view="page4" class="{{pageClass.index}}" ng-show="'main.page4' | includedByState"></div>
+        </div>
+    </div>
+</div>

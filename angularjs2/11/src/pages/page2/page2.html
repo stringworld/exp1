@@ -1,0 +1,27 @@
+<div ng-controller="menu_left">
+    <div class="menu">
+        <ul>
+            <a ui-sref="page1">
+                <li>
+                    <img class="menu_ico" src="http://tva2.sinaimg.cn/crop.0.0.664.664.50/9a0161cajw8ezgyrt5a3nj20ig0ig0ub.jpg" alt="">
+                    <span class="menu_text">操作菜单</span>
+                </li>
+            </a>
+            <a ui-sref="page2.page3">
+                <li>
+                    <img class="menu_ico" src="http://tva2.sinaimg.cn/crop.0.0.664.664.50/9a0161cajw8ezgyrt5a3nj20ig0ig0ub.jpg" alt="">
+                    <span class="menu_text">客户管理</span>
+                </li>
+            </a>
+            <a ui-sref="page2.page4">
+                <li>
+                    <img class="menu_ico" src="http://tva2.sinaimg.cn/crop.0.0.664.664.50/9a0161cajw8ezgyrt5a3nj20ig0ig0ub.jpg" alt="">
+                    <span class="menu_text">客户服务</span>
+                </li>
+            </a>
+        </ul>
+    </div>
+</div>
+
+<div ui-view="page3" class="{{pageClass.index}}"></div>
+<div ui-view="page4" class="{{pageClass.index}}"></div>

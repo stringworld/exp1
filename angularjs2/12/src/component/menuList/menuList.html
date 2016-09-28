@@ -1,0 +1,16 @@
+<div class="menu">
+    <ul>
+        <li class="ali-center li-height" ng-repeat="menuData in menulist" ng-class="{'hover-0384BB': hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false" ng-mouseover="mouseOverThing($index)">
+            <a ui-sref="{{menuData.roteUrl}}">
+                <img class="menu-ico" ng-src={{menuData.img}} alt="">
+                <span class="menu-text">{{menuData.menuText}}</span>
+                <div class="menu-level">
+                    <ul class="level-last">
+                        <li ui-sref="{{menuData.roteUrl}}" class="ali-center li-height" ng-click="greet({name:$index})" ng-repeat="leveldata in menuData.level" ng-class="{'hover-0384BB': hoveR}" ng-mouseenter="hoveR = true" ng-mouseleave="hoveR = false">{{leveldata}}</li>
+                    </ul>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+</div>
