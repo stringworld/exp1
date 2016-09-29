@@ -24,12 +24,13 @@ body {
     .logo {
         width: 280px;
         padding-top: 14px;
-        padding-left: 60px;
+        text-align: center;
         float: left;
         height: 60px;
         color: #52C9FB;
         font-size: 20px;
     }
+
     .login-list {
         margin-left: 40px;
         height: 100%;
@@ -74,6 +75,16 @@ body {
 
     .menu-gradient {
 
+    .arrow-left{
+        position: absolute;
+        top: 25px;
+        left: 100%;
+        width: 0;
+        height: 0;
+        border-top: 13px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-right: 35px solid #51C9FB;
+        opacity: 0;
     }
     .ali-center {
         justify-content: center;
@@ -100,11 +111,22 @@ body {
             }
         }
 
+        .level-last li:last-child{
+            border-bottom:none;
+        }
+
+
         &:hover {
             .menu-level {
                 display: block;
                 opacity: 1;
                 width: 150px;
+                transition: 400ms all;
+                z-index: 11;
+            }
+            .arrow-left{
+                display: block;
+                opacity: 1;
                 transition: 400ms all;
                 z-index: 11;
             }

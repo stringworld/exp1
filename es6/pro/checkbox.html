@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html data-ng-app="App">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+</head>
+<body data-ng-controller="AddStyleCtrl">
+
+    <div>Choose Tags</div>    
+    <div>
+        <div>You have choosen:</div>
+        <hr>
+        <label data-ng-repeat="selectedTag in selectedTags">
+            (({{selectedTag}}))
+        </label>
+        <hr>
+        <div data-ng-repeat="category in tagcategories">
+            <div>{{ category.name }}</div>
+            <div data-ng-repeat="tag in category.tags">
+                <label for="{{tag.id}}">
+                    <input type="checkbox" id={{tag.id}} name="{{tag.name}}" ng-checked="isSelected(tag.id)" ng-click="updateSelection($event,tag.id)">
+                    {{ tag.name }}
+                </label>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+<pre>{{selected|json}}</pre>
+<pre>{{selectedTags|json}}</pre>
+
+
+<script>
+    /**
+ * Created by zh on 20/05/15.
+ */
+// Code goes here
+
+var iApp = angular.module("App", []);
+iApp.controller('AddStyleCtrl', function($scope) {
+    $scope.tagcategories = [{
+        id: 1,
+        name: 'Color',
+        tags: [{
+            id: 1,
+            name: 'color1'
+        }, {
+            id: 2,
+            name: 'color2'
+        }, {
+            id: 3,
+            name: 'color3'
+        }, {
+            id: 4,
+            name: 'color4'
+        }, ]
+    }, {
+        id: 2,
+        name: 'Cat',
+        tags: [{
+            id: 5,
+            name: 'cat1'
+        }, {
+            id: 6,
+            name: 'cat2'
+        }, ]
+    }, {
+        id: 3,
+        name: 'Scenario',
+        tags: [{
+            id: 7,
+            name: 'Home'
+        }, {
+            id: 8,
+            name: 'Work'
+        }, ]
+    }];
+
+    $scope.selected = [];
+    $scope.selectedTags = [];
+
+    var updateSelected = function(action, id, name) {
+        if (action == 'add' && $scope.selected.indexOf(id) == -1) {
+            $scope.selected.push(id);
+            $scope.selectedTags.push(name);
+        }
+        if (action == 'remove' && $scope.selected.indexOf(id) != -1) {
+            var idx = $scope.selected.indexOf(id);
+            $scope.selected.splice(idx, 1);
+            $scope.selectedTags.splice(idx, 1);
+        }
+    }
+
+    $scope.updateSelection = function($event, id) {
+        var checkbox = $event.target;
+        var action = (checkbox.checked ? 'add' : 'remove');
+        updateSelected(action, id, checkbox.name);
+
+        console.log($event.target,'-------------------')
+    }
+
+    $scope.isSelected = function(id) {
+        return $scope.selected.indexOf(id) >= 0;
+    }
+});
+
+var aa={
+    "isSuccess": true,
+    "data": {
+        "userName": 8001,
+        "roleId": 1,
+        "menuList": [
+            {
+                "zyid": "1",
+                "zybm": "menu_task_manage",
+                "zymc": "任务管理",
+                "zypx": "1",
+                "zysd": "0",
+                "fzyid": "0",
+                "sfky": "1",
+                "childzy": [
+                    {
+                        "zyid": "101",
+                        "zybm": "menu_task_allocation",
+                        "zymc": "任务分配",
+                        "zypx": "1",
+                        "zysd": "1",
+                        "fzyid": "1",
+                        "sfky": "1"
+                    },
+                    {
+                        "zyid": "102",
+                        "zybm": "menu_all_task",
+                        "zymc": "所有任务",
+                        "zypx": "2",
+                        "zysd": "1",
+                        "fzyid": "1",
+                        "sfky": "1"
+                    },
+                    {
+                        "zyid": "103",
+                        "zybm": "menu_my_task",
+                        "zymc": "我的任务",
+                        "zypx": "3",
+                        "zysd": "1",
+                        "fzyid": "1",
+                        "sfky": "1"
+                    }
+                ]
+            },
+            {
+                "zyid": "2",
+                "zybm": "menu_record_manage",
+                "zymc": "任务管理",
+                "zypx": "2",
+                "zysd": "0",
+                "fzyid": "0",
+                "sfky": "1"
+            },
+            {
+                "zyid": "3",
+                "zybm": "menu_seat_manage",
+                "zymc": "坐席管理",
+                "zypx": "3",
+                "zysd": "0",
+                "fzyid": "0",
+                "sfky": "1"
+            }
+        ]
+    }
+}
+
+</script>
+</body>
+</html>

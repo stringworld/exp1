@@ -1,8 +1,10 @@
 import uirouter from 'angular-ui-router';
-import menuList_ from '../../component/menuList/menuList';
+import menuList_ from '../../components/menuList/menuList';
+import callOutSystem from '../../components/callOutSystem/callOutSystem';
+import splitPage from '../../components/splitPage/splitPage';
 import './main.less';
 
-export default angular.module('main', [uirouter, menuList_])
+export default angular.module('main', [uirouter, menuList_, callOutSystem, splitPage])
     .service('MAIN_API', ['$http', function($http) {
         return {
             get_data: function() {
@@ -19,10 +21,13 @@ export default angular.module('main', [uirouter, menuList_])
 
         })
 
-        // 
-
-
         $scope.show_menu = false;
+
+        $scope.callOutData = {
+            seatno:'8020',
+            password:'123456',
+            telno:'8020'
+        }
 
         $scope.showLeftPush = function() {
             $scope.show_menu = true;
@@ -30,11 +35,22 @@ export default angular.module('main', [uirouter, menuList_])
         $scope.hideLeftPush = function() {
             $scope.show_menu = false;
         };
+        
+        $scope.splitPage = function(page,itemsPerPage){
+           console.log(page)
+           console.log(itemsPerPage);
+        }
+        $scope.pageData = {
+            itemsPerPage: 10,
+            itemsCount: 100,
+            maxNumbers: 3
+        }
 
-
-        $scope.sayHello = function(name) {
-            // alert("Hello " + $scope.menudata[name].menuText);
-            $scope.menudata[name].isShow = false;
+        $scope.getIndex = function(pIndex, tIndex) {
+            // alert("Hello " + pIndex + "--this" + tIndex);
+            $scope.menudata[pIndex].isShow = false;
+            $scope.levelTxt = $scope.menudata[pIndex].level[tIndex].levelTxt;
+            $scope.levelRoute = $scope.menudata[pIndex].level[tIndex].levelRoute;
         }
         $scope.menuClose = function(index) {
             // alert(index)

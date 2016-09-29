@@ -22,12 +22,7 @@
             <table st-table="rowCollection" class="table">
                 <thead>
                     <tr>
-                        <th>选择</th>
-                        <th>first name</th><!-- st-sort="firstName" 排序 -->
-                        <th>last name</th>
-                        <th>birth date</th>
-                        <th>balance</th>
-                        <th>email</th>
+                        <th ng-repeat="tab_title in table_title">{{tab_title}}</th>
                     </tr>
                 </thead>
                 <tbody>

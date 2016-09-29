@@ -9,41 +9,38 @@ var app=angular.module('myApp', ['smart-table','lrDragNDrop']);
             $scope.rowCollection = [];
 
 
-            function createRandomItem() {
-                var firstName = nameList[Math.floor(Math.random() * 4)],
-                    lastName = familyName[Math.floor(Math.random() * 4)],
-                    age = Math.floor(Math.random() * 100),
-                    email = firstName + lastName + '@whatever.com',
-                    balance = Math.random() * 3000;
+            // function createRandomItem() {
+            //     var firstName = nameList[Math.floor(Math.random() * 4)],
+            //         lastName = familyName[Math.floor(Math.random() * 4)],
+            //         age = Math.floor(Math.random() * 100),
+            //         email = firstName + lastName + '@whatever.com',
+            //         balance = Math.random() * 3000;
 
-                return {
-                    firstName: firstName,
-                    lastName: lastName,
-                    age: age,
-                    email: email,
-                    balance: balance
-                };
-            }
+            //     return {
+            //         firstName: firstName,
+            //         lastName: lastName,
+            //         age: age,
+            //         email: email,
+            //         balance: balance
+            //     };
+            // }
             
-            $scope.columns=['firstName', 'lastName','age','email','balance'];
+            $scope.table_title=['选择','编号', '电话号码','地区','签约医院','签约医生','销售','创建人','详情'];
             
             for(var i=0;i<50;i++){
-              $scope.rowCollection.push(createRandomItem());
-            }
+              // $scope.rowCollection.push(createRandomItem());
+            } 
+            $scope.rowCollection=[
+                {selected:false,numId: 'Laurent', lastName: 'Renard', birthDate: new Date('1987-05-21'), balance: 102, email: 'whatever@gmail.com'},
+                {firstName: 'Blandine', lastName: 'Faivre', birthDate: new Date('1987-04-25'), balance: -2323.22, email: 'oufblandou@gmail.com',selected:false},
+                {firstName: 'Francoise', lastName: 'Frere', birthDate: new Date('1955-08-27'), balance: 42343, email: 'raymondef@gmail.com',selected:false}
+            ];
 
             $scope.on_change=function(evt){
                 console.log(evt)
             }
         }
     ]);
-
-    app.controller('customCtrl', ['$scope', function (scope) {
-    scope.rowCollection = [
-        {firstName: 'Laurent', lastName: 'Renard', birthDate: new Date('1987-05-21'), balance: 102, email: 'whatever@gmail.com',selected:false},
-        {firstName: 'Blandine', lastName: 'Faivre', birthDate: new Date('1987-04-25'), balance: -2323.22, email: 'oufblandou@gmail.com',selected:false},
-        {firstName: 'Francoise', lastName: 'Frere', birthDate: new Date('1955-08-27'), balance: 42343, email: 'raymondef@gmail.com',selected:false}
-    ];
-}]);
 app.directive('csSelect', function () {
     return {
         require: '^stTable',
@@ -60,20 +57,20 @@ app.directive('csSelect', function () {
             //     });
             // });
             scope.on_change = function(evt) {
-                console.log(evt)
+                // console.log(evt)
                 // scope.$apply(function () {
                 //     ctrl.select(scope.row, 'multiple');
                 // });
             }
 
-            // scope.$watch('row.isSelected', function (newValue, oldValue) {
-            //     if (newValue === true) {
-            //         element.parent().addClass('st-selected');
-            //         console.log(newValue,oldValue,element)
-            //     } else {
-            //         element.parent().removeClass('st-selected');
-            //     }
-            // });
+            scope.$watch('row.isSelected', function (newValue, oldValue) {
+                if (newValue === true) {
+                    element.parent().addClass('st-selected');
+                    console.log(newValue,oldValue,element)
+                } else {
+                    element.parent().removeClass('st-selected');
+                }
+            });
         }
     };
 });

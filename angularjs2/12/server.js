@@ -12,7 +12,6 @@ var upath = require('upath');
 
 var port = 8080;
 
-
 var compiler = webpack(config);
 app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath }));
 app.use(webpackHotMiddleware(compiler));
@@ -23,14 +22,14 @@ app.get("/", function(req, res) {
 })
 
 app.use(function(request, response, next) {
-    var list = matchDataSource(__dirname + '/src/mockup/').map((file) => {
-        var replace_target = upath.normalizeSafe(__dirname + '/src/mockup');
-        return upath.normalizeSafe(file.split(__dirname + '/src/mockup').slice(-1)[0].replace('.js', '')).replace(replace_target, '');
+    var list = matchDataSource(__dirname + '/mockup/').map((file) => {
+        var replace_target = upath.normalizeSafe(__dirname + '/mockup');
+        return upath.normalizeSafe(file.split(__dirname + '/mockup').slice(-1)[0].replace('.js', '')).replace(replace_target, '');
     })
 
     console.info('request===>'.yellow + request.url.yellow);
     //console.info(request.path);
-    if (list.includes(request.path)) {
+    if (list.indexOf(request.path) >= 0) {
         var data = JSON.stringify(readSource(request.path));
         console.log('response===>'.green + data.green)
         response.writeHead(200, { "Content-Type": "text/plain" });
@@ -43,14 +42,12 @@ app.use(function(request, response, next) {
     }
 })
 
-
 // if (request.url === "/error") {
 //   response.writeHead(200, { "Content-Type": "text/plain" });
 //   response.end("Welcome to the homepage!\n");
 // } else {
 //   
 // }
-
 
 app.listen(port, function(error) {
     if (error) {
@@ -61,7 +58,7 @@ app.listen(port, function(error) {
 })
 
 function matchDataSource(dir) {
-    //var path = __dirname + '/src/mockup/'
+    //var path = __dirname + '/mockup/'
     return fs.readdirSync(dir).reduce((list, file) => {
         var name = path.join(dir, file);
         var isDir = fs.statSync(name).isDirectory();
@@ -70,7 +67,7 @@ function matchDataSource(dir) {
 }
 
 function readSource(path) {
-    var relativePath = `./src/mockup${path}.js`;
+    var relativePath = `./mockup${path}.js`;
     delete require.cache[require.resolve(relativePath)];
     return require(relativePath)();
 }
