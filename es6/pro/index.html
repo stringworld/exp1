@@ -31,7 +31,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr st-select-row="row" st-select-mode="multiple" ng-click="on_change($event)" ng-repeat="row in rowCollection">
+                    <tr st-select-row="row" st-select-mode="multiple" ng-click="updateSelection($event,tag.id)" ng-repeat="row in rowCollection">
                         <td cs-select="row">{{row.firstName | uppercase}}</td>
                         <td>{{row.firstName | uppercase}}</td>
                         <td>{{row.lastName}}</td>

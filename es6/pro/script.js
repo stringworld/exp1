@@ -48,7 +48,7 @@ app.directive('csSelect', function () {
     return {
         require: '^stTable',
         restrict: 'AE',
-        template: '<input type="checkbox"/>',
+        template: '<input type="checkbox" ng-checked="isSelected(tag.id)"/>',
         scope: {
             row: '=csSelect'
         },
