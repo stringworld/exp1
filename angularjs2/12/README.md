@@ -1,5 +1,19 @@
-This is a demo for hybrid
+## ToG项目开发说明
 
-npm run server  进入开发模式
+1. 安装依赖
 
-npm run build 生产环境
+    ```bash
+    npm i
+    ```
+
+1. 开发模式
+
+    ```bash
+    npm run server
+    ```
+
+1. 构建
+
+    ```bash
+    npm run build
+    ```

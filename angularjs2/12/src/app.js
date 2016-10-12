@@ -1,12 +1,12 @@
-import './publicCss/base.css';
+import './common/css/base.css';
 import 'normalize.css/normalize.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import './publicCss/public.css';
+import './common/css/public.css';
 
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
-import routerextras from './app.routerextras'
-import ocLazyLoad from 'ocLazyLoad'
+import routerextras from './common/js/app.routerextras';
+import ocLazyLoad from 'ocLazyLoad';
 
 
 import routing from './app.config';
