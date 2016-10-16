@@ -1,0 +1,43 @@
+<main ng-controller="index" ng-class="{'nav-closed': hideMenu}">
+    <div class="top">
+        <h1 class="logo">
+            <img src="./images/logo.png" alt="logo"> 呼叫中心
+        </h1>
+        <div class="login-list pull-right">
+            <dl>
+                <dt>状态:</dt>
+                <dd>空闲</dd>
+            </dl>
+            <dl>
+                <dt>账号:</dt>
+                <dd>1001</dd>
+            </dl>
+            <button>退出系统</button>
+        </div>
+        <call-out callout="callOutData"></call-out>
+    </div>
+    <div class="main-left">
+        <menu-List getmenutext="getIndex(mainIndex,subIndex)"></menu-List>
+    </div>
+
+    <div class="main-right">
+        <!--控制台列表-->
+        <!--<nav class="tag-tab">
+            <div ng-repeat="navdata in menudata" class="tag-name on">
+                <a ui-sref="{{navdata.roteUrl}}">
+                    {{navdata.menuText}}
+                    <span ng-click="menuClose($index)">x</span>
+                </a>
+            </div>
+        </nav>-->
+        <!--主页面的view-->
+        <div>
+            <div ui-view="taskDetails" class="{{pageClass.index}}" ng-show="'main.taskDetails' | includedByState"></div>
+            <div ui-view="page4" class="{{pageClass.index}}" ng-show="'main.page4' | includedByState"></div>
+            <div ui-view="task" class="{{pageClass.index}}" ng-show="'main.task' | includedByState"></div>
+            <div ui-view="alltask" class="{{pageClass.index}}" ng-show="'main.alltask' | includedByState"></div>
+            <div ui-view="mytask" class="{{pageClass.index}}" ng-show="'main.mytask' | includedByState"></div>
+        </div>
+    </div>
+
+</main>

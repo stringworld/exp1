@@ -1,0 +1,117 @@
+@import "~common/css/ui.less";
+
+.btn-group {
+    *{
+        display: inline-block;
+        float: left;
+    }
+    label{
+        margin-right: 10px;
+    }
+    &.pull-left{
+        margin-left: 20px;
+        input,button{
+            margin-right: 20px;
+        }
+    }
+    &.pull-right{
+        margin-left: 20px;
+        input,button{
+            margin-left: 20px;
+        }
+    }
+}
+
+.task-btn, .form-control{
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #52C9FB;
+    border-radius: 2px;
+    font-size: 15px;
+    min-width: 100px;
+}
+
+.form-control{
+    padding: 0 10px;
+    width: 100px;
+    &:hover{
+        border-color: #02a5ea;
+    }
+}
+
+.task-btn{
+    padding: 0 20px;
+}
+
+.btn-primary {
+    color: #fff;
+    background: #216cad;
+    border-color: #216cad;
+    &:hover{
+        background: #005197;
+    }
+
+}
+.btn-secondary {
+    color: #373a3c;
+    background-color: #e6e6e6;
+    border-color: #ccc;
+    &:hover{
+        border-color: #aaa;
+    }
+}
+
+.task-main {
+    caption {
+        padding-left: 10px;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        color: #ffffff;
+        background-color: #3FABDF;
+        font-size: 18px;
+    }
+    tr td, tr th {
+        border: 1px solid #C5C5C5;
+    }
+
+    thead tr {
+        background-color: #51C9FB;
+        th {
+            color: #fff;
+        }
+    }
+    tbody {
+        tr:nth-child(2n) {
+            background-color: #F4F4F4;
+        }
+        tr:nth-child(2n+1) {
+            background-color: #fff;
+        }
+        .item-detail {
+            color: #51C9FB;
+        }
+    }
+    .checked {
+        background-color: red;
+    }
+    .batch-count {
+        height: 40px;
+        line-height: 40px;
+        margin: 25px 0 20px 0;
+        font-size: 16px;
+        color: #000;
+        span {
+            display: inline-block;
+            height: 100%;
+            float: left;
+        }
+        .all-checked {
+            img {
+                margin: 10px 12px;
+                float: left;
+            }
+        }
+    }
+}

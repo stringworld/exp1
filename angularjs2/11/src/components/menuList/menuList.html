@@ -1,0 +1,22 @@
+<nav class="menu-list" ng-class="{'hide-sub-menu': hideSubMenu}">
+    <img class="minimal" src="./images/left.png" ng-click="showNav()">
+    <ul>
+        <li ng-click="hideNav()">
+            <img class="menu-ico" src="./images/menu_1.png" alt="">
+            <span class="menu-text">操作菜单</span>
+            <img class="menu-ico" src="./images/arrow-l.png" alt="<">
+        </li>
+    </ul>
+    <ul>
+        <li class="main-level" ng-repeat="menuData in menudata" ng-init="number=$index">
+            <img class="menu-ico" ng-src={{menuData.img}} alt="">
+            <span class="menu-text">{{menuData.menuText}}</span>
+            <span class="menu-stance"></span>
+            <ul class="sub-level">
+                <li ng-click="getMenuText(menuData.roteUrl,number,$index,leveldata.levelTxt,leveldata.levelRoute)" ng-repeat="leveldata in menuData.level">
+                    {{leveldata.levelTxt}}
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>

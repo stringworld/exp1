@@ -1,0 +1,80 @@
+@header-font-color: #fff;
+@header-background-color: #216cad;
+
+.backgroud-image(@url) {
+    background: url(@url) no-repeat center;
+    background-size: 24px 24px;
+}
+ .callout {
+     .dial {
+         float: right;
+         height: 60px;
+         background: @header-background-color;
+         li {
+             float: left;
+             width: 60px;
+             text-align: center;
+             color: @header-font-color;
+             padding: 10px 0;
+             line-height: 16px;
+             cursor: pointer;
+             height: 60px;
+         }
+     }
+
+     .icon {
+         display: inline-block;
+         width: 100%;
+         height: 24px;
+         background: url("http://7xso1h.com1.z0.glb.clouddn.com/mxSginIn.png") no-repeat center;
+         &.icon-qianru {
+             .backgroud-image("http://7xso1h.com1.z0.glb.clouddn.com/mxSginIn.png");
+         }
+         &.icon-qianchu {
+             .backgroud-image("http://7xso1h.com1.z0.glb.clouddn.com/mxSignOut.png");
+         }
+         &.icon-bohao {
+             .backgroud-image("http://7xso1h.com1.z0.glb.clouddn.com/mxCall.png");
+         }
+         &.icon-fanmang {
+             .backgroud-image("http://7xso1h.com1.z0.glb.clouddn.com/mxBusy.png");
+         }
+         &.icon-zhuanjie {
+             .backgroud-image("http://7xso1h.com1.z0.glb.clouddn.com/mxhang.png");
+         }
+         &.icon-baochi {
+             .backgroud-image("http://7xso1h.com1.z0.glb.clouddn.com/mxKeep.png");
+         }
+         &.icon-jingyin {
+             .backgroud-image("http://7xso1h.com1.z0.glb.clouddn.com/mxMute.png");
+         }
+         &.icon-guaji {
+             .backgroud-image("http://7xso1h.com1.z0.glb.clouddn.com/mxhang.png");
+         }
+     }
+
+     .input-wrap {
+         height: 100%;
+         padding: 14px 20px 0 80px;
+         input {
+             width: 182px;
+             font-size: 16px;
+             line-height: 16px;
+             padding: 7px;
+             border: 1px solid @header-font-color;
+             border-radius: 3px;
+             background: @header-background-color;
+             color: @header-font-color;
+             display: inline-block;
+             height: 32px;
+             &::-webkit-input-placeholder,
+             &:-moz-placeholder,
+             &::-moz-placeholder,
+             &:-ms-input-placeholder {
+                 color: @header-font-color;
+                 opacity: 0.9;
+             }
+         }
+     }
+ }
+

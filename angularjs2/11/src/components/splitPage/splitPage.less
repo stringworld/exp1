@@ -1,0 +1,103 @@
+@basic-color:#52C9FB;
+@line-color:#000;
+@import "~common/css/ui.less";
+.splitPage{
+    float: right;
+    margin-top:38px;
+    .page-count{
+        float: left;
+        font-size: 16px;
+        margin-right: 25px;
+        .select-page{
+            padding: 0 37px 0 9px;
+            background-size: 25px;        
+            height: 25px;
+            line-height: 16px;
+            margin-top: 26px;
+            margin: 0 10px;
+            border-radius: 2px;
+        }
+    }
+    
+    .change-page{
+        float: left;
+        margin-top: 6px;
+        li{
+            float: left;
+            width: 40px;
+            .page{
+                font-size: 16px;
+                line-height: 20px;
+            }
+            .refresh:before, .refresh:after, .previous-page:after, .next-page:before, .last-page:before{
+                content: '';
+                border: 1px solid #000;
+                height: 37px;
+                opacity: .12;
+                display: inline-block;
+                position: relative;
+                top: -7px;
+            }
+            .refresh{
+                height: 20px;
+                background: url(img/refresh.png) no-repeat;
+                &:before{                   
+                    left: -10px;
+                }
+                &:after{
+                    right: -22px;
+                }
+            }
+            .home-page, .previous-page, .next-page, .last-page{
+                width: 0;
+                height: 0;
+                border-style:solid;
+            }
+            .home-page{
+                border-width:8px 16px 8px 0;
+                border-color:transparent @basic-color transparent;
+                margin-top:2px;
+            }
+            .home-page:before{
+                content: '';
+                border: 2px solid #52C9FB;        
+                position: relative;
+                left: -5px;
+                top: -11px;
+            }
+            .previous-page{
+                border-width:10px 20px 10px 0;
+                border-color:transparent @basic-color transparent;
+                &:after{
+                    right: -30px;
+                    top: -18px;
+                }
+            }
+            .next-page{
+                border-width:10px 0 10px 20px;
+                border-color:transparent @basic-color transparent;
+                &:before{
+                    left: -34px;
+                    top: -18px;
+                }
+            }
+            .last-page{
+                border-width:8px 0 8px 16px;
+                border-color:transparent @basic-color transparent;
+                margin-top:2px;                
+                &:before{
+                    right:-14px;
+                    top: -18px;
+                }
+                &:after{
+                    content: '';
+                    border: 2px solid #52C9FB;        
+                    position: relative;
+                    right: -5px;
+                    top: -47px;                  
+                }
+            }
+        }
+    }
+    
+}

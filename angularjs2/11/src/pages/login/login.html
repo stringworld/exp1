@@ -1,0 +1,33 @@
+<div ng-controller="login" class="login">
+    <div class="login-box">
+        <h1><i class="logo"></i>云呼叫中心平台</h1>
+        <p class="error-message">{{errorMessage}}</p>
+        <form>
+            <label for="userName" class="user">
+                <input id="userName" type="text" placeholder="请输入您的账号"
+                       ng-model="username" class="text-box">
+            </label>
+            <br>
+            <label for="password" class="pwd">
+                <input id="password" type="password" placeholder="请输入您的密码"
+                       ng-model="password" class="text-box">
+            </label>
+            <br>
+            <input type="button" value="登录" ng-click="userLogin()" class="btn login-btn"/><br>
+
+            <p class="remember-me">
+                <!--<span class="check-box">                    
+                    <input type="checkbox" class="remember-pwd" id="check">
+                    <label for="check"></label>                      
+                </span>-->
+                <span class="check-box">
+                    <label for="">
+                        <input type="checkbox" class="remember-pwd" id="check">
+                        <label for="check" class="checked"></label>
+                    </label>                
+                </span>
+                <span class="remember-text">记住密码</span>
+            </p>
+        </form>
+    </div>
+</div>

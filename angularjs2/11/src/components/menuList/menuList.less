@@ -1,0 +1,104 @@
+.menu-list {
+    background-image: -webkit-linear-gradient(to bottom, #4DCBFF, #206CAC);
+    background-image: linear-gradient(to bottom, #4DCBFF, #206CAC);
+    li {
+        margin: 0;
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid #226DA6;
+        color: #FFF;
+        font-size: 18px;
+        position: relative;
+        list-style-type: none;
+        white-space: nowrap;
+        justify-content: center;
+        align-items: center;
+        display: -webkit-flex;
+        display: flex;
+        &:hover {
+            background-color: #0384BB;
+        }
+        img {
+            margin-right: 8px;
+        }
+        cursor: pointer;
+    }
+    .sub-level {
+        opacity: 0;
+        width: 10px;
+        transition: 200ms 100ms all;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        z-index: 10;
+        overflow: hidden;
+        padding-left: 15px;
+        &:before {
+            content: '';
+            border: 15px solid transparent;
+            border-width: 10px 15px 10px 0;
+            border-right-color: #52c9fb;
+            position: absolute;
+            top: 17px;
+            left: 1px;
+        }
+        li {
+            background-color: #52C9FB;
+            overflow: hidden;
+            height: 50px;
+            &:last-child {
+                border-bottom: none;
+            }
+            &:hover {
+                background-color: #52C9FB;
+            }
+        }
+    }
+    .main-level {
+        transition: 400ms all;
+        &:hover {
+            .sub-level {
+                display: block;
+                opacity: 1;
+                width: 150px;
+                transition: 400ms all;
+                z-index: 11;
+            }
+        }
+    }
+    .menu-ico {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .menu-stance {
+        width: 24px;
+    }
+    .menu-text {
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        margin: 0 10px;
+        font-size: 18px;
+        color: #FFF;
+    }
+
+    .minimal {
+        position: fixed;
+        top: 60px;
+        left: -60px;
+        transition: all 0.3s ease;
+        z-index: 99;
+    }
+}
+
+.nav-closed {
+    .minimal {
+        left: 0;
+    }
+}
+
+.hide-sub-menu .sub-level {
+    width: 0 !important;
+}

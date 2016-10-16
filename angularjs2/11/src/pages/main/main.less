@@ -1,0 +1,120 @@
+
+@import "~common/css/vars.less";
+
+.top {
+    background-color: @primary-bg;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin-right: 30px;
+    .logo {
+        width: 221px;
+        padding-top: 14px;
+        padding-left: 60px;
+        float: left;
+        height: 60px;
+        color: #52C9FB;
+        font-size: 999px;
+    }
+    .login-list {
+        margin-left: 40px;
+        height: 100%;
+        color: @header-font-color;
+        dl{
+            margin: 0;
+            padding-top: 6px;
+            dd,
+            dt{
+                float: left;
+                font-size: 15px;
+                height: 24px;
+                line-height: 24px;
+                word-spacing: 8px;
+                letter-spacing: 3px;
+                font-weight: lighter
+            }
+        }
+        button{
+            float: left;
+            height: 32px;
+            box-sizing: border-box;
+            padding: 8px 15px;
+            line-height: 16px;
+            margin: 14px 0 14px 25px;
+            background: @primary-bg;
+            border: 1px solid @header-font-color;
+            border-radius: 3px;
+        }
+    }
+}
+
+main {
+    width: 100%;
+    background-color: #FFFFFF;
+    .main-left {
+        width: 221px;
+        float: left;
+        margin-right: -100%;
+        transition: all 0.4s ease;
+    }
+    .main-right {
+        width: 100%;
+        float: left;
+        padding-left: 241px;
+    }
+    &.nav-closed {
+        .main-left {
+            width: 0;
+        }
+        .main-right {
+            padding-left: 80px;
+        }
+    }
+    .nav {
+        position: relative;
+        margin-top: 0;
+        width: 100%;
+        height: 60px;
+        background-color: @primary-bg;
+        p {
+            color: #fff;
+        }
+    }
+}
+
+.main-content {
+    clear: both;
+}
+
+.tag-tab {
+    margin-top: 15px;
+    width: 100%;
+    border-bottom: 2px solid @primary-bg;
+    overflow: hidden;
+    .tag-name {
+        float: left;
+        a {
+            display: inline-block;
+            padding: 0px 20px;
+            height: 46px;
+            line-height: 46px;
+            border: 1px solid @tag-tab-color;
+            border-bottom: 1px solid #fff;
+            background: #fff;
+            color: @tag-tab-color;
+            font-size: 16px;
+            span {
+                font-size: 20px;
+                padding-left: 8px;
+            }
+        }
+    }
+    .on a {
+        background: @primary-bg;
+        color: #fff;
+        border-color: @primary-bg
+    }
+
+}
