@@ -71,8 +71,46 @@ var temp={
                     }
                 ]
             }
+<<<<<<< HEAD
         ]
     },
   "errorMessage": ""
 }
 console.log(temp.value.taskList)
+=======
+        }
+    ]);
+app.directive('csSelect', function () {
+    return {
+        require: '^stTable',
+        restrict: 'AE',
+        template: '<input type="checkbox" ng-checked="isSelected(tag.id)"/>',
+        scope: {
+            row: '=csSelect'
+        },
+        link: function (scope, element, attr, ctrl) {
+
+            // element.bind('change', function (evt) {
+            //     scope.$apply(function () {
+            //         ctrl.select(scope.row, 'multiple');
+            //     });
+            // });
+            scope.on_change = function(evt) {
+                // console.log(evt)
+                // scope.$apply(function () {
+                //     ctrl.select(scope.row, 'multiple');
+                // });
+            }
+
+            scope.$watch('row.isSelected', function (newValue, oldValue) {
+                if (newValue === true) {
+                    element.parent().addClass('st-selected');
+                    console.log(newValue,oldValue,element)
+                } else {
+                    element.parent().removeClass('st-selected');
+                }
+            });
+        }
+    };
+});
+>>>>>>> 8379e33dd19decd826c80d787f0a9fcb7e2e74f5

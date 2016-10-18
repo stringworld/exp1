@@ -25,6 +25,7 @@
                     </tr>
                 </thead>
                 <tbody>
+<<<<<<< HEAD
                     <tr st-select-row="row" st-select-mode="multiple" ng-repeat="row in rowCollection">
                         <td cs-select="row"><span class="selectedTags" ng-class="{red:{{row.isSelected}}}">{{row.isSelected}}</span></td>
                         <td>{{row.numId}}</td>
@@ -37,6 +38,15 @@
                         <td>{{row.numSell}}</td>
                         <td>{{row.numCreate}}</td>
                         <td><a ng-href="{{row.details}}">详情</a></td>
+=======
+                    <tr st-select-row="row" st-select-mode="multiple" ng-click="updateSelection($event,tag.id)" ng-repeat="row in rowCollection">
+                        <td cs-select="row">{{row.firstName | uppercase}}</td>
+                        <td>{{row.firstName | uppercase}}</td>
+                        <td>{{row.lastName}}</td>
+                        <td>{{row.birthDate | date}}</td>
+                        <td>{{row.balance | currency}}</td>
+                        <td><a ng-href="mailto:{{row.email}}">email</a></td>
+>>>>>>> 8379e33dd19decd826c80d787f0a9fcb7e2e74f5
                     </tr>
                 </tbody>
             </table>
