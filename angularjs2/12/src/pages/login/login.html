@@ -1,10 +1,27 @@
-<div ng-controller="login">
-    <h3>云呼叫中心</h3>
-    <form>
-        <label for=""></label><input type="text" placeholder="请输入您的账号" ng-model="userName"><br>
-        <label for=""></label><input type="password" placeholder="请输入您的密码" ng-model="passWord"><br>
-        <input type="button"  value="登录" ng-click="userLogin()"/><br>
-        <input type="checkbox"><span>记住密码 </span>
-    </form>
+<div ng-controller="login" class="login">
+    <div class="login-box">
+        <h1><i class="logo"></i>云呼叫中心平台</h1>
+
+        <form>
+            <label for="userName" class="user">
+                <input id="userName" type="text" placeholder="请输入您的账号"
+                       ng-model="username" class="text-box">
+            </label>
+            <br>
+            <label for="password" class="pwd">
+                <input id="password" type="password" placeholder="请输入您的密码"
+                       ng-model="password" class="text-box">
+            </label>
+            <br>
+            <input type="button" value="登录" ng-click="userLogin()" class="btn login-btn"/><br>
+
+            <p class="remember-me">
+                <span class="check-box">
+                    <input type="checkbox" class="remember-pwd" id="check">
+                    <label for="check"></label>
+                </span>
+                <span class="remember-text">记住密码</span>
+            </p>
+        </form>
+    </div>
 </div>
-<a ui-sref="main">log in main</a>

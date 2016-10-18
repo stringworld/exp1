@@ -1,0 +1,19 @@
+<div ng-controller="login" class="login">
+    <div class="login-box">
+        <h1><i class="logo"></i>云呼叫中心平台</h1>
+        <p class="error-message">{{errorMessage}}</p>
+        <form>
+            <label for="userName" class="user">
+                <input id="userName" type="text" placeholder="请输入您的账号"
+                       ng-model="loginData.username" class="text-box">
+            </label>
+            <br>
+            <label for="password" class="pwd">
+                <input id="password" type="password" placeholder="请输入您的密码"
+                       ng-model="loginData.password" class="text-box">
+            </label>
+            <br>
+            <input type="button" value="登录" ng-click="userLogin()" class="btn login-btn"/><br>
+        </form>
+    </div>
+</div>

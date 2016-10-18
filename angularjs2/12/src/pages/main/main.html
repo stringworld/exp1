@@ -1,54 +1,39 @@
-<div class="e-call-main" ng-controller="e_call_main">
+
+<main ng-controller="index" ng-class="{'nav-closed': hideMenu}">
     <div class="top">
-        <div class="logo">
-            <img src="./images/logo.png" alt="logo">
-        </div>
-        <div class="login-list right">
-            <div>
-                <dl>
-                    <dt>状态:</dt>
-                    <dd>空闲</dd>
-                </dl>
-                <dl>
-                    <dt>账号:</dt>
-                    <dd>1001</dd>
-                </dl>
-            </div>
+        <h1 class="logo">
+            <img src="./images/logo.png" alt="logo"> 呼叫中心
+        </h1>
+        <div class="login-list pull-right">
+            <dl>
+                <dt>状态:</dt>
+                <dd>空闲</dd>
+            </dl>
+            <dl>
+                <dt>账号:</dt>
+                <dd>1001</dd>
+            </dl>
             <button>退出系统</button>
         </div>
         <call-out callout="callOutData"></call-out>
     </div>
-    <div class="e-call-main-left" ng-class="{'e-call-main-left-open':show_menu}">
-        <img class="e-call-left" ng-class="{'e-call-left-show':show_menu}" src="./images/left.png" ng-click="hideLeftPush()">
-        <ul>
-            <li class="ali-center li-height" ng-click="showLeftPush()">
-                <img class="menu-ico" src="./images/menu_1.png" alt="">
-                <span class="menu-text">操作菜单</span>
-                <img class="menu-ico" src="./images/arrow-l.png" alt="<">
-            </li>
-        </ul>
-        <!--菜单-->
-        <div>
-            <menu-List menulist='menudata' greet="sayHello(name)"></menu-List>
-        </div>
-
+    <div class="main-left">
+        <menu-List getindex="getindex(mainIndex,subIndex)"></menu-List>
     </div>
-    <div class="e-call-main-right" ng-class="{'e-call-main-right-toright':show_menu}">
-        <!--电话呼叫栏-->
-        <nav class="e_call_nav">
-            <split-page page="pageData" changepage="splitPage(page,itemsPerPage)"></split-page>
-        </nav>
+
+    <div class="main-right">
+        <!--控制台列表-->
+        <!--<nav class="tag-tab">
+            <div ng-repeat="navdata in menudata" class="tag-name on">
+                <a ui-sref="{{navdata.roteUrl}}">
+                    {{navdata.menuText}}
+                    <span ng-click="menuClose($index)">x</span>
+                </a>
+            </div>
+        </nav>-->
         <!--主页面的view-->
         <div>
-            <nav>
-                <div ng-repeat="navdata in menudata">
-                    <a ui-sref="{{navdata.roteUrl}}" ng-if="!navdata.isShow">
-                        {{navdata.menuText}}
-                        <span ng-click="menuClose($index)">close</span>
-                    </a>
-                </div>
-            </nav>
-            <div ui-view="page3" class="{{pageClass.index}}" ng-show="'main.page3' | includedByState"></div>
+            <div ui-view="taskDetails" class="{{pageClass.index}}" ng-show="'main.taskDetails' | includedByState"></div>
             <div ui-view="page4" class="{{pageClass.index}}" ng-show="'main.page4' | includedByState"></div>
             <div ui-view="task" class="{{pageClass.index}}" ng-show="'main.task' | includedByState"></div>
             <div ui-view="alltask" class="{{pageClass.index}}" ng-show="'main.alltask' | includedByState"></div>
@@ -56,4 +41,4 @@
         </div>
     </div>
 
-</div>
+</main>

@@ -5,34 +5,38 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <link data-require="bootstrap-css@3.2.0" data-semver="3.2.0" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <script data-require="angular.js@1.2.21" data-semver="1.2.21" src="https://code.angularjs.org/1.2.21/angular.js"></script>
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" type="text/css" href="mainStyle.css">
-    <!-- <link rel="stylesheet" type="text/css" href="prism.css"> -->
     <script src="script.js"></script>
-    <script src="lrDragNDrop.js"></script>
-    <script src="smart-table.debug.js"></script>
+    <!-- <script src="lrDragNDrop.js"></script> -->
+    <script src="smart-table.js"></script>
 
   </head>
 
   <body>
-    <a href="http://lorenzofox3.github.io/smart-table-website/#section-basics">来源</a>
-
     <section id="section-format" ng-controller="mainCtrl">
         <div class="table-container">
             <table st-table="rowCollection" class="table">
                 <thead>
                     <tr>
+                        <th colspan="11">客户列表</th>
+                    </tr>
+                    <tr>
                         <th ng-repeat="tab_title in table_title">{{tab_title}}</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr st-select-row="row" st-select-mode="multiple" ng-click="on_change($event)" ng-repeat="row in rowCollection">
-                        <td cs-select="row">{{row.firstName | uppercase}}</td>
-                        <td>{{row.firstName | uppercase}}</td>
-                        <td>{{row.lastName}}</td>
-                        <td>{{row.birthDate | date}}</td>
-                        <td>{{row.balance | currency}}</td>
-                        <td><a ng-href="mailto:{{row.email}}">email</a></td>
+                    <tr st-select-row="row" st-select-mode="multiple" ng-repeat="row in rowCollection">
+                        <td cs-select="row"><span class="selectedTags" ng-class="{red:{{row.isSelected}}}">{{row.isSelected}}</span></td>
+                        <td>{{row.numId}}</td>
+                        <td>{{row.numTel}}</td>
+                        <td>{{row.userName}}</td>
+                        <td>{{row.address}}</td>
+                        <td>{{row.committee}}</td>
+                        <td>{{row.signHos}}</td>
+                        <td>{{row.signDoc}}</td>
+                        <td>{{row.numSell}}</td>
+                        <td>{{row.numCreate}}</td>
+                        <td><a ng-href="{{row.details}}">详情</a></td>
                     </tr>
                 </tbody>
             </table>

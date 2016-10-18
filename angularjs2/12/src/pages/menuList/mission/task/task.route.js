@@ -23,7 +23,7 @@ export default function routes($stateProvider, $urlRouterProvider, $ocLazyLoadPr
                     return $q((resolve) => {
                         require.ensure([], () => {
                             // load whole module
-                            let module = require('./task.js');
+                            const module = require('./task.js');
                             $ocLazyLoad.load({ name: 'task' });
                             resolve(module.controller);
                         }, 'task');

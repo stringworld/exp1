@@ -1,20 +1,22 @@
-<div class="menu">
+<nav class="menu-list" ng-class="{'hide-sub-menu': hideSubMenu}">
+    <img class="minimal" src="./images/left.png" ng-click="showNav()">
     <ul>
-        <li class="ali-center li-height" ng-repeat="menuData in menulist" ng-init="number=$index">
-            <!--<a ui-sref="{{menuData.roteUrl}}">-->
+        <li ng-click="hideNav()">
+            <img class="menu-ico" src="./images/menu_1.png" alt="">
+            <span class="menu-text">操作菜单</span>
+            <img class="menu-ico" src="./images/arrow-l.png" alt="<">
+        </li>
+    </ul>
+    <ul>
+        <li class="main-level" ng-repeat="menuData in menudata" ng-init="number=$index">
             <img class="menu-ico" ng-src={{menuData.img}} alt="">
             <span class="menu-text">{{menuData.menuText}}</span>
             <span class="menu-stance"></span>
-            <div class="arrow-left" ng-if="menuData.level!=''">
-                <!--向左的三角-->
-            </div>
-            <div class="menu-level">
-                <ul class="level-last">
-                    <li ui-sref="{{leveldata.levelRoute}}" class="ali-center li-height" ng-click="greet({pIndex:number,tIndex:$index})" ng-repeat="leveldata in menuData.level">{{leveldata.levelTxt}}</li>
-                </ul>
-            </div>
-            <!--</a>-->
+            <ul class="sub-level">
+                <li ui-sref="{{leveldata.levelRoute}}" ng-click="getindex({mainIndex:number,subIndex:$index})" ng-repeat="leveldata in menuData.level">
+                    {{leveldata.levelTxt}}
+                </li>
+            </ul>
         </li>
     </ul>
-
-</div>
+</nav>

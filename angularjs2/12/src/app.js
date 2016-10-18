@@ -1,11 +1,9 @@
-import './common/css/base.css';
-import 'normalize.css/normalize.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import './common/css/public.css';
+import './common/css/main.less';
 
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
-import routerextras from './common/js/app.routerextras';
+import routerextras from 'app.routerextras';
 import ocLazyLoad from 'ocLazyLoad';
 
 
@@ -17,7 +15,7 @@ import initial from './app.initial';
 import routes from './pages/index';
 
 
-const app = angular.module('app', [uirouter, routerextras, ocLazyLoad])
+const app = angular.module( 'app', [uirouter, routerextras, ocLazyLoad])
     .run(initial)
     .config(routing);
 routes.forEach((ele, index) => {

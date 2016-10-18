@@ -1,0 +1,106 @@
+@basic-color: #52C9FB;
+@error-message:red;
+@font-color:#fff;
+@import "~common/css/ui.less";
+.login {
+    width: 100%;
+    height: 100%;
+    background: url(img/login.jpg) no-repeat center;
+    background-size: cover;
+    font-size: 20px;
+    .login-box {
+        padding: 50px;
+        border-radius: 5px;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);  
+        -ms-transform: translate(-50%,-50%);  
+        transform: translate(-50%,-50%); 
+        background: rgba(0, 0, 0, 0.2);
+        color: @font-color;
+        .logo {
+            width: 50px;
+            height: 35px;
+            background: url(../main/images/logo.png) no-repeat;
+            display: inline-block;
+            margin-right: 20px;
+            float: left;
+        }
+        h1 {
+            margin-left:20px;
+            display: inline-block;
+            color: @font-color;
+            font-weight: bolder;
+            font-size: 32px;
+            line-height: 35px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+        }
+        .error-message{
+            height: 50px;
+            line-height: 50px;
+            color: @error-message;
+            font-size: 14px;
+        }
+        label {
+            border: 1px solid@font-color;
+            border-radius: 5px;
+            line-height: 40px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            .text-box {
+                font-weight: normal;
+                border: none;
+                color:@font-color;
+                background: none;
+                width: 300px;
+                margin-left: 50px;
+                text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+                &::-webkit-input-placeholder {
+                    color:@font-color;
+                }
+                &:-moz-placeholder {
+                    color:@font-color;
+                }
+                &::-moz-placeholder {
+                    color:@font-color;
+                }
+                &:-ms-input-placeholder {
+                    color:@font-color;
+                }
+            }
+        }
+        .user {
+            background: url(img/user.png) no-repeat 8px center;
+            background-size: 24px;
+        }
+        .pwd {
+            background: url(img/pwd.png) no-repeat 10px center;
+            background-size: 20px;
+        }
+        .login-btn {
+            width: 350px;
+            background: @basic-color;
+            color:@font-color;
+            border-radius: 5px;
+            line-height: 30px;
+            font-weight: bolder;
+            font-size: 20px;
+            float: none;
+        }
+        .remember-me {
+            .remember-pwd {
+                margin: 20px 18px 0 0;
+            }
+            .check-box label{
+                margin-top: -1px;
+                border: none
+            }
+            .remember-text {
+                color:@font-color;
+                font-size: 16px;
+            }
+        }
+    }
+}

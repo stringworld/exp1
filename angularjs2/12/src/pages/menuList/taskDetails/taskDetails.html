@@ -1,0 +1,59 @@
+<div class="task-details" ng-controller="details">
+    <div>
+        <h5>编辑客户资料</h5>
+        <ul class="edit-customer-data">
+            <li>客户类型：签约居民信息</li>
+            <li>文化程度：
+                <span ng-if="!isShow">高中</span>
+                <select ng-model="teachBackground" ng-options="x for x in educationBackground" ng-show="isShow"></select>{{educationBackground}}
+            </li><br />
+            <li class="cls">序号：89757</li>
+            <li>姓名：王大锤</li>
+            <li>性别：男</li>
+            <li>移动电话：18356503348</li>
+            <li>家庭电话：6166084521</li>
+            <li>出生日期：1994-09-19</li>
+            <li>签约时间：2016-05-08</li><br>
+            <li class="cls">所在居委会：中国居委会</li>
+            <li>签约医生姓名：马园园</li>
+            <li>所在区域：上海</li>
+            <li>详细地址：上海市虹口区周家嘴路1010号</li><br>
+            <li class="cls">医疗机构代码：4250980998</li>
+            <li>详细地址：浦东新区唐镇创新西路99弄</li>
+            <li>资料信息：xxxx</li>
+        </ul>
+    </div>
+    <div class="cls sign-survey">
+        <h5>居民签约调研</h5>
+        <ul ng-if="!isShow">
+            <li>1、请问您是xx街道xx居委会：清水河居委会</li>
+            <li>2、请问您签约医生是xx街道社区：清水河居委会</li>
+            <li>4、请问您对xx社区卫生服务中心满意吗：满意</li>
+            <li>5、请问您家庭医生的就医服务有：是</li>
+            <li>6、未完成原因：是</li>
+            <li>7、回访状态：是</li>
+        </ul>
+        <form action="" ng-if="isShow">
+            <div ng-repeat="problem in problems">
+                {{problem.tmid}}、{{problem.tmnr}}
+                <p ng-if="problem.tmlx == '1'" ng-repeat="option in problem.options" class="radio-box">
+                    <input  type="radio" id="{{option.xxid}}" name="{{option.name}}" value="{{option.xxnr}}" ng-change="change(this)" ng-model="option.value">
+                    <label for="{{option.xxid}}"></label>{{option.xxnr}}
+                </p>
+                <p ng-if="problem.tmlx == '2'" ng-repeat="option in problem.options" class="check-box">
+                    <input type="checkbox" id="{{option.xxid}}">
+                    <label for="{{option.xxid}}"></label>{{option.xxnr}}
+                </p>
+            </div>
+        </form>
+    </div>
+    <div>
+        <h5>备注信息</h5>
+        <textarea placeholder="备注信息" class="note"></textarea>
+    </div>
+    <input  ng-if="!isShow" type="button" value="返回" class="btn">
+    <div ng-if="isShow">
+        <input type="button" value="保存" class="btn" ng-click="submitForm()">
+        <input type="button" value="取消" class="btn cancel-btn">
+    </div>
+</div>

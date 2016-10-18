@@ -1,10 +1,53 @@
-<h1>task 1</h1>
-<h1>task 2</h1>
-<h1>task 3</h1>
-<h1>task 4</h1>
-<h1>task 5</h1>
-<form action="">
-    <label for="">name</label>
-    <input type="text">
-</form>
-<a ui-sref="main">jump_to main</a>
+<section id="section-format" ng-controller="tableCtrl" class="task-main">
+    <div class="table-container">
+        <div class="batch-count">
+            <span class="batch-title">分配数量:</span>
+            <span class="all-checked" ng-click="allChecked()">
+                <img src="http://7xso1h.com2.z0.glb.clouddn.com/img-false.png">
+                全选(100)
+            </span>
+            <span class="num-batch">
+                <input type="text" placeholder="输入数量" ng-model="allotNum">
+                <button ng-click="getChecked()">分配</button>
+            </span>
+        </div>
+        <div class="allot-box" ng-if="showAllotBox">
+            <div class="allot-child">
+                <div class="allot-close" ng-click="closeAllotBox()">关闭</div>
+                <div class="allot-select" ng-if="allotSelect">
+                    <p class="allot-title">选择坐席或者公共池</p>
+                    <select ng-options="x for x in range"></select>
+                </div>
+                <div class="allot-success" ng-if="!allotSelect">
+                    <p class="allot-title">分配成功！</p>
+                    <p class="allot-txt">分配成功，分配给了<span>8001</span>座席<span ng-bind="{{allotNum}}">100</span>个任务。</p>
+                </div>
+            </div>
+        </div>
+        <table st-table="rowCollection" class="table">
+            <caption>客户列表</caption>
+            <thead>
+                <tr>
+                    <th ng-repeat="tabTitle in tableTitle">{{tabTitle}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr st-select-row="row" st-select-mode="multiple" ng-repeat="row in rowCollection" ng-init="numId=row.isSelected">
+                    <td on-select="row"></td>
+                    <td>{{row.numId}}</td>
+                    <td>{{row.numTel}}</td>
+                    <td>{{row.userName}}</td>
+                    <td>{{row.address}}</td>
+                    <td>{{row.committee}}</td>
+                    <td>{{row.signHos}}</td>
+                    <td>{{row.signDoc}}</td>
+                    <td><a class="item-detail" ng-href="{{row.details}}">详情</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--分页-->
+    <div>
+        <split-page page="pageData" changepage="splitPage(page,itemsPerPage)"></split-page>
+    </div>
+</section>

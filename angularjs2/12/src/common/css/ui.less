@@ -1,0 +1,87 @@
+@basic-color:#52C9FB;
+@radio-bg: #3FABDF;
+@radio-check-bg: #ef4949;
+@checkbox-border: #cacaca;
+@checkbox-check-border:#f78642;
+
+.inlineBlock {
+    display: inline-block;
+}
+.btn {
+    width: 140px;
+    height: 46px;
+    color:#fff;
+    background: @basic-color;
+    border-radius: 2px;
+    float: right;
+    margin-top: 20px;
+}
+.radio-box {
+    display:inline-block;
+    position:relative;
+}
+.radio-box label {
+    width:16px;
+    height:16px;
+    position:absolute;
+    top:0;
+    left:0;
+    background: @radio-bg;
+    border-radius:50%;
+    cursor:pointer;
+}
+.radio-box input:checked + label:after {
+    content:'';
+    width:10px;
+    height:9px;
+    position:absolute;
+    top:3px;
+    left:3px;
+    background:@radio-check-bg;
+    border-radius:50%;
+}
+.check-box {
+    display:inline-block;
+    position:relative;
+}
+.check-box label {
+    width:16px;
+    height:16px;
+    position:absolute;
+    top:0;
+    left:0;
+    border:2px solid @checkbox-border;
+    border-radius:50%;
+    background:#fff;
+    cursor:pointer;
+}
+.check-box label:hover {
+    border:2px solid @checkbox-check-border;
+}
+.check-box label:after {
+    content:'';
+    width:8px;
+    height:4px;
+    position:absolute;
+    top:4px;
+    left:3px;
+    border:2px solid @checkbox-border;
+    border-top:none;
+    border-right:none;
+    opacity:0.4;
+    transform:rotate(-45deg);
+}
+.check-box label:hover:after {
+    border:2px solid @checkbox-check-border;
+    border-top:none;
+    border-right:none;
+}
+.check-box input:checked + label {
+    border:2px solid @checkbox-check-border;
+}
+.check-box input:checked + label:after {
+    opacity:1;
+    border:2px solid @checkbox-check-border;
+    border-top:none;
+    border-right:none;
+}

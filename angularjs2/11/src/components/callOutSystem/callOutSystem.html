@@ -1,0 +1,43 @@
+<div class="callout">
+    <ul class="dial">
+        <li ng-click="dial()">
+            <i class="icon icon-dial"></i>
+            <span>拨号</span>
+        </li>
+        <li>
+            <i class="icon icon-busy"></i>
+            <span>繁忙</span>
+        </li>
+        <li ng-click="connect()">
+            <i class="icon icon-translation"></i>
+            <span>转接</span>
+        </li>
+        <li ng-click="keespan()">
+            <i class="icon icon-keep"></i>
+            <span>保持</span>
+        </li>
+        <li>
+            <i class="icon icon-mute"></i>
+            <span>静音</span>
+        </li>
+        <li>
+            <i class="icon icon-hang"></i>
+            <span>挂机</span>
+        </li>
+    </ul>
+
+    <div class="pull-right input-wrap ">
+        <input type="text" placeholder="请输入电话号码" ng-model='phone'>
+    </div>
+
+    <ul class="dial">
+        <li ng-click="signIn()">
+            <i class="icon icon-sign-in"></i>
+            <span>签入</span>
+        </li>
+        <li ng-click="signOut()">
+            <i class="icon icon-sign-out"></i>
+            <span>签出</span>
+        </li>
+    </ul>
+</div>

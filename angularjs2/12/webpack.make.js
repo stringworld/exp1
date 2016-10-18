@@ -7,16 +7,16 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var colors = require("colors");
 var precss = require('precss');
-
+var path = require('path');
 
 module.exports = function makeWebpackConfig(options) {
     var option_info = JSON.stringify(options)
     console.log(option_info.yellow)
-        /**
-         * Environment type
-         * BUILD is for generating minified builds
-         * TEST is for generating test builds
-         */
+    /**
+     * Environment type
+     * BUILD is for generating minified builds
+     * TEST is for generating test builds
+     */
     var BUILD = !!options.BUILD;
     var TEST = !!options.TEST;
     var CDN = options.CDN;
@@ -35,7 +35,8 @@ module.exports = function makeWebpackConfig(options) {
      */
     if (TEST) {
         config.entry = {}
-    } else {
+    }
+    else {
         config.entry = {
             common: ['angular', 'fastclick', 'jquery', 'angular-ui-router', './src/common/js/app.routerextras.js'],
             app: ['./src/app.js']
@@ -54,7 +55,8 @@ module.exports = function makeWebpackConfig(options) {
      */
     if (TEST) {
         config.output = {}
-    } else {
+    }
+    else {
         config.output = {
             // Absolute output directory
             path: __dirname + '/dist',
@@ -80,9 +82,11 @@ module.exports = function makeWebpackConfig(options) {
      */
     if (TEST) {
         config.devtool = 'inline-source-map';
-    } else if (BUILD) {
+    }
+    else if (BUILD) {
         config.devtool = 'source-map';
-    } else {
+    }
+    else {
         //config.devtool = 'eval';
         config.devtool = 'inline-source-map';
     }
@@ -94,7 +98,7 @@ module.exports = function makeWebpackConfig(options) {
      * This handles most of the magic responsible for converting modules
      */
 
-    // Initialize module
+        // Initialize module
     config.module = {
         preLoaders: [],
         loaders: [{
@@ -156,7 +160,7 @@ module.exports = function makeWebpackConfig(options) {
     var lessLoader = {
         test: /\.less$/,
         //less loader
-        loader: "style!css!postcss!less?strictMath&noIeCompat"
+        loader: "style!css!postcss!less?strictMath"
     }
 
     // Skip loading css in test mode
@@ -246,6 +250,13 @@ module.exports = function makeWebpackConfig(options) {
             hot: true,
             inline: true
         }
+    };
+    config.resolve = {
+        root: [
+            path.resolve('./src'),
+            path.resolve('./src/common/js')
+        ],
+        extensions: ['', '.webpack.js', '.web.js', '.min.js', '.js', '.es6', '.json']
     };
 
     return config;
