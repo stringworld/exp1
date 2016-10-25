@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>文字自动滚屏</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+
+<body   onload= "SetPos() "> 
+<script> 
+function   SetPos() 
+{ 
+s   =   document.getElementById( "test ") 
+for(i   =   0;i <s.length;i++) 
+{ 
+  if(s[i].text   ==   "6 ")   s[i].selected=true 
+} 
+} 
+</script> 
+<select   name= "test "   size= "3 "   multiple= "MULTIPLE "     id= "test "> 
+<option   value= "a "> 1 </option> 
+<option   value= "b "> 2 </option> 
+<option   value= "c "> 3 </option> 
+<option   value= "d "> 4 </option> 
+<option   value= "e "> 5 </option> 
+<option   value= "f "> 6 </option> 
+<option   value= "g "> 7 </option> 
+<option   value= "h "> 8 </option> 
+</select>  
+
+</body>
+
+</html>

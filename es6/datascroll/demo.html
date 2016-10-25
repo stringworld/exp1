@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+    <head>
+        <title>滚动</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/scroll.css">
+        <style>
+            #beginTime{
+                z-index: 1000;
+            }
+        </style>
+    </head>
+    <body ng-controller="AddStyleCtrl">
+    设置-1:
+    <!-- <div id="beginTime" class="kbtn" >点击测试</div> -->
+    <input  id="beginTime" class="kbtn" />
+        <div id="main">
+            <div id="dateshadow"></div>
+            <div id="datePage" class="page">
+                <section>
+                    <div id="datetitle">
+                        <h1>请选择</h1>
+                    </div>
+                    <div id="datemark">
+                        <a id="markyear"></a>
+                        <a id="markmonth"></a>
+                        <a id="markday"></a>
+                    </div>
+                    <div id="datescroll">
+                        <div id="yearwrapper">
+                            <ul>
+                                <li>&nbsp;</li>
+                                <li ng-repeat="item in tagdata">{{item.provinceName}}</li>
+                                <li>&nbsp;</li>
+                            </ul>
+                        </div>
+                        <div id="monthwrapper" ng-if="taglist">
+                            <ul>
+                                <li>&nbsp;</li>
+                                <li ng-repeat="items in taglist">{{items.name}}</li>
+                                <li>&nbsp;</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <footer id="dateFooter">
+                    <div id="setcancle">
+                        <ul>
+                            <li id="datecancle">取消</li>
+                            <li id="dateconfirm">确定</li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
+        <script type="text/javascript" src="js/iscroll.js" ></script>
+        <script>
+
+
+            var app = angular.module("App", []);
+            app.service('getData', ['$http', function($http) {
+                return {
+                    getJson({doctorTypeId}) {
+                        const config = { params: {doctorTypeId} };
+                        return $http.get('http://192.168.10.15:8082/doctor/getRegisterDict/', config).then(({data})=>{
+                            return data||{};
+                        });
+                    }
+                }
+            }]);
+
+            app.controller('AddStyleCtrl',['$scope','getData', function($scope,getData){
+                var indexY=0,indexM=0;
+
+                $scope.defaultData = {
+                    doctorTypeId: 2
+                };
+
+                getData.getJson($scope.defaultData).then(setData);
+
+                function setData({data}){
+                    console.log(data.provinceListWithCity[3].cityList)
+                    $scope.tagdata=data.provinceListWithCity;
+                    $scope.taglist=$scope.tagdata[indexY].cityList||[];
+
+                }
+
+                // $scope.tagdata = {"citylist":[
+                //     {"p":"前端技术","c":[]}, 
+                //     {"p":"编程语言","c":[{"n":"C"},{"n":"C++"},{"n":"PHP"},{"n":"JAVA"}]},
+                //     {"p":"数据库","c":[{"n":"Mysql"},{"n":"SqlServer"},{"n":"Oracle"}]},
+                // ]};
+
+                // $scope.taglist=$scope.tagdata.citylist[indexY].c;
+
+                //数据滑动
+                function init_iScrll() {
+                    var yearScroll = new iScroll("yearwrapper",{snap:"li",vScrollbar:false,
+                        onScrollEnd:function () {
+                            indexY = (this.y/40)*(-1);
+                            console.log(indexY)
+                            $scope.$apply(function(){
+                                $scope.taglist=$scope.tagdata[indexY].cityList||[];
+                            });
+                            monthScroll.refresh();
+                    }});
+                    monthScroll = new iScroll("monthwrapper",{snap:"li",vScrollbar:false,
+                        onScrollEnd:function (){
+                            indexM = (this.y/40)*(-1);
+                            console.log(indexM)
+                    }});
+                }
+                
+                $("#dateconfirm").unbind('click').click(function () {
+                    var datestr = $("#yearwrapper ul li:eq("+(indexY+1)+")").html()+'-'+$("#monthwrapper ul li:eq("+((indexM||0)+1)+")").html()||'';
+                    console.log($("#yearwrapper ul li:eq("+(indexY+1)+")").html())
+                    console.log($("#monthwrapper ul li:eq("+(indexM+1)+")").html())
+                    $('#beginTime').html(datestr)
+                    $("#datePage").hide(); 
+                    $("#dateshadow").hide();
+                });
+                $('#beginTime').click(function(){
+                    alert('dd');
+                    $("#datePage").show();
+                    $("#dateshadow").show();
+                    init_iScrll();
+                });
+            }]);
+        </script>
+    </body>
+</html>
