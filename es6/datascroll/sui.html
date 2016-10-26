@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的生活</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <!-- <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/sui.css">
+
+  </head>
+  <body>
+  <div class="content-block-title">请填写真实信息，获取优质服务</div>
+  <div class="list-block">
+    <ul>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div class="item-title label">姓名</div>
+            <div class="item-input">
+              <input class="pull-text-right" type="text" placeholder="Your name" id="picker">
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div class="item-title label">地址</div>
+            <div class="item-input">
+              <input class="pull-text-right" type="text" placeholder="Your name" id="city-picker">
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="item-content item-link">
+        <div class="item-inner">
+          <div class="item-title label">显示toast</div>
+          <div class="item-after" id="show-toast">点击测试显示toast</div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+    <script type='text/javascript' src='js/zepto.js' charset='utf-8'></script>
+    <!-- <script type="text/javascript" src="js/jquery-1.9.1.js" ></script> -->
+    <script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+    <script type="text/javascript" src="http://g.alicdn.com/msui/sm/0.6.2/js/sm-city-picker.min.js" charset="utf-8"></script>
+    <script>
+        $("#picker").picker({
+          toolbarTemplate: '<header class="bar bar-nav">\
+          <button class="button button-link pull-left  close-picker">取消</button>\
+          <button class="button button-link pull-right close-picker">确定</button>\
+          </header>',
+          cols: [
+            {
+              textAlign: 'center',
+              values: ['iPhone 4', 'iPhone 4S', 'iPhone 5', 'iPhone 5S', 'iPhone 6', 'iPhone 6 Plus', 'iPad 2', 'iPad Retina', 'iPad Air', 'iPad mini', 'iPad mini 2', 'iPad mini 3']
+            },
+            {
+              textAlign: 'center',
+              values: ['iPhone 4', 'iPhone 4S', 'iPhone 5', 'iPhone 5S', 'iPhone 6', 'iPhone 6 Plus', 'iPad 2', 'iPad Retina', 'iPad Air', 'iPad mini', 'iPad mini 2', 'iPad mini 3']
+            }
+          ]
+        });
+      $("#city-picker").cityPicker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择收货地址</h1>\
+        </header>'
+      });
+    $("#show-toast").click(function() {
+      $.toast("操作成功",1000,'toast-style');
+    });
+    </script>
+
+  </body>
+</html>

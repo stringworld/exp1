@@ -14,6 +14,8 @@
     <body ng-controller="AddStyleCtrl">
     设置-1:
     <!-- <div id="beginTime" class="kbtn" >点击测试</div> -->
+    <input type="radio" name="{{te.name}}" ng-checked="{{te.isselected}}" ng-repeat="te in temp"/>
+    <p></p>
     <input  id="beginTime" class="kbtn" />
         <div id="main">
             <div id="dateshadow"></div>
@@ -86,6 +88,15 @@
                     $scope.tagdata=data.provinceListWithCity;
                     $scope.taglist=$scope.tagdata[indexY].cityList||[];
 
+                }
+                $scope.temp=[
+                    {name:1,isselected:true,value:'text'},
+                    {name:1,isselected:false,value:'text'},
+                ]
+
+                $scope.selectEd=function(index){
+                    // return $scope.temp[index].isselected=true;
+                    // return true;
                 }
 
                 // $scope.tagdata = {"citylist":[
