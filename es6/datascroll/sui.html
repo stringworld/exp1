@@ -42,7 +42,7 @@
       <li class="item-content item-link">
         <div class="item-inner">
           <div class="item-title label">显示toast</div>
-          <div class="item-after" id="show-toast">点击测试显示toast</div>
+          <div class="item-after show-toast">点击测试显示toast</div>
         </div>
       </li>
 
@@ -76,8 +76,8 @@
         <h1 class="title">选择收货地址</h1>\
         </header>'
       });
-    $("#show-toast").click(function() {
-      $.toast("操作成功",1000,'toast-style');
+    $(".show-toast").click(function() {
+      $.toast("操作成功",100000);
     });
     </script>
 
