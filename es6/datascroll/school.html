@@ -9,103 +9,56 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <!-- <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css"> -->
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
     <!-- <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css"> -->
     <link rel="stylesheet" type="text/css" href="css/public.css">
     <link rel="stylesheet" type="text/css" href="css/sui.css">
+
   </head>
   <body>
   <div class="content-block-title">请填写真实信息，获取优质服务</div>
   <div class="list-block">
     <ul>
       <li>
-        <div class="item-content">
-          <div class="item-inner">
-            <div class="item-title label">姓名</div>
-            <div class="item-input">
-              <input class="pull-text-right" type="text" placeholder="Your name">
-            </div>
-          </div>
-        </div>
-      </li>
-      <li id="myFunc">
         <div class="item-content item-link">
           <div class="item-inner">
-            <div class="item-title label">我是</div>
-            <div class="item-after" id="myIdentity">我是</div>
-          </div>
-        </div>
-      </li>
-      <li>
-        <a href="hos.html">
-          <div class="item-content item-link">
-            <div class="item-inner">
-              <div class="item-title label">医院</div>
-              <div class="item-after">医院</div>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li id="depart">
-        <div class="item-content item-link">
-          <div class="item-inner">
-            <div class="item-title label">科室</div>
-            <div class="item-after" id="depart-picker">科室</div>
+            <div class="item-title label">地区</div>
+            <div class="item-after">地区</div>
           </div>
         </div>
       </li>
       <li>
         <div class="item-content item-link">
           <div class="item-inner">
-            <div class="item-title label">擅长</div>
-            <div class="item-after">擅长</div>
+            <div class="item-title label">院校名称</div>
+            <div class="item-after">院校名称</div>
           </div>
         </div>
       </li>
-      <li>
-        <a href="school.html">
-          <div class="item-content item-link">
-            <div class="item-inner">
-              <div class="item-title label">毕业院校</div>
-              <div class="item-after">毕业院校</div>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li id="open-picker">
-        <div class="item-content">
-          <div class="item-inner">
-            <div class="item-title label">地址</div>
-            <div class="item-after"  id="city-picker">点击测试显示toast</div>
-<!--             <div class="item-input">
-              <input class="pull-text-right" type="text" placeholder="Your name">
-            </div> -->
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="item-content">
-          <div class="item-inner">
-            <div class="item-title label">测试click</div>
-            <div class="item-input">
-              <input class="pull-text-right" type="text" placeholder="Your name">
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="item-content item-link">
-        <div class="item-inner">
-          <div class="item-title label">显示toast</div>
-          <div class="item-after show-toast">点击测试显示toast</div>
-        </div>
-      </li>
-
     </ul>
   </div>
 
     <script type='text/javascript' src='js/zepto.js' charset='utf-8'></script>
     <script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
     <script>
+        $("#picker").picker({
+          toolbarTemplate: '<header class="bar bar-nav">\
+          <button class="button button-link pull-left  close-picker">取消</button>\
+          <button class="button button-link pull-right close-picker">确定</button>\
+          </header>',
+          toolbar:true,
+          onChange:function(){
+            // alert('---------------')
+          },
+          cols: [
+            {
+              textAlign: 'center',
+              values: ['iPhone 4', 'iPhone 4S', 'iPhone 5', 'iPhone 5S', 'iPhone 6', 'iPhone 6 Plus', 'iPad 2', 'iPad Retina', 'iPad Air', 'iPad mini', 'iPad mini 2', 'iPad mini 3']
+            }
+          ]
+        });
+
+
     var raw = [
         {
             "id":1,
@@ -208,15 +161,9 @@
             "type":0
         }
     ];
-    var result=[{
-      value:[['iPhone 4', 'iPhone 4S', 'iPhone 5', 'iPhone 5S', 'iPhone 6', 'iPhone 6 Plus', 'iPad 2', 'iPad Retina', 'iPad Air', 'iPad mini', 'iPad mini 2', 'iPad mini 3'],
-      ['iPhone 4', '2','7']],
-      ids:[
-        [1,2,3,4,5,6,7,8,9,10,11,12,13],
-        [1,2,3]
-      ]
-    }];
-    // var ids=
+
+
+
   // 二级联动
   function getData(raw,dom,subList){
     var cityList = function(data) {
@@ -238,7 +185,6 @@
         return d.name;
     });
 
-    var idsList={};
     var getCodeId=function({values}){
         // return (function(values){
             var mm=raw.filter(function(index) {
@@ -256,10 +202,10 @@
                 }
                 return temp;
             });
-              idsList={
+              var tem={
                   res:values+','+mm[0].first+','+mm[0].two
               }
-            console.log(idsList)
+            console.log(tem)
             return mm[0].first+','+mm[0].two;
         // })
     }
@@ -272,7 +218,7 @@
       $("#"+dom).picker({
         toolbarTemplate: '<header class="bar bar-nav">\
         <button class="button button-link pull-left close-picker">取消</button>\
-        <button class="button button-link pull-right conprim-'+dom+'">确定</button>\
+        <button class="button button-link pull-right conprim-picker">确定</button>\
         </header>',
         cssClass: "city-picker",
         rotateEffect: false,  //为了性能
@@ -305,71 +251,9 @@
         }]
       });
 
-    $(document).on("click", ".conprim-"+dom, function() {
-        alert(idsList.res)
-        var pickerToClose = $('.picker-modal.modal-in');
-        $.closeModal(pickerToClose);
-    });
-
-    setTimeout(function(){$('#'+dom).picker('open');},100);
   }
 
-  // 两层无关联
-  function showSelect(data,dom){
-    var colsData=data[0].value.map((item)=>({
-      textAlign: 'center',
-      values:item
-    }));
-    var indexX;
-    var indexY;
-    var time;
-
-    function getIds({values}){
-      if(values.length===2){
-        indexX=data[0].ids[0][data[0].value[0].indexOf(values[0])];
-        indexY=data[0].ids[1][data[0].value[1].indexOf(values[1])];
-      }else{
-        indexX=data[0].ids[0][data[0].value[0].indexOf(values[0])];
-      }
-
-      console.log(values.length)
-    }
-
-    $("#"+dom).picker({
-      toolbarTemplate: '<header class="bar bar-nav">\
-      <button class="button button-link pull-left  close-picker">取消</button>\
-      <button class="button button-link pull-right close-picker">确定</button>\
-      </header>',
-      toolbar:true,
-      onChange:function(picker, values, displayValues){
-        clearTimeout(time)
-        $(picker.input).attr('ids_1_'+dom,indexX);
-        $(picker.input).attr('ids_2_'+dom,indexY||'');
-        time=setTimeout(function(){getIds({values});},200)
-      },
-      cols: colsData
-    });
-    setTimeout(function(){$('#'+dom).picker('open')},10);
-  }
-
-
-
-
-  $('#myFunc').click(function(e){
-    //我是
-    e.preventDefault();
-    // $('#myIdentity').picker('open');
-    showSelect(result,'myIdentity');
-  })
-  // $('#depart').click(function(e){
-  //   //科室
-  //   e.preventDefault();
-  //   $('#city-picker').picker('open');
-  // });
-  $('#depart').click(function(e){
-    //科室
-    e.preventDefault();
-
+  // 
   $.ajax({
       type:'get',
       url:'pat.json',
@@ -379,21 +263,22 @@
           console.log(data.departmentList)
           $.smConfig.rawCitiesData=data.departmentList;
           if(data.departmentType==='0'){
-            getData(data.departmentList,'depart-picker','subDepartmentList');
+            getData(data.departmentList,'city-picker','subDepartmentList');
           }else{
-            getData(raw,'depart-picker','cityList');
+            getData(raw,'city-picker','cityList');
           }
       }
-  });
-    
-  });
+  })
       $(document).on('click','.conprim-picker',function(){
       })
 
       $('#open-picker').click(function(e){
+        e.stopPropagation();
         e.preventDefault();
-        getData(raw,'city-picker','cityList');
-        // $('#city-picker').picker('open');
+        // $.toast("操作成功",1000);
+        $('#city-picker').picker('open');
+        // $('#picker').picker('close')
+        // $('#picker').picker("setValue", ["2012"])
       });
 
     $(".show-toast").click(function() {

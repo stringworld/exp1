@@ -33,7 +33,7 @@
                         <div id="yearwrapper">
                             <ul>
                                 <li>&nbsp;</li>
-                                <li ng-repeat="item in tagdata">{{item.provinceName}}</li>
+                                <li ng-repeat="item in tagdata">{{item}}</li>
                                 <li>&nbsp;</li>
                             </ul>
                         </div>
@@ -81,24 +81,49 @@
                     doctorTypeId: 2
                 };
 
-                getData.getJson($scope.defaultData).then(setData);
+                // getData.getJson($scope.defaultData).then(setData);
 
                 function setData({data}){
                     console.log(data.provinceListWithCity[3].cityList)
-                    $scope.tagdata=data.provinceListWithCity;
-                    $scope.taglist=$scope.tagdata[indexY].cityList||[];
+                    // $scope.tagdata=data.provinceListWithCity;
+                    // $scope.taglist=$scope.tagdata[indexY].cityList||[];
 
                 }
-                $scope.temp=[
-                    {name:1,isselected:true,value:'text'},
-                    {name:1,isselected:false,value:'text'},
-                ]
 
                 $scope.selectEd=function(index){
                     // return $scope.temp[index].isselected=true;
                     // return true;
                 }
-
+                var temp={
+                    "isSuccess": true,
+                    "data": {
+                        "departmentList": [
+                            {
+                                "name": "内科",
+                                "id": "652"
+                            },
+                            {
+                                "name": "外科",
+                                "id": "653"
+                            },
+                            {
+                                "name": "妇产科",
+                                "id": "654"
+                            },
+                            {
+                                "name": "儿科",
+                                "id": "655"
+                            },
+                            {
+                                "name": "中西医结合科",
+                                "id": "656"
+                            }
+                        ],
+                        "departmentType": "-1"
+                    },
+                    "type": "DepartmentInfo"
+                }
+                $scope.tagdata=temp.data.departmentList.map(item=> item.name);
                 // $scope.tagdata = {"citylist":[
                 //     {"p":"前端技术","c":[]}, 
                 //     {"p":"编程语言","c":[{"n":"C"},{"n":"C++"},{"n":"PHP"},{"n":"JAVA"}]},
@@ -113,32 +138,39 @@
                         onScrollEnd:function () {
                             indexY = (this.y/40)*(-1);
                             console.log(indexY)
-                            $scope.$apply(function(){
-                                $scope.taglist=$scope.tagdata[indexY].cityList||[];
-                            });
-                            monthScroll.refresh();
+                            // $scope.$apply(function(){
+                            //     $scope.taglist=$scope.tagdata[indexY].cityList||[];
+                            // });
+                            // monthScroll.refresh();
                     }});
-                    monthScroll = new iScroll("monthwrapper",{snap:"li",vScrollbar:false,
-                        onScrollEnd:function (){
-                            indexM = (this.y/40)*(-1);
-                            console.log(indexM)
-                    }});
+                    // monthScroll = new iScroll("monthwrapper",{snap:"li",vScrollbar:false,
+                    //     onScrollEnd:function (){
+                    //         indexM = (this.y/40)*(-1);
+                    //         console.log(indexM)
+                    // }});
                 }
                 
                 $("#dateconfirm").unbind('click').click(function () {
                     var datestr = $("#yearwrapper ul li:eq("+(indexY+1)+")").html()+'-'+$("#monthwrapper ul li:eq("+((indexM||0)+1)+")").html()||'';
                     console.log($("#yearwrapper ul li:eq("+(indexY+1)+")").html())
                     console.log($("#monthwrapper ul li:eq("+(indexM+1)+")").html())
-                    $('#beginTime').html(datestr)
+                    // $('#beginTime').html(datestr)
                     $("#datePage").hide(); 
                     $("#dateshadow").hide();
                 });
+
                 $('#beginTime').click(function(){
-                    alert('dd');
+                    // alert('dd');
                     $("#datePage").show();
                     $("#dateshadow").show();
                     init_iScrll();
                 });
+
+                $(document).on('click',"#yearwrapper ul li:eq("+(indexY+1)+")",function(){
+                    var mm=$(this).html()
+                    alert(mm)
+                })
+
             }]);
         </script>
     </body>

@@ -1,0 +1,3915 @@
+{
+    "isSuccess": true,
+    "data": {
+        "departmentList": [
+            {
+                "name": "内科",
+                "id": "1",
+                "subDepartmentList": [
+                    {
+                        "id": "2",
+                        "parentId": "1",
+                        "name": "心血管内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "3",
+                        "parentId": "1",
+                        "name": "呼吸内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "4",
+                        "parentId": "1",
+                        "name": "消化内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "5",
+                        "parentId": "1",
+                        "name": "神经内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "6",
+                        "parentId": "1",
+                        "name": "功能神经内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "7",
+                        "parentId": "1",
+                        "name": "肾脏内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "8",
+                        "parentId": "1",
+                        "name": "血液内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "9",
+                        "parentId": "1",
+                        "name": "内分泌科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "10",
+                        "parentId": "1",
+                        "name": "风湿免疫科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "11",
+                        "parentId": "1",
+                        "name": "肝脏内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "12",
+                        "parentId": "1",
+                        "name": "普通内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "13",
+                        "parentId": "1",
+                        "name": "过敏反应科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "14",
+                        "parentId": "1",
+                        "name": "老年病科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "15",
+                        "parentId": "1",
+                        "name": "变态反应科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "16",
+                        "parentId": "1",
+                        "name": "高压氧科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "外科",
+                "id": "17",
+                "subDepartmentList": [
+                    {
+                        "id": "18",
+                        "parentId": "17",
+                        "name": "神经外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "19",
+                        "parentId": "17",
+                        "name": "功能神经外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "20",
+                        "parentId": "17",
+                        "name": "心血管外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "21",
+                        "parentId": "17",
+                        "name": "血管外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "22",
+                        "parentId": "17",
+                        "name": "胸外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "23",
+                        "parentId": "17",
+                        "name": "创伤外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "24",
+                        "parentId": "17",
+                        "name": "肝胆外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "25",
+                        "parentId": "17",
+                        "name": "泌尿外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "26",
+                        "parentId": "17",
+                        "name": "乳腺外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "27",
+                        "parentId": "17",
+                        "name": "甲状腺外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "28",
+                        "parentId": "17",
+                        "name": "肛肠科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "29",
+                        "parentId": "17",
+                        "name": "普通外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "30",
+                        "parentId": "17",
+                        "name": "整形外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "31",
+                        "parentId": "17",
+                        "name": "微创外科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "妇产科",
+                "id": "32",
+                "subDepartmentList": [
+                    {
+                        "id": "33",
+                        "parentId": "32",
+                        "name": "妇科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "34",
+                        "parentId": "32",
+                        "name": "产科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "35",
+                        "parentId": "32",
+                        "name": "新生儿科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "36",
+                        "parentId": "32",
+                        "name": "妇产科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "37",
+                        "parentId": "32",
+                        "name": "生殖医学科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "38",
+                        "parentId": "32",
+                        "name": "计划生育科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "39",
+                        "parentId": "32",
+                        "name": "中西医结合科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "40",
+                        "parentId": "32",
+                        "name": "乳腺外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "41",
+                        "parentId": "32",
+                        "name": "宫颈科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "42",
+                        "parentId": "32",
+                        "name": "产前诊断科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "43",
+                        "parentId": "32",
+                        "name": "妇幼保健科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "儿科",
+                "id": "44",
+                "subDepartmentList": [
+                    {
+                        "id": "45",
+                        "parentId": "44",
+                        "name": "新生儿科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "46",
+                        "parentId": "44",
+                        "name": "小儿呼吸科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "47",
+                        "parentId": "44",
+                        "name": "小儿消化科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "48",
+                        "parentId": "44",
+                        "name": "小儿神经内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "49",
+                        "parentId": "44",
+                        "name": "小儿心内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "50",
+                        "parentId": "44",
+                        "name": "小儿肾内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "51",
+                        "parentId": "44",
+                        "name": "小儿内分泌科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "52",
+                        "parentId": "44",
+                        "name": "小儿风湿免疫科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "53",
+                        "parentId": "44",
+                        "name": "小儿血液科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "54",
+                        "parentId": "44",
+                        "name": "小儿感染科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "55",
+                        "parentId": "44",
+                        "name": "小儿内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "56",
+                        "parentId": "44",
+                        "name": "小儿皮肤科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "57",
+                        "parentId": "44",
+                        "name": "小儿耳鼻喉科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "58",
+                        "parentId": "44",
+                        "name": "小儿心外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "59",
+                        "parentId": "44",
+                        "name": "小儿胸外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "60",
+                        "parentId": "44",
+                        "name": "小儿泌尿外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "61",
+                        "parentId": "44",
+                        "name": "小儿神经外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "62",
+                        "parentId": "44",
+                        "name": "小儿整形科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "63",
+                        "parentId": "44",
+                        "name": "小儿外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "64",
+                        "parentId": "44",
+                        "name": "小儿骨科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "65",
+                        "parentId": "44",
+                        "name": "小儿妇科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "66",
+                        "parentId": "44",
+                        "name": "小儿急诊科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "67",
+                        "parentId": "44",
+                        "name": "小儿精神科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "68",
+                        "parentId": "44",
+                        "name": "小儿营养科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "69",
+                        "parentId": "44",
+                        "name": "小儿康复科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "70",
+                        "parentId": "44",
+                        "name": "小儿保健科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "中西医结合科",
+                "id": "71",
+                "subDepartmentList": [
+                    {
+                        "id": "72",
+                        "parentId": "71",
+                        "name": "中西医结合科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "中医科",
+                "id": "73",
+                "subDepartmentList": [
+                    {
+                        "id": "74",
+                        "parentId": "73",
+                        "name": "中医科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "75",
+                        "parentId": "73",
+                        "name": "中医内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "76",
+                        "parentId": "73",
+                        "name": "中医消化科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "77",
+                        "parentId": "73",
+                        "name": "中医呼吸科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "78",
+                        "parentId": "73",
+                        "name": "中医内分泌科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "79",
+                        "parentId": "73",
+                        "name": "中医神经内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "80",
+                        "parentId": "73",
+                        "name": "中医肾内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "81",
+                        "parentId": "73",
+                        "name": "中医心内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "82",
+                        "parentId": "73",
+                        "name": "中医风湿免疫科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "83",
+                        "parentId": "73",
+                        "name": "中医血液科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "84",
+                        "parentId": "73",
+                        "name": "中医肿瘤科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "85",
+                        "parentId": "73",
+                        "name": "中医外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "86",
+                        "parentId": "73",
+                        "name": "中医乳腺科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "87",
+                        "parentId": "73",
+                        "name": "中医肛肠科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "88",
+                        "parentId": "73",
+                        "name": "中医妇科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "89",
+                        "parentId": "73",
+                        "name": "中医儿科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "90",
+                        "parentId": "73",
+                        "name": "中医皮肤科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "91",
+                        "parentId": "73",
+                        "name": "中医骨伤科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "92",
+                        "parentId": "73",
+                        "name": "中医五官科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "93",
+                        "parentId": "73",
+                        "name": "中医男科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "94",
+                        "parentId": "73",
+                        "name": "针灸科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "95",
+                        "parentId": "73",
+                        "name": "推拿科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "骨科",
+                "id": "96",
+                "subDepartmentList": [
+                    {
+                        "id": "97",
+                        "parentId": "96",
+                        "name": "脊柱外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "98",
+                        "parentId": "96",
+                        "name": "足踝外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "99",
+                        "parentId": "96",
+                        "name": "手外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "100",
+                        "parentId": "96",
+                        "name": "创伤骨科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "101",
+                        "parentId": "96",
+                        "name": "骨关节科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "102",
+                        "parentId": "96",
+                        "name": "矫形骨科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "103",
+                        "parentId": "96",
+                        "name": "运动医学科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "104",
+                        "parentId": "96",
+                        "name": "骨质疏松科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "105",
+                        "parentId": "96",
+                        "name": "骨科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "肿瘤科",
+                "id": "106",
+                "subDepartmentList": [
+                    {
+                        "id": "107",
+                        "parentId": "106",
+                        "name": "肿瘤内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "108",
+                        "parentId": "106",
+                        "name": "肿瘤外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "109",
+                        "parentId": "106",
+                        "name": "肿瘤妇科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "110",
+                        "parentId": "106",
+                        "name": "骨肿瘤科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "111",
+                        "parentId": "106",
+                        "name": "肿瘤科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "112",
+                        "parentId": "106",
+                        "name": "放疗科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "113",
+                        "parentId": "106",
+                        "name": "化疗科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "114",
+                        "parentId": "106",
+                        "name": "介入治疗科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "115",
+                        "parentId": "106",
+                        "name": "肿瘤康复科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "116",
+                        "parentId": "106",
+                        "name": "肿瘤综合科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "眼科",
+                "id": "117",
+                "subDepartmentList": [
+                    {
+                        "id": "118",
+                        "parentId": "117",
+                        "name": "小儿眼科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "119",
+                        "parentId": "117",
+                        "name": "眼底病科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "120",
+                        "parentId": "117",
+                        "name": "眼角膜科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "121",
+                        "parentId": "117",
+                        "name": "青光眼科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "122",
+                        "parentId": "117",
+                        "name": "白内障科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "123",
+                        "parentId": "117",
+                        "name": "眼外伤科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "124",
+                        "parentId": "117",
+                        "name": "眼眶病科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "125",
+                        "parentId": "117",
+                        "name": "眼整形科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "126",
+                        "parentId": "117",
+                        "name": "眼科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "口腔科",
+                "id": "127",
+                "subDepartmentList": [
+                    {
+                        "id": "128",
+                        "parentId": "127",
+                        "name": "口腔正畸科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "129",
+                        "parentId": "127",
+                        "name": "口腔综合科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "130",
+                        "parentId": "127",
+                        "name": "口腔种植科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "131",
+                        "parentId": "127",
+                        "name": "口腔预防科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "132",
+                        "parentId": "127",
+                        "name": "口腔修复科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "133",
+                        "parentId": "127",
+                        "name": "口腔黏膜科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "134",
+                        "parentId": "127",
+                        "name": "口腔颌面头颈肿瘤科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "135",
+                        "parentId": "127",
+                        "name": "口腔外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "136",
+                        "parentId": "127",
+                        "name": "口腔颅颌面科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "137",
+                        "parentId": "127",
+                        "name": "口腔急诊科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "138",
+                        "parentId": "127",
+                        "name": "口腔科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "139",
+                        "parentId": "127",
+                        "name": "牙科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "140",
+                        "parentId": "127",
+                        "name": "牙体牙髓科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "141",
+                        "parentId": "127",
+                        "name": "牙周病科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "142",
+                        "parentId": "127",
+                        "name": "儿童口腔科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "耳鼻咽喉头颈科",
+                "id": "143",
+                "subDepartmentList": [
+                    {
+                        "id": "144",
+                        "parentId": "143",
+                        "name": "耳鼻喉科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "145",
+                        "parentId": "143",
+                        "name": "头颈外科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "皮肤性病科",
+                "id": "146",
+                "subDepartmentList": [
+                    {
+                        "id": "147",
+                        "parentId": "146",
+                        "name": "皮肤内科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "148",
+                        "parentId": "146",
+                        "name": "皮肤外科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "149",
+                        "parentId": "146",
+                        "name": "性病科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "150",
+                        "parentId": "146",
+                        "name": "真菌病科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "151",
+                        "parentId": "146",
+                        "name": "皮肤美容科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "152",
+                        "parentId": "146",
+                        "name": "皮肤综合科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "男性科",
+                "id": "153",
+                "subDepartmentList": [
+                    {
+                        "id": "154",
+                        "parentId": "153",
+                        "name": "男性科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "灼伤科",
+                "id": "155",
+                "subDepartmentList": [
+                    {
+                        "id": "156",
+                        "parentId": "155",
+                        "name": "灼伤科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "157",
+                        "parentId": "155",
+                        "name": "灼伤整形科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "传染科",
+                "id": "158",
+                "subDepartmentList": [
+                    {
+                        "id": "159",
+                        "parentId": "158",
+                        "name": "传染科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "160",
+                        "parentId": "158",
+                        "name": "肝病科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "161",
+                        "parentId": "158",
+                        "name": "艾滋病科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "162",
+                        "parentId": "158",
+                        "name": "传染危重室科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "结核病科",
+                "id": "163",
+                "subDepartmentList": [
+                    {
+                        "id": "164",
+                        "parentId": "163",
+                        "name": "结核病科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "精神心理科",
+                "id": "165",
+                "subDepartmentList": [
+                    {
+                        "id": "166",
+                        "parentId": "165",
+                        "name": "精神科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "167",
+                        "parentId": "165",
+                        "name": "心理科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "168",
+                        "parentId": "165",
+                        "name": "精神心理科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "康复医学科",
+                "id": "169",
+                "subDepartmentList": [
+                    {
+                        "id": "170",
+                        "parentId": "169",
+                        "name": "康复医学科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "171",
+                        "parentId": "169",
+                        "name": "理疗科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "其他科室",
+                "id": "172",
+                "subDepartmentList": [
+                    {
+                        "id": "173",
+                        "parentId": "172",
+                        "name": "全科医疗科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "174",
+                        "parentId": "172",
+                        "name": "急诊科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "175",
+                        "parentId": "172",
+                        "name": "营养科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "176",
+                        "parentId": "172",
+                        "name": "预防保健科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "177",
+                        "parentId": "172",
+                        "name": "疼痛科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "178",
+                        "parentId": "172",
+                        "name": "临终关怀科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "179",
+                        "parentId": "172",
+                        "name": "麻醉科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "180",
+                        "parentId": "172",
+                        "name": "介入医学科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "181",
+                        "parentId": "172",
+                        "name": "重症监护科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "182",
+                        "parentId": "172",
+                        "name": "血透中心",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "183",
+                        "parentId": "172",
+                        "name": "输血科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "184",
+                        "parentId": "172",
+                        "name": "碎石中心",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "185",
+                        "parentId": "172",
+                        "name": "病理科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "医学影像科",
+                "id": "186",
+                "subDepartmentList": [
+                    {
+                        "id": "187",
+                        "parentId": "186",
+                        "name": "放射科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "188",
+                        "parentId": "186",
+                        "name": "核医学科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "189",
+                        "parentId": "186",
+                        "name": "超声医学科",
+                        "templateId": "中"
+                    },
+                    {
+                        "id": "190",
+                        "parentId": "186",
+                        "name": "医学影像科",
+                        "templateId": "中"
+                    }
+                ]
+            },
+            {
+                "name": "眼科",
+                "id": "191",
+                "subDepartmentList": [
+                    {
+                        "id": "192",
+                        "parentId": "191",
+                        "name": "小儿眼科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "193",
+                        "parentId": "191",
+                        "name": "眼底病科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "194",
+                        "parentId": "191",
+                        "name": "眼角膜科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "195",
+                        "parentId": "191",
+                        "name": "青光眼科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "196",
+                        "parentId": "191",
+                        "name": "白内障科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "197",
+                        "parentId": "191",
+                        "name": "眼外伤科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "198",
+                        "parentId": "191",
+                        "name": "眼眶病科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "199",
+                        "parentId": "191",
+                        "name": "眼整形科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "200",
+                        "parentId": "191",
+                        "name": "眼科",
+                        "templateId": "五"
+                    }
+                ]
+            },
+            {
+                "name": "耳鼻喉科",
+                "id": "201",
+                "subDepartmentList": [
+                    {
+                        "id": "202",
+                        "parentId": "201",
+                        "name": "耳神经颅底外科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "203",
+                        "parentId": "201",
+                        "name": "听觉语言疾病",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "204",
+                        "parentId": "201",
+                        "name": "耳整复外科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "205",
+                        "parentId": "201",
+                        "name": "头颈外科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "206",
+                        "parentId": "201",
+                        "name": "鼻科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "207",
+                        "parentId": "201",
+                        "name": "咽喉科",
+                        "templateId": "五"
+                    }
+                ]
+            },
+            {
+                "name": "口腔科",
+                "id": "208",
+                "subDepartmentList": [
+                    {
+                        "id": "209",
+                        "parentId": "208",
+                        "name": "口腔科",
+                        "templateId": "五"
+                    }
+                ]
+            },
+            {
+                "name": "激光整形科",
+                "id": "210",
+                "subDepartmentList": [
+                    {
+                        "id": "211",
+                        "parentId": "210",
+                        "name": "激光整形科",
+                        "templateId": "五"
+                    }
+                ]
+            },
+            {
+                "name": "放疗科",
+                "id": "212",
+                "subDepartmentList": [
+                    {
+                        "id": "213",
+                        "parentId": "212",
+                        "name": "放疗科",
+                        "templateId": "五"
+                    }
+                ]
+            },
+            {
+                "name": "急诊科",
+                "id": "214",
+                "subDepartmentList": [
+                    {
+                        "id": "215",
+                        "parentId": "214",
+                        "name": "急诊科",
+                        "templateId": "五"
+                    }
+                ]
+            },
+            {
+                "name": "其他科室",
+                "id": "216",
+                "subDepartmentList": [
+                    {
+                        "id": "217",
+                        "parentId": "216",
+                        "name": "麻醉科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "218",
+                        "parentId": "216",
+                        "name": "药剂科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "219",
+                        "parentId": "216",
+                        "name": "放射科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "220",
+                        "parentId": "216",
+                        "name": "病理科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "221",
+                        "parentId": "216",
+                        "name": "检验科",
+                        "templateId": "五"
+                    },
+                    {
+                        "id": "222",
+                        "parentId": "216",
+                        "name": "营养室",
+                        "templateId": "五"
+                    }
+                ]
+            },
+            {
+                "name": "内科",
+                "id": "223",
+                "subDepartmentList": [
+                    {
+                        "id": "224",
+                        "parentId": "223",
+                        "name": "消化科",
+                        "templateId": "传"
+                    },
+                    {
+                        "id": "225",
+                        "parentId": "223",
+                        "name": "传染科",
+                        "templateId": "传"
+                    },
+                    {
+                        "id": "226",
+                        "parentId": "223",
+                        "name": "结核科",
+                        "templateId": "传"
+                    },
+                    {
+                        "id": "227",
+                        "parentId": "223",
+                        "name": "肝炎科",
+                        "templateId": "传"
+                    },
+                    {
+                        "id": "228",
+                        "parentId": "223",
+                        "name": "呼吸科",
+                        "templateId": "传"
+                    },
+                    {
+                        "id": "229",
+                        "parentId": "223",
+                        "name": "内科",
+                        "templateId": "传"
+                    }
+                ]
+            },
+            {
+                "name": "外科",
+                "id": "230",
+                "subDepartmentList": [
+                    {
+                        "id": "231",
+                        "parentId": "230",
+                        "name": "肝胆外科",
+                        "templateId": "传"
+                    },
+                    {
+                        "id": "232",
+                        "parentId": "230",
+                        "name": "胸外科",
+                        "templateId": "传"
+                    },
+                    {
+                        "id": "233",
+                        "parentId": "230",
+                        "name": "普外科",
+                        "templateId": "传"
+                    }
+                ]
+            },
+            {
+                "name": "妇产科",
+                "id": "234",
+                "subDepartmentList": [
+                    {
+                        "id": "235",
+                        "parentId": "234",
+                        "name": "妇产科",
+                        "templateId": "传"
+                    }
+                ]
+            },
+            {
+                "name": "儿科",
+                "id": "236",
+                "subDepartmentList": [
+                    {
+                        "id": "237",
+                        "parentId": "236",
+                        "name": "儿科",
+                        "templateId": "传"
+                    }
+                ]
+            },
+            {
+                "name": "五官科",
+                "id": "238",
+                "subDepartmentList": [
+                    {
+                        "id": "239",
+                        "parentId": "238",
+                        "name": "五官科",
+                        "templateId": "传"
+                    }
+                ]
+            },
+            {
+                "name": "中医科",
+                "id": "240",
+                "subDepartmentList": [
+                    {
+                        "id": "241",
+                        "parentId": "240",
+                        "name": "中医科",
+                        "templateId": "传"
+                    }
+                ]
+            },
+            {
+                "name": "介入科",
+                "id": "242",
+                "subDepartmentList": [
+                    {
+                        "id": "243",
+                        "parentId": "242",
+                        "name": "介入科",
+                        "templateId": "传"
+                    }
+                ]
+            },
+            {
+                "name": "麻醉科",
+                "id": "244",
+                "subDepartmentList": [
+                    {
+                        "id": "245",
+                        "parentId": "244",
+                        "name": "麻醉科",
+                        "templateId": "传"
+                    }
+                ]
+            },
+            {
+                "name": "医疗辅助科室",
+                "id": "246",
+                "subDepartmentList": [
+                    {
+                        "id": "247",
+                        "parentId": "246",
+                        "name": "医学影像科",
+                        "templateId": "传"
+                    },
+                    {
+                        "id": "248",
+                        "parentId": "246",
+                        "name": "医学检验科",
+                        "templateId": "传"
+                    },
+                    {
+                        "id": "249",
+                        "parentId": "246",
+                        "name": "药剂科",
+                        "templateId": "传"
+                    },
+                    {
+                        "id": "250",
+                        "parentId": "246",
+                        "name": "病理科",
+                        "templateId": "传"
+                    },
+                    {
+                        "id": "251",
+                        "parentId": "246",
+                        "name": "血液净化中心",
+                        "templateId": "传"
+                    }
+                ]
+            },
+            {
+                "name": "内科",
+                "id": "252",
+                "subDepartmentList": [
+                    {
+                        "id": "253",
+                        "parentId": "252",
+                        "name": "小儿呼吸科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "254",
+                        "parentId": "252",
+                        "name": "小儿消化科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "255",
+                        "parentId": "252",
+                        "name": "小儿神经内科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "256",
+                        "parentId": "252",
+                        "name": "小儿心内科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "257",
+                        "parentId": "252",
+                        "name": "小儿肾内科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "258",
+                        "parentId": "252",
+                        "name": "小儿内分泌科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "259",
+                        "parentId": "252",
+                        "name": "小儿风湿免疫科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "260",
+                        "parentId": "252",
+                        "name": "小儿血液科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "261",
+                        "parentId": "252",
+                        "name": "小儿传染科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "262",
+                        "parentId": "252",
+                        "name": "重症医学科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "263",
+                        "parentId": "252",
+                        "name": "新生儿科",
+                        "templateId": "儿"
+                    }
+                ]
+            },
+            {
+                "name": "外科",
+                "id": "264",
+                "subDepartmentList": [
+                    {
+                        "id": "265",
+                        "parentId": "264",
+                        "name": "小儿泌尿外科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "266",
+                        "parentId": "264",
+                        "name": "小儿普外科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "267",
+                        "parentId": "264",
+                        "name": "小儿神经外科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "268",
+                        "parentId": "264",
+                        "name": "小儿心外科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "269",
+                        "parentId": "264",
+                        "name": "小儿胸外科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "270",
+                        "parentId": "264",
+                        "name": "小儿肿瘤外科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "271",
+                        "parentId": "264",
+                        "name": "小儿整形外科",
+                        "templateId": "儿"
+                    }
+                ]
+            },
+            {
+                "name": "妇科",
+                "id": "272",
+                "subDepartmentList": [
+                    {
+                        "id": "273",
+                        "parentId": "272",
+                        "name": "小儿妇科",
+                        "templateId": "儿"
+                    }
+                ]
+            },
+            {
+                "name": "骨科",
+                "id": "274",
+                "subDepartmentList": [
+                    {
+                        "id": "275",
+                        "parentId": "274",
+                        "name": "小儿骨科",
+                        "templateId": "儿"
+                    }
+                ]
+            },
+            {
+                "name": "眼科",
+                "id": "276",
+                "subDepartmentList": [
+                    {
+                        "id": "277",
+                        "parentId": "276",
+                        "name": "小儿眼科",
+                        "templateId": "儿"
+                    }
+                ]
+            },
+            {
+                "name": "耳鼻咽喉头颈外科",
+                "id": "278",
+                "subDepartmentList": [
+                    {
+                        "id": "279",
+                        "parentId": "278",
+                        "name": "小儿耳鼻咽喉头颈外科",
+                        "templateId": "儿"
+                    }
+                ]
+            },
+            {
+                "name": "口腔科",
+                "id": "280",
+                "subDepartmentList": [
+                    {
+                        "id": "281",
+                        "parentId": "280",
+                        "name": "小儿口腔科",
+                        "templateId": "儿"
+                    }
+                ]
+            },
+            {
+                "name": "皮肤科",
+                "id": "282",
+                "subDepartmentList": [
+                    {
+                        "id": "283",
+                        "parentId": "282",
+                        "name": "小儿皮肤科",
+                        "templateId": "儿"
+                    }
+                ]
+            },
+            {
+                "name": "中医科",
+                "id": "284",
+                "subDepartmentList": [
+                    {
+                        "id": "285",
+                        "parentId": "284",
+                        "name": "小儿中医科",
+                        "templateId": "儿"
+                    }
+                ]
+            },
+            {
+                "name": "儿童保健科",
+                "id": "286",
+                "subDepartmentList": [
+                    {
+                        "id": "287",
+                        "parentId": "286",
+                        "name": "儿童保健科",
+                        "templateId": "儿"
+                    }
+                ]
+            },
+            {
+                "name": "康复科",
+                "id": "288",
+                "subDepartmentList": [
+                    {
+                        "id": "289",
+                        "parentId": "288",
+                        "name": "小儿康复科",
+                        "templateId": "儿"
+                    }
+                ]
+            },
+            {
+                "name": "麻醉科",
+                "id": "290",
+                "subDepartmentList": [
+                    {
+                        "id": "291",
+                        "parentId": "290",
+                        "name": "麻醉科",
+                        "templateId": "儿"
+                    }
+                ]
+            },
+            {
+                "name": "医学影像科",
+                "id": "292",
+                "subDepartmentList": [
+                    {
+                        "id": "293",
+                        "parentId": "292",
+                        "name": "放射科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "294",
+                        "parentId": "292",
+                        "name": "核医学科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "295",
+                        "parentId": "292",
+                        "name": "超声医学科",
+                        "templateId": "儿"
+                    },
+                    {
+                        "id": "296",
+                        "parentId": "292",
+                        "name": "医学影像科",
+                        "templateId": "儿"
+                    }
+                ]
+            },
+            {
+                "name": "口腔科",
+                "id": "297",
+                "subDepartmentList": [
+                    {
+                        "id": "298",
+                        "parentId": "297",
+                        "name": "牙体牙髓科",
+                        "templateId": "口"
+                    },
+                    {
+                        "id": "299",
+                        "parentId": "297",
+                        "name": "口腔外科",
+                        "templateId": "口"
+                    },
+                    {
+                        "id": "300",
+                        "parentId": "297",
+                        "name": "口腔修复科",
+                        "templateId": "口"
+                    },
+                    {
+                        "id": "301",
+                        "parentId": "297",
+                        "name": "口腔正畸科",
+                        "templateId": "口"
+                    },
+                    {
+                        "id": "302",
+                        "parentId": "297",
+                        "name": "预防儿童科",
+                        "templateId": "口"
+                    },
+                    {
+                        "id": "303",
+                        "parentId": "297",
+                        "name": "牙周病科",
+                        "templateId": "口"
+                    },
+                    {
+                        "id": "304",
+                        "parentId": "297",
+                        "name": "口腔种植科",
+                        "templateId": "口"
+                    },
+                    {
+                        "id": "305",
+                        "parentId": "297",
+                        "name": "口腔内科",
+                        "templateId": "口"
+                    },
+                    {
+                        "id": "306",
+                        "parentId": "297",
+                        "name": "口腔颌面外科",
+                        "templateId": "口"
+                    },
+                    {
+                        "id": "307",
+                        "parentId": "297",
+                        "name": "儿童口腔科",
+                        "templateId": "口"
+                    },
+                    {
+                        "id": "308",
+                        "parentId": "297",
+                        "name": "口腔综合科",
+                        "templateId": "口"
+                    },
+                    {
+                        "id": "309",
+                        "parentId": "297",
+                        "name": "口腔全科",
+                        "templateId": "口"
+                    },
+                    {
+                        "id": "310",
+                        "parentId": "297",
+                        "name": "口腔放射科",
+                        "templateId": "口"
+                    }
+                ]
+            },
+            {
+                "name": "麻醉科",
+                "id": "311",
+                "subDepartmentList": [
+                    {
+                        "id": "312",
+                        "parentId": "311",
+                        "name": "麻醉科",
+                        "templateId": "口"
+                    }
+                ]
+            },
+            {
+                "name": "检验科",
+                "id": "313",
+                "subDepartmentList": [
+                    {
+                        "id": "314",
+                        "parentId": "313",
+                        "name": "检验科",
+                        "templateId": "口"
+                    }
+                ]
+            },
+            {
+                "name": "妇产科",
+                "id": "315",
+                "subDepartmentList": [
+                    {
+                        "id": "316",
+                        "parentId": "315",
+                        "name": "妇科",
+                        "templateId": "妇"
+                    },
+                    {
+                        "id": "317",
+                        "parentId": "315",
+                        "name": "产科",
+                        "templateId": "妇"
+                    },
+                    {
+                        "id": "318",
+                        "parentId": "315",
+                        "name": "新生儿科",
+                        "templateId": "妇"
+                    },
+                    {
+                        "id": "319",
+                        "parentId": "315",
+                        "name": "计划生育科",
+                        "templateId": "妇"
+                    },
+                    {
+                        "id": "320",
+                        "parentId": "315",
+                        "name": "中西医结合科",
+                        "templateId": "妇"
+                    },
+                    {
+                        "id": "321",
+                        "parentId": "315",
+                        "name": "乳腺外科",
+                        "templateId": "妇"
+                    },
+                    {
+                        "id": "322",
+                        "parentId": "315",
+                        "name": "宫颈科",
+                        "templateId": "妇"
+                    },
+                    {
+                        "id": "323",
+                        "parentId": "315",
+                        "name": "麻醉科",
+                        "templateId": "妇"
+                    },
+                    {
+                        "id": "324",
+                        "parentId": "315",
+                        "name": "妇产科",
+                        "templateId": "妇"
+                    }
+                ]
+            },
+            {
+                "name": "儿科",
+                "id": "325",
+                "subDepartmentList": [
+                    {
+                        "id": "326",
+                        "parentId": "325",
+                        "name": "儿科",
+                        "templateId": "妇"
+                    }
+                ]
+            },
+            {
+                "name": "口腔科",
+                "id": "327",
+                "subDepartmentList": [
+                    {
+                        "id": "328",
+                        "parentId": "327",
+                        "name": "口腔科",
+                        "templateId": "妇"
+                    }
+                ]
+            },
+            {
+                "name": "营养科",
+                "id": "329",
+                "subDepartmentList": [
+                    {
+                        "id": "330",
+                        "parentId": "329",
+                        "name": "营养科",
+                        "templateId": "妇"
+                    }
+                ]
+            },
+            {
+                "name": "中医科",
+                "id": "331",
+                "subDepartmentList": [
+                    {
+                        "id": "332",
+                        "parentId": "331",
+                        "name": "中医妇科",
+                        "templateId": "妇"
+                    }
+                ]
+            },
+            {
+                "name": "男性科",
+                "id": "333",
+                "subDepartmentList": [
+                    {
+                        "id": "334",
+                        "parentId": "333",
+                        "name": "男性科",
+                        "templateId": "妇"
+                    }
+                ]
+            },
+            {
+                "name": "医技科室",
+                "id": "335",
+                "subDepartmentList": [
+                    {
+                        "id": "336",
+                        "parentId": "335",
+                        "name": "检验科",
+                        "templateId": "妇"
+                    },
+                    {
+                        "id": "337",
+                        "parentId": "335",
+                        "name": "放射科",
+                        "templateId": "妇"
+                    },
+                    {
+                        "id": "338",
+                        "parentId": "335",
+                        "name": "病理科",
+                        "templateId": "妇"
+                    },
+                    {
+                        "id": "339",
+                        "parentId": "335",
+                        "name": "超声室",
+                        "templateId": "妇"
+                    },
+                    {
+                        "id": "340",
+                        "parentId": "335",
+                        "name": "药剂科",
+                        "templateId": "妇"
+                    },
+                    {
+                        "id": "341",
+                        "parentId": "335",
+                        "name": "心电图室",
+                        "templateId": "妇"
+                    },
+                    {
+                        "id": "342",
+                        "parentId": "335",
+                        "name": "研究所",
+                        "templateId": "妇"
+                    }
+                ]
+            },
+            {
+                "name": "内科",
+                "id": "343",
+                "subDepartmentList": [
+                    {
+                        "id": "344",
+                        "parentId": "343",
+                        "name": "心血管内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "345",
+                        "parentId": "343",
+                        "name": "呼吸内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "346",
+                        "parentId": "343",
+                        "name": "消化内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "347",
+                        "parentId": "343",
+                        "name": "神经内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "348",
+                        "parentId": "343",
+                        "name": "功能神经内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "349",
+                        "parentId": "343",
+                        "name": "肾脏内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "350",
+                        "parentId": "343",
+                        "name": "血液内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "351",
+                        "parentId": "343",
+                        "name": "内分泌科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "352",
+                        "parentId": "343",
+                        "name": "风湿免疫科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "353",
+                        "parentId": "343",
+                        "name": "肝脏内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "354",
+                        "parentId": "343",
+                        "name": "普通内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "355",
+                        "parentId": "343",
+                        "name": "过敏反应科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "356",
+                        "parentId": "343",
+                        "name": "老年病科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "357",
+                        "parentId": "343",
+                        "name": "变态反应科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "358",
+                        "parentId": "343",
+                        "name": "高压氧科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "外科",
+                "id": "359",
+                "subDepartmentList": [
+                    {
+                        "id": "360",
+                        "parentId": "359",
+                        "name": "神经外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "361",
+                        "parentId": "359",
+                        "name": "功能神经外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "362",
+                        "parentId": "359",
+                        "name": "心血管外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "363",
+                        "parentId": "359",
+                        "name": "血管外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "364",
+                        "parentId": "359",
+                        "name": "胸外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "365",
+                        "parentId": "359",
+                        "name": "创伤外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "366",
+                        "parentId": "359",
+                        "name": "肝胆外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "367",
+                        "parentId": "359",
+                        "name": "泌尿外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "368",
+                        "parentId": "359",
+                        "name": "乳腺外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "369",
+                        "parentId": "359",
+                        "name": "甲状腺外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "370",
+                        "parentId": "359",
+                        "name": "肛肠科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "371",
+                        "parentId": "359",
+                        "name": "普通外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "372",
+                        "parentId": "359",
+                        "name": "整形外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "373",
+                        "parentId": "359",
+                        "name": "微创外科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "妇产科",
+                "id": "374",
+                "subDepartmentList": [
+                    {
+                        "id": "375",
+                        "parentId": "374",
+                        "name": "妇科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "376",
+                        "parentId": "374",
+                        "name": "产科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "377",
+                        "parentId": "374",
+                        "name": "新生儿科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "378",
+                        "parentId": "374",
+                        "name": "妇产科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "379",
+                        "parentId": "374",
+                        "name": "生殖医学科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "380",
+                        "parentId": "374",
+                        "name": "计划生育科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "381",
+                        "parentId": "374",
+                        "name": "中西医结合科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "382",
+                        "parentId": "374",
+                        "name": "乳腺外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "383",
+                        "parentId": "374",
+                        "name": "宫颈科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "384",
+                        "parentId": "374",
+                        "name": "产前诊断科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "385",
+                        "parentId": "374",
+                        "name": "妇幼保健科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "儿科",
+                "id": "386",
+                "subDepartmentList": [
+                    {
+                        "id": "387",
+                        "parentId": "386",
+                        "name": "新生儿科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "388",
+                        "parentId": "386",
+                        "name": "小儿呼吸科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "389",
+                        "parentId": "386",
+                        "name": "小儿消化科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "390",
+                        "parentId": "386",
+                        "name": "小儿神经内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "391",
+                        "parentId": "386",
+                        "name": "小儿心内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "392",
+                        "parentId": "386",
+                        "name": "小儿肾内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "393",
+                        "parentId": "386",
+                        "name": "小儿内分泌科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "394",
+                        "parentId": "386",
+                        "name": "小儿风湿免疫科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "395",
+                        "parentId": "386",
+                        "name": "小儿血液科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "396",
+                        "parentId": "386",
+                        "name": "小儿感染科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "397",
+                        "parentId": "386",
+                        "name": "小儿内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "398",
+                        "parentId": "386",
+                        "name": "小儿皮肤科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "399",
+                        "parentId": "386",
+                        "name": "小儿耳鼻喉科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "400",
+                        "parentId": "386",
+                        "name": "小儿心外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "401",
+                        "parentId": "386",
+                        "name": "小儿胸外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "402",
+                        "parentId": "386",
+                        "name": "小儿泌尿外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "403",
+                        "parentId": "386",
+                        "name": "小儿神经外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "404",
+                        "parentId": "386",
+                        "name": "小儿整形科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "405",
+                        "parentId": "386",
+                        "name": "小儿外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "406",
+                        "parentId": "386",
+                        "name": "小儿骨科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "407",
+                        "parentId": "386",
+                        "name": "小儿妇科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "408",
+                        "parentId": "386",
+                        "name": "小儿急诊科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "409",
+                        "parentId": "386",
+                        "name": "小儿精神科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "410",
+                        "parentId": "386",
+                        "name": "小儿营养科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "411",
+                        "parentId": "386",
+                        "name": "小儿康复科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "412",
+                        "parentId": "386",
+                        "name": "小儿保健科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "骨科",
+                "id": "413",
+                "subDepartmentList": [
+                    {
+                        "id": "414",
+                        "parentId": "413",
+                        "name": "脊柱外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "415",
+                        "parentId": "413",
+                        "name": "足踝外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "416",
+                        "parentId": "413",
+                        "name": "手外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "417",
+                        "parentId": "413",
+                        "name": "创伤骨科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "418",
+                        "parentId": "413",
+                        "name": "骨关节科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "419",
+                        "parentId": "413",
+                        "name": "矫形骨科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "420",
+                        "parentId": "413",
+                        "name": "运动医学科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "421",
+                        "parentId": "413",
+                        "name": "骨质疏松科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "422",
+                        "parentId": "413",
+                        "name": "骨科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "647",
+                        "parentId": "413",
+                        "name": "骨伤科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "肿瘤科",
+                "id": "423",
+                "subDepartmentList": [
+                    {
+                        "id": "424",
+                        "parentId": "423",
+                        "name": "肿瘤内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "425",
+                        "parentId": "423",
+                        "name": "肿瘤外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "426",
+                        "parentId": "423",
+                        "name": "肿瘤妇科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "427",
+                        "parentId": "423",
+                        "name": "骨肿瘤科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "428",
+                        "parentId": "423",
+                        "name": "肿瘤科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "429",
+                        "parentId": "423",
+                        "name": "放疗科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "430",
+                        "parentId": "423",
+                        "name": "化疗科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "431",
+                        "parentId": "423",
+                        "name": "介入治疗科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "432",
+                        "parentId": "423",
+                        "name": "肿瘤康复科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "433",
+                        "parentId": "423",
+                        "name": "肿瘤综合科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "眼科",
+                "id": "434",
+                "subDepartmentList": [
+                    {
+                        "id": "435",
+                        "parentId": "434",
+                        "name": "小儿眼科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "436",
+                        "parentId": "434",
+                        "name": "眼底病科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "437",
+                        "parentId": "434",
+                        "name": "眼角膜科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "438",
+                        "parentId": "434",
+                        "name": "青光眼科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "439",
+                        "parentId": "434",
+                        "name": "白内障科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "440",
+                        "parentId": "434",
+                        "name": "眼外伤科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "441",
+                        "parentId": "434",
+                        "name": "眼眶病科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "442",
+                        "parentId": "434",
+                        "name": "眼整形科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "443",
+                        "parentId": "434",
+                        "name": "眼科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "口腔科",
+                "id": "444",
+                "subDepartmentList": [
+                    {
+                        "id": "445",
+                        "parentId": "444",
+                        "name": "口腔正畸科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "446",
+                        "parentId": "444",
+                        "name": "口腔综合科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "447",
+                        "parentId": "444",
+                        "name": "口腔种植科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "448",
+                        "parentId": "444",
+                        "name": "口腔预防科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "449",
+                        "parentId": "444",
+                        "name": "口腔修复科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "450",
+                        "parentId": "444",
+                        "name": "口腔黏膜科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "451",
+                        "parentId": "444",
+                        "name": "口腔颌面头颈肿瘤科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "452",
+                        "parentId": "444",
+                        "name": "口腔外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "453",
+                        "parentId": "444",
+                        "name": "口腔颅颌面科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "454",
+                        "parentId": "444",
+                        "name": "口腔急诊科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "455",
+                        "parentId": "444",
+                        "name": "口腔科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "456",
+                        "parentId": "444",
+                        "name": "牙科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "457",
+                        "parentId": "444",
+                        "name": "牙体牙髓科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "458",
+                        "parentId": "444",
+                        "name": "牙周病科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "459",
+                        "parentId": "444",
+                        "name": "儿童口腔科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "耳鼻咽喉头颈科",
+                "id": "460",
+                "subDepartmentList": [
+                    {
+                        "id": "461",
+                        "parentId": "460",
+                        "name": "耳鼻喉科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "462",
+                        "parentId": "460",
+                        "name": "头颈外科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "皮肤性病科",
+                "id": "463",
+                "subDepartmentList": [
+                    {
+                        "id": "464",
+                        "parentId": "463",
+                        "name": "皮肤内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "465",
+                        "parentId": "463",
+                        "name": "皮肤外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "466",
+                        "parentId": "463",
+                        "name": "性病科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "467",
+                        "parentId": "463",
+                        "name": "真菌病科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "468",
+                        "parentId": "463",
+                        "name": "皮肤美容科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "469",
+                        "parentId": "463",
+                        "name": "皮肤综合科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "男性科",
+                "id": "470",
+                "subDepartmentList": [
+                    {
+                        "id": "471",
+                        "parentId": "470",
+                        "name": "男性科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "灼伤科",
+                "id": "472",
+                "subDepartmentList": [
+                    {
+                        "id": "473",
+                        "parentId": "472",
+                        "name": "灼伤科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "474",
+                        "parentId": "472",
+                        "name": "灼伤整形科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "649",
+                        "parentId": "472",
+                        "name": "烧伤整形科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "传染科",
+                "id": "475",
+                "subDepartmentList": [
+                    {
+                        "id": "476",
+                        "parentId": "475",
+                        "name": "传染科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "477",
+                        "parentId": "475",
+                        "name": "肝病科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "478",
+                        "parentId": "475",
+                        "name": "艾滋病科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "479",
+                        "parentId": "475",
+                        "name": "传染危重室科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "结核病科",
+                "id": "480",
+                "subDepartmentList": [
+                    {
+                        "id": "481",
+                        "parentId": "480",
+                        "name": "结核病科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "中西医结合科",
+                "id": "482",
+                "subDepartmentList": [
+                    {
+                        "id": "483",
+                        "parentId": "482",
+                        "name": "中西医结合科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "中医科",
+                "id": "484",
+                "subDepartmentList": [
+                    {
+                        "id": "485",
+                        "parentId": "484",
+                        "name": "中医科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "486",
+                        "parentId": "484",
+                        "name": "中医内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "487",
+                        "parentId": "484",
+                        "name": "中医消化科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "488",
+                        "parentId": "484",
+                        "name": "中医呼吸科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "489",
+                        "parentId": "484",
+                        "name": "中医内分泌科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "490",
+                        "parentId": "484",
+                        "name": "中医神经内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "491",
+                        "parentId": "484",
+                        "name": "中医肾内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "492",
+                        "parentId": "484",
+                        "name": "中医心内科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "493",
+                        "parentId": "484",
+                        "name": "中医风湿免疫科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "494",
+                        "parentId": "484",
+                        "name": "中医血液科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "495",
+                        "parentId": "484",
+                        "name": "中医肿瘤科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "496",
+                        "parentId": "484",
+                        "name": "中医外科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "497",
+                        "parentId": "484",
+                        "name": "中医乳腺科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "498",
+                        "parentId": "484",
+                        "name": "中医肛肠科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "499",
+                        "parentId": "484",
+                        "name": "中医妇科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "500",
+                        "parentId": "484",
+                        "name": "中医儿科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "501",
+                        "parentId": "484",
+                        "name": "中医皮肤科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "502",
+                        "parentId": "484",
+                        "name": "中医骨伤科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "503",
+                        "parentId": "484",
+                        "name": "中医五官科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "504",
+                        "parentId": "484",
+                        "name": "中医男科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "505",
+                        "parentId": "484",
+                        "name": "针灸科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "506",
+                        "parentId": "484",
+                        "name": "推拿科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "644",
+                        "parentId": "484",
+                        "name": "治未病科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "645",
+                        "parentId": "484",
+                        "name": "传统医学科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "646",
+                        "parentId": "484",
+                        "name": "针推科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "精神心理科",
+                "id": "507",
+                "subDepartmentList": [
+                    {
+                        "id": "508",
+                        "parentId": "507",
+                        "name": "精神科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "509",
+                        "parentId": "507",
+                        "name": "心理科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "510",
+                        "parentId": "507",
+                        "name": "精神心理科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "康复医学科",
+                "id": "511",
+                "subDepartmentList": [
+                    {
+                        "id": "512",
+                        "parentId": "511",
+                        "name": "康复医学科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "513",
+                        "parentId": "511",
+                        "name": "理疗科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "648",
+                        "parentId": "511",
+                        "name": "康复治疗科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "其他科室",
+                "id": "514",
+                "subDepartmentList": [
+                    {
+                        "id": "515",
+                        "parentId": "514",
+                        "name": "全科医疗科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "516",
+                        "parentId": "514",
+                        "name": "急诊科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "517",
+                        "parentId": "514",
+                        "name": "营养科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "518",
+                        "parentId": "514",
+                        "name": "预防保健科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "519",
+                        "parentId": "514",
+                        "name": "疼痛科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "520",
+                        "parentId": "514",
+                        "name": "临终关怀科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "521",
+                        "parentId": "514",
+                        "name": "麻醉科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "522",
+                        "parentId": "514",
+                        "name": "介入医学科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "523",
+                        "parentId": "514",
+                        "name": "重症监护科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "524",
+                        "parentId": "514",
+                        "name": "血透中心",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "525",
+                        "parentId": "514",
+                        "name": "输血科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "526",
+                        "parentId": "514",
+                        "name": "碎石中心",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "527",
+                        "parentId": "514",
+                        "name": "病理科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "医学影像科",
+                "id": "528",
+                "subDepartmentList": [
+                    {
+                        "id": "529",
+                        "parentId": "528",
+                        "name": "放射科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "530",
+                        "parentId": "528",
+                        "name": "核医学科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "531",
+                        "parentId": "528",
+                        "name": "超声医学科",
+                        "templateId": "总"
+                    },
+                    {
+                        "id": "532",
+                        "parentId": "528",
+                        "name": "医学影像科",
+                        "templateId": "总"
+                    }
+                ]
+            },
+            {
+                "name": "临床科室",
+                "id": "533",
+                "subDepartmentList": [
+                    {
+                        "id": "534",
+                        "parentId": "533",
+                        "name": "放射治疗科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "535",
+                        "parentId": "533",
+                        "name": "乳腺外科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "536",
+                        "parentId": "533",
+                        "name": "泌尿外科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "537",
+                        "parentId": "533",
+                        "name": "胸外科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "538",
+                        "parentId": "533",
+                        "name": "头颈外科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "539",
+                        "parentId": "533",
+                        "name": "大肠外科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "540",
+                        "parentId": "533",
+                        "name": "胰腺外科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "541",
+                        "parentId": "533",
+                        "name": "肿瘤妇科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "542",
+                        "parentId": "533",
+                        "name": "胃及软组织外科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "543",
+                        "parentId": "533",
+                        "name": "肝脏外科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "544",
+                        "parentId": "533",
+                        "name": "肿瘤内科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "545",
+                        "parentId": "533",
+                        "name": "中西医结合科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "546",
+                        "parentId": "533",
+                        "name": "麻醉科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "547",
+                        "parentId": "533",
+                        "name": "综合治疗科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "548",
+                        "parentId": "533",
+                        "name": "介入科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "549",
+                        "parentId": "533",
+                        "name": "营养科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "550",
+                        "parentId": "533",
+                        "name": "脑脊柱外科",
+                        "templateId": "瘤"
+                    }
+                ]
+            },
+            {
+                "name": "医技科室",
+                "id": "551",
+                "subDepartmentList": [
+                    {
+                        "id": "552",
+                        "parentId": "551",
+                        "name": "病理科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "553",
+                        "parentId": "551",
+                        "name": "超声诊断科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "554",
+                        "parentId": "551",
+                        "name": "检验科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "555",
+                        "parentId": "551",
+                        "name": "药剂科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "556",
+                        "parentId": "551",
+                        "name": "核医学科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "557",
+                        "parentId": "551",
+                        "name": "放射诊断科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "558",
+                        "parentId": "551",
+                        "name": "心肺功能科",
+                        "templateId": "瘤"
+                    },
+                    {
+                        "id": "559",
+                        "parentId": "551",
+                        "name": "内镜科",
+                        "templateId": "瘤"
+                    }
+                ]
+            },
+            {
+                "name": "临床科室",
+                "id": "560",
+                "subDepartmentList": [
+                    {
+                        "id": "561",
+                        "parentId": "560",
+                        "name": "皮肤内科",
+                        "templateId": "皮"
+                    },
+                    {
+                        "id": "562",
+                        "parentId": "560",
+                        "name": "皮肤外科",
+                        "templateId": "皮"
+                    },
+                    {
+                        "id": "563",
+                        "parentId": "560",
+                        "name": "中西医结合科",
+                        "templateId": "皮"
+                    },
+                    {
+                        "id": "564",
+                        "parentId": "560",
+                        "name": "性病科",
+                        "templateId": "皮"
+                    },
+                    {
+                        "id": "565",
+                        "parentId": "560",
+                        "name": "医学美容科",
+                        "templateId": "皮"
+                    },
+                    {
+                        "id": "566",
+                        "parentId": "560",
+                        "name": "麻风感染科",
+                        "templateId": "皮"
+                    },
+                    {
+                        "id": "567",
+                        "parentId": "560",
+                        "name": "光医学治疗科",
+                        "templateId": "皮"
+                    },
+                    {
+                        "id": "568",
+                        "parentId": "560",
+                        "name": "神经内科",
+                        "templateId": "皮"
+                    },
+                    {
+                        "id": "569",
+                        "parentId": "560",
+                        "name": "肿瘤科",
+                        "templateId": "皮"
+                    }
+                ]
+            },
+            {
+                "name": "医技科室",
+                "id": "570",
+                "subDepartmentList": [
+                    {
+                        "id": "571",
+                        "parentId": "570",
+                        "name": "药剂科",
+                        "templateId": "皮"
+                    },
+                    {
+                        "id": "572",
+                        "parentId": "570",
+                        "name": "医学检验科",
+                        "templateId": "皮"
+                    },
+                    {
+                        "id": "573",
+                        "parentId": "570",
+                        "name": "病理科",
+                        "templateId": "皮"
+                    },
+                    {
+                        "id": "574",
+                        "parentId": "570",
+                        "name": "医学影像科",
+                        "templateId": "皮"
+                    },
+                    {
+                        "id": "575",
+                        "parentId": "570",
+                        "name": "中心实验室",
+                        "templateId": "皮"
+                    },
+                    {
+                        "id": "576",
+                        "parentId": "570",
+                        "name": "膳食营养科",
+                        "templateId": "皮"
+                    }
+                ]
+            },
+            {
+                "name": "眼科",
+                "id": "577",
+                "subDepartmentList": [
+                    {
+                        "id": "578",
+                        "parentId": "577",
+                        "name": "小儿眼科",
+                        "templateId": "眼"
+                    },
+                    {
+                        "id": "579",
+                        "parentId": "577",
+                        "name": "眼底病科",
+                        "templateId": "眼"
+                    },
+                    {
+                        "id": "580",
+                        "parentId": "577",
+                        "name": "眼角膜科",
+                        "templateId": "眼"
+                    },
+                    {
+                        "id": "581",
+                        "parentId": "577",
+                        "name": "青光眼科",
+                        "templateId": "眼"
+                    },
+                    {
+                        "id": "582",
+                        "parentId": "577",
+                        "name": "白内障科",
+                        "templateId": "眼"
+                    },
+                    {
+                        "id": "583",
+                        "parentId": "577",
+                        "name": "眼外伤科",
+                        "templateId": "眼"
+                    },
+                    {
+                        "id": "584",
+                        "parentId": "577",
+                        "name": "眼眶病科",
+                        "templateId": "眼"
+                    },
+                    {
+                        "id": "585",
+                        "parentId": "577",
+                        "name": "眼整形科",
+                        "templateId": "眼"
+                    },
+                    {
+                        "id": "586",
+                        "parentId": "577",
+                        "name": "眼科",
+                        "templateId": "眼"
+                    }
+                ]
+            },
+            {
+                "name": "中医科",
+                "id": "587",
+                "subDepartmentList": [
+                    {
+                        "id": "588",
+                        "parentId": "587",
+                        "name": "中医眼科",
+                        "templateId": "眼"
+                    }
+                ]
+            },
+            {
+                "name": "精神心理科",
+                "id": "589",
+                "subDepartmentList": [
+                    {
+                        "id": "590",
+                        "parentId": "589",
+                        "name": "精神科",
+                        "templateId": "精"
+                    },
+                    {
+                        "id": "591",
+                        "parentId": "589",
+                        "name": "心理科",
+                        "templateId": "精"
+                    },
+                    {
+                        "id": "592",
+                        "parentId": "589",
+                        "name": "心理咨询科",
+                        "templateId": "精"
+                    }
+                ]
+            },
+            {
+                "name": "儿科",
+                "id": "593",
+                "subDepartmentList": [
+                    {
+                        "id": "594",
+                        "parentId": "593",
+                        "name": "儿童精神医学科",
+                        "templateId": "精"
+                    },
+                    {
+                        "id": "595",
+                        "parentId": "593",
+                        "name": "小儿心理科",
+                        "templateId": "精"
+                    }
+                ]
+            },
+            {
+                "name": "临床科室",
+                "id": "596",
+                "subDepartmentList": [
+                    {
+                        "id": "597",
+                        "parentId": "596",
+                        "name": "胸外科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "598",
+                        "parentId": "596",
+                        "name": "结核科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "599",
+                        "parentId": "596",
+                        "name": "肿瘤科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "600",
+                        "parentId": "596",
+                        "name": "尘肺科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "601",
+                        "parentId": "596",
+                        "name": "中毒科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "602",
+                        "parentId": "596",
+                        "name": "肺循环科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "603",
+                        "parentId": "596",
+                        "name": "中西医结核科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "604",
+                        "parentId": "596",
+                        "name": "放疗科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "605",
+                        "parentId": "596",
+                        "name": "急诊科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "606",
+                        "parentId": "596",
+                        "name": "麻醉科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "607",
+                        "parentId": "596",
+                        "name": "呼吸科",
+                        "templateId": "肺"
+                    }
+                ]
+            },
+            {
+                "name": "医技科室",
+                "id": "608",
+                "subDepartmentList": [
+                    {
+                        "id": "609",
+                        "parentId": "608",
+                        "name": "影像科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "610",
+                        "parentId": "608",
+                        "name": "核医学科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "611",
+                        "parentId": "608",
+                        "name": "核辐射科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "612",
+                        "parentId": "608",
+                        "name": "检验科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "613",
+                        "parentId": "608",
+                        "name": "病理科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "614",
+                        "parentId": "608",
+                        "name": "药剂科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "615",
+                        "parentId": "608",
+                        "name": "内镜科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "616",
+                        "parentId": "608",
+                        "name": "肺功能科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "617",
+                        "parentId": "608",
+                        "name": "营养科",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "618",
+                        "parentId": "608",
+                        "name": "体检中心",
+                        "templateId": "肺"
+                    },
+                    {
+                        "id": "619",
+                        "parentId": "608",
+                        "name": "超声科",
+                        "templateId": "肺"
+                    }
+                ]
+            },
+            {
+                "name": "临床科室",
+                "id": "620",
+                "subDepartmentList": [
+                    {
+                        "id": "621",
+                        "parentId": "620",
+                        "name": "心内科",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "622",
+                        "parentId": "620",
+                        "name": "胸外科",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "623",
+                        "parentId": "620",
+                        "name": "呼吸内科",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "624",
+                        "parentId": "620",
+                        "name": "心外科",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "625",
+                        "parentId": "620",
+                        "name": "肿瘤科",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "626",
+                        "parentId": "620",
+                        "name": "放疗科",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "627",
+                        "parentId": "620",
+                        "name": "中西医结核科",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "628",
+                        "parentId": "620",
+                        "name": "ICU",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "629",
+                        "parentId": "620",
+                        "name": "麻醉科",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "630",
+                        "parentId": "620",
+                        "name": "急诊室",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "631",
+                        "parentId": "620",
+                        "name": "小儿心外科",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "632",
+                        "parentId": "620",
+                        "name": "体外循环室",
+                        "templateId": "胸"
+                    }
+                ]
+            },
+            {
+                "name": "医技科室",
+                "id": "633",
+                "subDepartmentList": [
+                    {
+                        "id": "634",
+                        "parentId": "633",
+                        "name": "放射科",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "635",
+                        "parentId": "633",
+                        "name": "超声科",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "636",
+                        "parentId": "633",
+                        "name": "病理科",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "637",
+                        "parentId": "633",
+                        "name": "检验科",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "638",
+                        "parentId": "633",
+                        "name": "核医学科",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "639",
+                        "parentId": "633",
+                        "name": "药剂科",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "640",
+                        "parentId": "633",
+                        "name": "心功能室",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "641",
+                        "parentId": "633",
+                        "name": "肺功能室",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "642",
+                        "parentId": "633",
+                        "name": "内镜室",
+                        "templateId": "胸"
+                    },
+                    {
+                        "id": "643",
+                        "parentId": "633",
+                        "name": "营养室",
+                        "templateId": "胸"
+                    }
+                ]
+            },
+            {
+                "name": "临床科室",
+                "id": "650",
+                "subDepartmentList": [
+                    {
+                        "id": "651",
+                        "parentId": "650",
+                        "name": "皮肤科",
+                        "templateId": "总"
+                    }
+                ]
+            }
+        ],
+        "departmentType": "0"
+    },
+    "type": "DepartmentInfo"
+}

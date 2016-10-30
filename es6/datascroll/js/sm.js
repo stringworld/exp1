@@ -2594,7 +2594,10 @@ Device/OS Detection
                 p.params.onChange(p, p.value, p.displayValue);
             }
             if (p.input && p.input.length > 0) {
-                $(p.input).val(p.params.formatValue ? p.params.formatValue(p, p.value, p.displayValue) : p.value.join(' '));
+                var selectRes=p.params.formatValue ? p.params.formatValue(p, p.value, p.displayValue) : p.value.join(' ');
+                $(p.input).val(selectRes);
+                $(p.input).html(selectRes);
+                $(p.input).attr('picker-value',selectRes);
                 $(p.input).trigger('change');
             }
         };
@@ -2991,7 +2994,8 @@ Device/OS Detection
             if (p.input.length > 0) {
                 if (p.params.inputReadOnly) p.input.prop('readOnly', true);
                 if (!p.inline) {
-                    p.input.on('click', openOnInput);
+                    console.log('click')
+                    // p.input.on('click', openOnInput);
                 }
             }
         }
