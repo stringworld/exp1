@@ -60,7 +60,50 @@
         <script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
         <script type="text/javascript" src="js/iscroll.js" ></script>
         <script>
+var mm={
+    hospitalId:4537
+doctorTypeId:1
+departmentId:32,34
+realname:test name
+schoolId:75
+specialtyList:1027,1030,1026,1033
+userData:SESSION=9760fbd7-8b57-4810-86da-2e3295b553a6
+}
 
+
+
+     var param = function(obj) {
+    var query = '', name, value, fullSubName, subName, subValue, innerObj, i;
+      
+    for(name in obj) {
+      value = obj[name];
+        
+      if(value instanceof Array) {
+        for(i=0; i
+          subValue = value[i];
+          fullSubName = name + '[' + i + ']';
+          innerObj = {};
+          innerObj[fullSubName] = subValue;
+          query += param(innerObj) + '&';
+        }
+      }
+      else if(value instanceof Object) {
+        for(subName in value) {
+          subValue = value[subName];
+          fullSubName = name + '[' + subName + ']';
+          innerObj = {};
+          innerObj[fullSubName] = subValue;
+          query += param(innerObj) + '&';
+        }
+      }
+      else if(value !== undefined && value !== null)
+        query += encodeURIComponent(name) + '=' + encodeURIComponent(value) + '&';
+    }
+      
+    return query.length ? query.substr(0, query.length - 1) : query;
+  };
+
+  console.log(param(mm))
 
             var app = angular.module("App", []);
             app.service('getData', ['$http', function($http) {

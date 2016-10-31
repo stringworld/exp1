@@ -314,43 +314,7 @@
     setTimeout(function(){$('#'+dom).picker('open');},100);
   }
 
-  // 两层无关联
-  function showSelect(data,dom){
-    var colsData=data[0].value.map((item)=>({
-      textAlign: 'center',
-      values:item
-    }));
-    var indexX;
-    var indexY;
-    var time;
 
-    function getIds({values}){
-      if(values.length===2){
-        indexX=data[0].ids[0][data[0].value[0].indexOf(values[0])];
-        indexY=data[0].ids[1][data[0].value[1].indexOf(values[1])];
-      }else{
-        indexX=data[0].ids[0][data[0].value[0].indexOf(values[0])];
-      }
-
-      console.log(values.length)
-    }
-
-    $("#"+dom).picker({
-      toolbarTemplate: '<header class="bar bar-nav">\
-      <button class="button button-link pull-left  close-picker">取消</button>\
-      <button class="button button-link pull-right close-picker">确定</button>\
-      </header>',
-      toolbar:true,
-      onChange:function(picker, values, displayValues){
-        clearTimeout(time)
-        $(picker.input).attr('ids_1_'+dom,indexX);
-        $(picker.input).attr('ids_2_'+dom,indexY||'');
-        time=setTimeout(function(){getIds({values});},200)
-      },
-      cols: colsData
-    });
-    setTimeout(function(){$('#'+dom).picker('open')},10);
-  }
 
 
 
