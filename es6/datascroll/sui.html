@@ -104,6 +104,7 @@
   </div>
 
     <script type='text/javascript' src='js/zepto.js' charset='utf-8'></script>
+    <!-- <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script> -->
     <script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
     <script>
     var raw = [
@@ -283,8 +284,9 @@
                 // 如果Provinces变化，节流以提高reRender性能
                 clearTimeout(t);
 
+                
                 t = setTimeout(function(){
-                  $(picker.input).attr('temp',res)
+                    $(picker.input).attr('temp',res);
                     picker.cols[1].replaceValues(getCities(newProvince));
                     currentProvince = newProvince;
                     picker.updateValue();
@@ -292,6 +294,7 @@
                 return;
             }
         },
+        toolbar:true,
         cols: [
         {
             textAlign: 'center',
@@ -305,15 +308,14 @@
         }]
       });
 
-    $(document).on("click", ".conprim-"+dom, function() {
+    $(document).unbind('click').on("click", ".conprim-"+dom, function() {
         alert(idsList.res)
-        var pickerToClose = $('.picker-modal.modal-in');
-        $.closeModal(pickerToClose);
+        $("#"+dom).unbind('click').picker("close");
     });
-
-    setTimeout(function(){$('#'+dom).picker('open');},100);
+    $('#'+dom).unbind('click').picker('open');
   }
 
+          // getData(raw,'city-picker','cityList');
 
 
 
@@ -333,30 +335,34 @@
   $('#depart').click(function(e){
     //科室
     e.preventDefault();
-
-  $.ajax({
-      type:'get',
-      url:'pat.json',
-      data:{doctorTypeId:2},
-      async: false,
-      success:function({data}){
-          console.log(data.departmentList)
-          $.smConfig.rawCitiesData=data.departmentList;
-          if(data.departmentType==='0'){
-            getData(data.departmentList,'depart-picker','subDepartmentList');
-          }else{
-            getData(raw,'depart-picker','cityList');
+      $.ajax({
+          type:'get',
+          url:'pat.json',
+          data:{doctorTypeId:2},
+          async: false,
+          success:function({data}){
+              console.log(data.departmentList)
+              $.smConfig.rawCitiesData=data.departmentList;
+              if(data.departmentType==='0'){
+                getData(data.departmentList,'depart-picker','subDepartmentList');
+              }else{
+                getData(raw,'depart-picker','cityList');
+              }
+              // $('#depart-picker').picker('close');
           }
-      }
-  });
-    
-  });
-      $(document).on('click','.conprim-picker',function(){
-      })
+      });
 
+      // $('#depart-picker').unbind('click').picker('open');
+  });
+      // $(document).on('click','.conprim-picker',function(){
+      // })
+
+      var tem;
       $('#open-picker').click(function(e){
         e.preventDefault();
-        getData(raw,'city-picker','cityList');
+        $('#city-picker').picker('open');
+        clearTimeout(tem);
+        tem=setTimeout(function(){},10);
         // $('#city-picker').picker('open');
       });
 

@@ -1,0 +1,110 @@
+<div ng-controller="basic">
+    <div class="content" ng-if="isHideBasic">
+        <div class="content-block-title" ng-click="saveRegisterInfo()">请填写真实信息，获取优质服务</div>
+        <div class="list-block">
+            <ul>
+                <li class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label pull-text-left">姓名</div>
+                        <div class="item-input">
+                            <input class="pull-text-right" type="text" placeholder="请输入">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <pic-Ker mydata='mydata' classdom="'myIdentity'" itemlabel="'我是'" itemvalue="'我是'"></pic-Ker>
+                </li>
+                <li ng-click="showHos($event)">
+                    <div class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title label pull-text-left"><a href="">医院</a></div>
+                            <div class="item-after pull-text-right">医院</div>
+                        </div>
+                    </div>
+                </li>
+                <li ng-click="hosDepartment($event)">
+                    <div class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title label pull-text-left">科室</div>
+                            <div class="item-after" id="depart-picker">科室</div>
+                        </div>
+                    </div>
+                </li>
+                <li ng-click="registerDict($event)">
+                    <div class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title label pull-text-left">擅长</div>
+                            <div class="item-after">擅长</div>
+                        </div>
+                    </div>
+                </li>
+                <li ng-click="showAcademy()">
+                    <div class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title label pull-text-left"><a href="">毕业院校</a></div>
+                            <div class="item-after">毕业院校</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="content-block-title show-toast">点击测试显示toast</div>
+    </div>
+
+    <!--医院-->
+    <div class="content" ng-if="isShowHos">
+        <div class="content-block-title" ng-click="hosBack()">返回</div>
+        <div class="list-block">
+            <ul>
+                <li ng-click="hosRegion($event)">
+                    <div class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title label pull-text-left">医院地区</div>
+                            <div class="item-after" id="hos-region">医院地区</div>
+                        </div>
+                    </div>
+                </li>
+                <li ng-click="hosProperty($event)">
+                    <div class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title label pull-text-left">医院属性</div>
+                            <div class="item-after" id="hos-property">医院属性</div>
+                        </div>
+                    </div>
+                </li>
+                <li ng-click="hosName($event)">
+                    <div class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title label pull-text-left">医院名称</div>
+                            <div class="item-after" id="hos-name">医院名称</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--毕业院校-->
+    <div class="content" ng-if="isShowAcademy">
+        <div class="content-block-title" ng-click="academyBack()">毕业院校返回</div>
+        <div class="list-block">
+            <ul>
+                <li ng-click="academyRegion($event)">
+                    <div class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title label pull-text-left">院校地区</div>
+                            <div class="item-after" id="academy-region">院校地区</div>
+                        </div>
+                    </div>
+                </li>
+                <li ng-click="graduateSchool($event)">
+                    <div class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title label pull-text-left">院校名称</div>
+                            <div class="item-after" id="byschool">院校名称</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
