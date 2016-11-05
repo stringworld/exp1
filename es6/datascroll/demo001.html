@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的生活</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+
+  </head>
+  <body>
+    <div class="page-group">
+        <div class="page page-current">
+            <p><input type="text" id='picker'/></p>
+            <p><input type="text" id='picker-name'/></p>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script>
+$("#picker").picker({
+  toolbarTemplate: '<header class="bar bar-nav">\
+  <button class="button button-link pull-left">按钮</button>\
+  <button class="button button-link pull-right close-picker">确定</button>\
+  <h1 class="title">标题</h1>\
+  </header>',
+  cols: [
+    {
+      textAlign: 'center',
+      values: ['iPhone 4', 'iPhone 4S', 'iPhone 5', 'iPhone 5S', 'iPhone 6', 'iPhone 6 Plus', 'iPad 2', 'iPad Retina', 'iPad Air', 'iPad mini', 'iPad mini 2', 'iPad mini 3']
+    }
+  ]
+});
+
+$('#picker-name').click(function(){
+    // $("#picker-name").picker("setValue", ["2012", "12", "12"]);
+    
+    $("#picker-name").picker("open");
+    $("#picker-name").picker({
+      toolbarTemplate: '<header class="bar bar-nav">\
+      <button class="button button-link pull-right close-picker">确定</button>\
+      <h1 class="title">请选择称呼</h1>\
+      </header>',
+      cols: [
+        {
+          textAlign: 'center',
+          values: []
+          //如果你希望显示文案和实际值不同，可以在这里加一个displayValues: [.....]
+        },
+        {
+          textAlign: 'center',
+          values: []
+        },
+        {
+          textAlign: 'center',
+          values: []
+        }
+      ]
+    });
+    setTimeout(function(){$(this).picker('open');},1000)
+    // $('.picker').picker('setValue', ["2012", "12", "12"]);
+})
+
+</script>
+
+
+  </body>
+</html>
