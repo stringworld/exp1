@@ -1,0 +1,35 @@
+<!--<input ng-model="myselect" mobiscroll-select="settings" mobiscroll-instance="demo" mobiscroll-data="lists" />-->
+
+<!-- <select ng-show="isShow" ng-model="item1" mobiscroll-select="settings" mobiscroll-instance="demo">
+    <option value=""></option>
+    <option ng-value="item.name" ng-repeat="item in lists">{{item.name}}</option>
+</select> -->
+<!-- <select ng-model="item" mobiscroll-select="settings" mobiscroll-instance="demo">
+    <option value="">Please select a demo</option>
+    <optgroup label="{{item.name}}" ng-repeat="item in lists">
+        <option value="" selected>Basic usage date</option>
+        <option ng-value="items.id" ng-repeat="items in item.list">{{items.name}}</option>
+    </optgroup>
+</select> -->
+
+<div ng-show="isShow">
+    <ul ng-model="oneColsChecked" mobiscroll-list="oneColsSetting" mobiscroll-instance="oneCols" style="display:none">
+        <li ng-repeat="item in lists" data-val="{{item.name}}">{{item.name}}</li>
+    </ul>
+<!--     <h1>选择{{oneColsChecked}}</h1>
+    <button ng-click="oneCols.clear()">Clear</button>
+    <button ng-click="oneCols.show()">Show</button> -->
+</div>
+
+<div ng-hide="isShow">
+    <ul ng-model="twoColsSelected" mobiscroll-image="twoColsSettings"  mobiscroll-instance="twoCols" style="display:none">
+      <li ng-repeat="item in lists" data-val="{{item.name}}">{{item.name}}
+        <ul>
+          <li ng-repeat="province in item.list" data-val="{{province.name}}">{{province.name}}</li>
+        </ul>
+      </li>
+    </ul>
+<!--     <h1>选择的地区{{twoColsSelected}}</h1>
+    <button ng-click="twoCols.clear()">Clear</button>
+    <button ng-click="twoCols.show()">Show</button> -->
+</div>

@@ -1,0 +1,6 @@
+﻿npm install -g cnpm --registry=http://registry.npm.taobao.org
+
+
+安装测试：
+
+cnpm install

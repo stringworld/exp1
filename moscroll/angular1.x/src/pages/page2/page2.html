@@ -1,0 +1,18 @@
+
+<div ng-controller="test2">
+    <ul ng-model="selected" mobiscroll-image="settings"  mobiscroll-instance="citySelect" style="display:none">
+      <li ng-repeat="item in cityData track by $index" data-val="{{item.name}}">{{item.name}}
+        <ul>
+          <li ng-repeat="province in item.sub track by $index" data-val="{{province.name}}">{{province.name}}
+            <ul>
+              <li ng-repeat="city in province.sub track by $index" data-val="{{city.name}}">{{city.name}}</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h1>选择的地区{{selected}}</h1>
+    <button ng-click="citySelect.clear()">Clear</button>
+    <button ng-click="citySelect.show()">Show</button>
+    <a ui-sref="page1">jump_to page1</a>
+ </div>
