@@ -1,0 +1,32 @@
+<div class="prm-addLabel" ng-controller="addLabel">
+    <tab-header>
+        <history-back back="goBack()">
+            <div class="add-patient arrow-left">已选10人</div>
+            <!--<span>已选10人</span>-->
+        </history-back>
+        +标签
+        <operator-header>
+            <div ng-click="saveCustomizeTag()">保存</div>
+        </operator-header>
+    </tab-header>
+    <content-item>
+        <div class="content-block-title" ng-bind="tagListData.customizeTag.typeName"></div>
+        <div class="content-block-input content-block-bg">
+            <edit-Tag gettag="gettag(newtag)" isexist="isexist(name)"></edit-Tag>
+            <!--<input class="content-block-title content-left" value="" placeholder="输入标签" ng-focus="isShowTag=false" ng-blur="isShowTag=true">-->
+        </div>
+        <div ng-if="isShowTag" class="show-tag">
+            <!--自定义-->
+            <ul class="tag-list">
+                <li class="tag-item tag-user-defined" ng-click="tagChecked(item.type,'1',$index)" ng-repeat="item in tagListData.customizeTag.userTagList" ng-class="{true:'tag-user-checked',false:'tag-user-unchecked'}[item.selected]" ng-bind="item.tag"></li>
+            </ul>
+            <!--其他-->
+            <div ng-repeat="item in tagListData.tagOtherList" ng-init="parentIndex=$index">
+                <div class="content-block-title layout-marign" ng-bind="item.typeName"></div>
+                <ul class="tag-list">
+                    <li class="tag-item tag-sys" ng-click="tagChecked(item.type,parentIndex,$index)" ng-repeat="items in item.otherList" ng-class="{true:'tag-sys-checked',false:'tag-sys-unchecked'}[items.selected]" ng-bind="items.tag"></li>
+                </ul>
+            </div>
+        </div>
+    </content-item>
+</div>

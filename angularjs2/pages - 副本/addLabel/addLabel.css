@@ -1,0 +1,68 @@
+.prm-addLabel {
+  /*width: 100%;
+    height: 100%;*/
+  background-color: #fff;
+}
+.prm-addLabel .add-patient {
+  width: 1.7rem;
+  text-align: right;
+  background-position-x: 0;
+  line-height: 50px;
+}
+.prm-addLabel .show-tag {
+  /*height: 10rem;
+        overflow: auto;*/
+}
+.prm-addLabel .tag-list {
+  width: 100%;
+}
+.prm-addLabel .tag-list .tag-item {
+  float: left;
+  list-style-type: none;
+  text-align: center;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.prm-addLabel .tag-list .tag-user-defined {
+  height: 35px;
+  line-height: 35px;
+  max-width: 2.7rem;
+  padding: 0 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+.prm-addLabel .tag-list .tag-user-unchecked {
+  color: #4A4A4A;
+  background-color: #fff;
+  border: 1px solid rgba(155, 155, 155, 0.31);
+}
+.prm-addLabel .tag-list .tag-user-checked {
+  background-color: #D43E72;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.prm-addLabel .tag-list .tag-del-checked {
+  background-color: #fff;
+  color: #D43E72;
+  border: 1px solid #D43E72;
+}
+.prm-addLabel .tag-list .tag-sys {
+  height: 55px;
+  width: 25%;
+  line-height: 35px;
+  border: 10px solid #fff;
+  border-radius: 14px;
+}
+.prm-addLabel .tag-list .tag-sys-unchecked {
+  color: #4A4A4A;
+  border: 9px solid #fff;
+  background-color: #fff;
+  box-shadow: inset 0 0 1px #9B9B9B;
+}
+.prm-addLabel .tag-list .tag-sys-checked {
+  background-color: #D43E72;
+  color: #fff;
+}
