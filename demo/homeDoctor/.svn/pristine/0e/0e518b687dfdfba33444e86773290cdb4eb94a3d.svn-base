@@ -1,0 +1,27 @@
+<div class="doctor-team-details" ng-controller="DoctorTeamDetailsCtrl">
+		<ul class="list" id="doctorTeamDetailsId">
+			<li class="item item-media">
+				<img class="item-media-object left" src="../img/pic_people.png">
+				<div class="item-media-body">
+					<h2 class="item-ellipsis">张仲景<span>副主任医师</span></h2>
+					<p class="item-ellipsis">接诊量：286 <span class="xingxing">★8.7</span></p>
+					<p class="item-ellipsis">河间市妇幼保健院 妇产科</p>
+				</div>
+			</li>
+		</ul>
+        <div id="segmentedControl" class="tab-segmented-control">
+            <a class="tab-control-item tab-active" href="#item1">
+                医生介绍
+            </a>
+        </div>
+		<div class="wrapper doctor-team-details-info" style="top:7.45rem;">
+			<div class="scroller">
+				<div id="item1" class="tab-control-content tab-active ">
+					<div>
+						<h2>职业经历</h2>
+						<p id="doctorTeamPid">大家哦啊减肥的大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊发觉地方啊风景啊大家哦啊减肥的大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊发觉地方啊风景啊大家哦啊减肥的大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊发觉地方啊风景啊大家哦啊减肥的大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊大家哦啊减肥的发觉地方啊风景啊发觉地方啊风景啊</p>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>

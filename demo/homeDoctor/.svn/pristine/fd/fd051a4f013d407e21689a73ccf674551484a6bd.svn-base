@@ -1,0 +1,5 @@
+<div class="check-failure" ng-controller="CheckFailureCtrl">
+	<img src="../img/familyDoctor/bg_weitongguo.png" alt="" />
+	<h2>未通过</h2>
+	<a id="checkFailurecleartime" class="button button-block button-sub bg-blue">重新提交</a>
+</div>

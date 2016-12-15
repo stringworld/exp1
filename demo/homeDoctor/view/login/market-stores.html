@@ -1,0 +1,59 @@
+<div view-title="门店选择" ng-controller="MarketStoresCtrl" class="market-stores">
+    <label class="item item-input">
+        <i class="icon icon-angle-search"></i>
+        <input type="text" id="storesKw" limit-fn="query" placeholder="输入关键词搜索">
+    </label>
+    <div class="wrapper marketStoresWrapper" style="top:3.35rem;bottom:2.5rem">
+        <div class="scroller">
+            <ul class="list">
+                <li class="item storeList">
+                    <h2><span>老百</span>姓大药房江南店</h2>
+                    <p>广州市|海珠区|江南大道中151-153号</p>
+                </li>
+                <li class="item storeList">
+                    <h2><span>老百</span>姓大药房江南店姓大药房江南店</h2>
+                    <p>广州市|海珠区|江南大道中151-153号</p>
+                </li>
+                <li class="item storeList">
+                    <h2><span>老百</span>姓大药房江南店</h2>
+                    <p>广州市|海珠区|江南大道中151-153号</p>
+                </li>
+                <li class="item storeList">
+                    <h2><span>老百</span>姓大药房江南店</h2>
+                    <p>广州市|海珠区|江南大道中151-153号</p>
+                </li>
+                <li class="item storeList">
+                    <h2><span>老百</span>姓大药房江南店</h2>
+                    <p>广州市|海珠区|江南大道中151-153号</p>
+                </li>
+                <li class="item storeList">
+                    <h2><span>老百</span>姓大药房江南店</h2>
+                    <p>广州市|海珠区|江南大道中151-153号</p>
+                </li>
+                <li class="item storeList">
+                    <h2><span>老百</span>姓大药房江南店</h2>
+                    <p>广州市|海珠区|江南大道中151-153号</p>
+                </li>
+                <li class="item storeList">
+                    <h2><span>老百</span>姓大药房江南店</h2>
+                    <p>广州市|海珠区|江南大道中151-153号</p>
+                </li>
+                <li class="item storeList">
+                    <h2><span>老百</span>姓大药房江南店</h2>
+                    <p>广州市|海珠区|江南大道中151-153号</p>
+                </li>
+                <!--<li class="item storeList" ng-repeat="shop in shops" ng-click="select($index)">
+                    <h2 ng-if="shop.storeName.indexOf(option.keyName) == -1">{{shop.storeName}}</h2>
+                    <h2 ng-if="shop.storeName.indexOf(option.keyName) == 0"><span ng-bind="shop.storeName.substr(shop.storeName.indexOf(option.keyName),option.keyName.length)"></span>{{shop.storeName.substr(2)}}</h2>
+                    <h2 ng-if="shop.storeName.indexOf(option.keyName)>0">{{shop.storeName.substr(0,shop.storeName.indexOf(option.keyName))}}<span ng-bind="shop.storeName.substr(shop.storeName.indexOf(option.keyName),option.keyName.length)"></span>{{shop.storeName.substr(shop.storeName.indexOf(option.keyName)+option.keyName.length)}}</h2>
+                    <p ng-bind="shop.storeAddress.substr(4)"></p>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="other-Stores item-icon-left"><i class="icon icon-radio_button"></i>其它门店
+            <small>(找不到门店时选择此选项)</small>
+        </div>
+    </footer>
+</div>

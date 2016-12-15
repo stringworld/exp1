@@ -1,0 +1,82 @@
+<ion-view view-title="卡列表" ng-controller="cardListCtrl" cache-view="false">
+    <ion-content>
+
+        <form name="form" class="cardList">
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label spacing2">姓&nbsp;名</span>
+                    <input type="text" required minlength="2" show-error="姓名" readonly ng-model="option.userName">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">证件号</span>
+                    <input type="text" required is-card-id="true" show-error="证件号" readonly ng-model="option.identity">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">手机号</span>
+                    <input name="mobile" type="text" required is-mobile="true" show-error="手机号" readonly ng-model="option.userPhone">
+                </label>
+            </div>
+            <div ng-show="edit">
+                <h2 class="marked_words">您已有家庭医生卡：</h2>
+                <div class="list">
+                    <a class="item item-thumbnail-left" ng-repeat="cardListInfo in cardList " >
+                        <img ng-if="cardListInfo.cardType==1" ng-src="img/common/ka_icon.png">
+                        <img ng-if="cardListInfo.cardType != 1" ng-src="img/common/tiyanka_icon.png">
+                        <p>卡号: <span ng-bind="cardListInfo.cardNo"></span></p>
+                        <div ng-if="cardListInfo.status==1">
+                            <div ng-if="cardListInfo.isActivate!=0" class="activat">
+                                <div ng-if="cardListInfo.activePersonId == option.id">
+                                    <p>密码: <span ng-bind="cardListInfo.cardPass"></span></p>
+                                    <p>剩余次数: <span ng-bind="cardListInfo.currentLimit | negativeNum"></span></p>
+                                </div>
+                                <div ng-if="cardListInfo.activePersonId != option.id">
+                                    <p>激活人: <span ng-bind="cardListInfo.activePerson"></span><span ng-bind="cardListInfo.activeMobile"></span></p>
+                                </div>
+                                <i>已激活</i>
+                            </div>
+                            <div ng-if="cardListInfo.isActivate == 0" class="inactive">
+                                <p>密码: <span ng-bind="cardListInfo.cardPass"></span></p>
+                                <p>剩余次数: <span ng-bind="cardListInfo.currentLimit | negativeNum"></span></p>
+                                <i ng-click="select($index)">激活</i>
+                            </div>
+                        </div>
+                        <div ng-if="cardListInfo.status==2"  class="expired">
+                            <div ng-if="cardListInfo.isActivate!=0" class="expired">
+                                <div ng-if="cardListInfo.activePersonId == option.id">
+                                    <p>密码: <span ng-bind="cardListInfo.cardPass"></span></p>
+                                    <p>剩余次数: <span ng-bind="cardListInfo.currentLimit | negativeNum"></span></p>
+                                </div>
+                                <div ng-if="cardListInfo.activePersonId != option.id">
+                                    <p>激活人: <span ng-bind="cardListInfo.activePerson"></span><span ng-bind="cardListInfo.activeMobile"></span></p>
+                                </div>
+                            </div>
+                            <div ng-if="cardListInfo.isActivate == 0" class="inactive">
+                                <p>密码: <span ng-bind="cardListInfo.cardPass"></span></p>
+                                <p>剩余次数: <span ng-bind="cardListInfo.currentLimit | negativeNum"></span></p>
+                            </div>
+                            <i>已过期</i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="list">
+                <a class="item item-icon-left item-icon-right consultingRecords" ng-click="record()">
+                    <i class="icon"></i>
+                    查询记录
+                    <i class="icon ion-ios-arrow-right"></i>
+                </a>
+                <a class="item item-icon-left item-icon-right passActivation" ui-sref="queryActivation">
+                    <i class="icon "></i>
+                    输入卡号密码激活
+                    <i class="icon ion-ios-arrow-right"></i>
+                </a>
+            </div>
+            <button ng-show="edit" ng-disabled="form.$invalid" class="button button-block button-positive margin-horizontal" ng-click="confirm()">立即使用</button>
+            <div ng-show="!edit" class="noCard">
+                <h2 class="marked_words">您还没有家庭医生卡,请购买后查询或使用</h2>
+                <button ng-disabled="form.$invalid" class="button button-block button-positive margin-horizontal" ng-click="buyCard()">购买</button>
+            </div>
+        </form>
+
+    </ion-content>
+</ion-view>

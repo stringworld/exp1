@@ -1,0 +1,15 @@
+<div class="has-admissions" ng-controller="HasAdmissionsCtrl">
+	<div class="admission" id="hasAdmissionsId">
+		<div class="admission-t">
+			<img src="../img/pic_people.png"/>
+			<h2><span>张三</span><span>内科</span> <span>主治医生</span></h2>
+			<h3>北京协和医院</h3>
+			<p>已接诊</p>
+		</div>
+		<div class="admission-b">
+			<p>医生已接诊，电话将在<i>5</i>分钟内接入，请注意接听哦！</p>
+		</div>
+	</div>
+	<a  class="button button-block button-sub bg-blue" id="payhasAdmissionsId">服务已完成，去评价</a>
+	<a href="tel:400-111-5289" class="gocall">还没来电？</a>
+</div>

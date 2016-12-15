@@ -1,0 +1,60 @@
+<div view-title="注册账户" ng-controller="RegisteredCtrl" class="wrapper registered">
+     <form name="form" class="scroller">
+       <div class="list">
+         <h2 class="marked_words">我们需要您的身份信息</h2>
+         <div class="form-list tip-show">
+           <label class="item item-input">
+             <span class="input-label spacing2">姓&nbsp;&nbsp;名</span>
+             <input type="text" name="name" required test="isName" is-name="true" show-error="姓名" placeholder="请输入姓名" ng-model="option.userName">
+           </label>
+           <q>*请输入正确的姓名</q>
+         </div>
+         <div class="form-list tip-show">
+           <label class="item item-input">
+             <span class="input-label">身份证号</span>
+             <input type="text" required test="isCardId" is-card-id="true" show-error="身份证号" placeholder="请输入身份证号" ng-model="option.identity">
+           </label>
+           <q>*请输入正确的身份证号</q>
+         </div>
+         <div class="form-list tip-show">
+           <label class="item item-input">
+             <span class="input-label spacing2">密&nbsp;&nbsp;码</span>
+             <input type="password" test="isPassNum" is-pass-num="true" required maxlength="6" show-error="密码" placeholder="请输入密码" ng-model="option.password">
+           </label>
+           <q>*请输入6位数字密码</q>
+         </div>
+         <a class="item selectStores item-icon-right" ui-sref="marketStores">
+           工作门店 <span class="pull-right">(如是多个门店选择一个即可)</span>
+           <input class="hide" name="userStores" ng-model="option.shopId" required>
+           <i class="icon icon-angle-right"></i>
+         </a>
+         <div class="form-list tip-show">
+           <label class="item item-input">
+             <span class="input-label">手机号码</span>
+             <input name="mobile" type="number" required is-mobile="true" test="isMobile" show-error="手机号码" placeholder="请输入手机号码" ng-model="option.userPhone">
+           </label>
+           <q>*请输入正确的手机号码</q>
+         </div>
+         <div class="form-list tip-show">
+           <div class="item item-input yzm">
+             <span class="input-label spacing2">验证码</span>
+             <input type="number" class="col-40" test="isYzm" is-yzm="true"  maxlength="4" minlength="4" show-error="验证码" placeholder="请输入验证码" ng-model="option.yzm">
+             <button ng-disabled="form.mobile.$invalid" class="button item-button" id="registered-btn" ng-click="sendCode()">发送验证码</button>
+           </div>
+           <q>*请输入4位数字验证码</q>
+         </div>
+       </div>
+       <button class="button button-block button-sub bg-blue" id="registerBtn" ng-disabled="form.$invalid"
+               ng-click="confirm()">注册
+       </button>
+       <div class="row">
+         <a class="w50 left" ui-sref="login">登录</a>
+         <a class="w50 left" href="tel:400-111-5289">忘记密码?</a>
+       </div>
+     </form>
+</div>
+
+
+
+
+

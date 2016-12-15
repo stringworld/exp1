@@ -1,0 +1,613 @@
+@charset "utf-8";
+
+/* login-auto  start */
+.login-auto{
+    width:100%;
+    height:100%;
+}
+.login-auto .modal-frame{
+    height:100%;
+    background: #fff;
+}
+.login-auto .modal-frame img{
+    display: block;
+    position: fixed;
+    left:50%;
+    top:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+}
+/* login-auto  end */
+
+/* registered  start */
+.registered .input-label {
+    width: 3.8rem;
+}
+.registered .row{
+    margin-bottom: 20px;
+}
+.registered .row a{
+    display: block;
+    text-decoration: none;
+    color: #00b6f3;
+    padding:3px;
+}
+.registered .row a:first-child{
+    border-right:1px solid #777;
+}
+/* registered  end */
+
+/* market-stores start*/
+.market-stores .item-input {
+    background: #00b6f3;
+    padding: 16px;
+    position: relative;
+}
+.market-stores .item-input input {
+    background: #fff;
+    padding-left: 34px;
+    border-radius: 15px;
+    max-width:100%;
+    font-size:16px;
+    height: 34px;
+}
+.market-stores .item-input .icon {
+    position: absolute;
+    top: 27px;
+    left: 26px;
+    height: 14px;
+    color: #999;
+}
+.market-stores footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+}
+.market-stores .other-Stores{
+    height:2.5rem;
+    line-height: 2.5rem;
+    color: #4a4a4a;
+    font-size:0.8rem;
+    padding:0 15px 0 2.6rem;
+    border-top:1px solid #ddd;
+}
+.market-stores .other-Stores .icon{
+    font-size:1.4rem;
+}
+.market-stores .other-Stores small{
+    color: #999;
+    font-size:0.7rem;
+}
+.market-stores .item h2 {
+    line-height:1rem;
+    color: #4a4a4a;
+    overflow: auto;
+    text-overflow: inherit;
+    white-space: normal;
+}
+.market-stores .item span {
+    color: #00b6f3;
+}
+/* market-stores end*/
+
+/* login start*/
+.login{
+    padding-top:3rem;
+}
+.login .row a{
+    display: block;
+    text-decoration: none;
+    color: #00b6f3;
+    padding:3px;
+}
+.login .row a:first-child{
+    border-right:1px solid #777;
+}
+.login .list {
+    width: 90%;
+    margin: 20px auto;
+}
+.login .list .item-input input{
+    max-width:100%;
+    width:100%;
+    position: relative;
+    text-align: left;
+    padding-right:2rem;
+}
+.login .userId span {
+    width: 1.75rem;
+    height: 1.2rem;
+    background: url(../../img/icon_number.png) center center no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+}
+.login .passWord span {
+    width: 1.25rem;
+    height: 1.4rem;
+    background: url(../../img/icon_password.png) center center no-repeat;
+    background-size: cover;
+    margin: 0 15px 0 5px;
+}
+.login .text-jumbotron{
+    line-height:1.2rem;
+    color: #999;
+}
+.login i{
+    position: absolute;
+    z-index: 2;
+    display: block;
+    right: 5px;
+    width: 1.5rem;
+    height: 1.7rem;
+    background: url(../../img/btn_show_password.png) center center no-repeat;
+    background-size: 1.1rem 0.8rem;
+}
+/* login end*/
+
+/* index-family-doctor start*/
+.index-family-doctor{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+.index-family-doctor-bg {
+    background: url(../../img/familyDoctor/yisheng.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50%;
+}
+.index-family-doctor-bottom {
+    position: absolute;
+    bottom:5%;
+    width:100%;
+}
+.index-family-doctor a {
+    display: block;
+    text-align: center;
+}
+.index-family-doctor .call-doctor {
+    position: absolute;
+    width:100%;
+    bottom: -2.375rem;
+}
+.index-family-doctor .call-doctor img {
+    width: 4.75rem;
+    display: block;
+    margin:0 auto;
+}
+.index-family-doctor-bg p{
+    position: absolute;
+    width:100%;
+    bottom: -5rem;
+    text-align: center;
+    font-size:0.7rem;
+    line-height:1.1rem;
+    color: #41cfff;
+}
+.index-family-doctor-bg span{
+    display: block;
+    font-size: 0.6rem;
+}
+.index-family-doctor-list img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.index-family-doctor-list a {
+    margin-left: 2.5%;
+    width: 30%;
+    padding: 0.5rem;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid rgb(221, 221, 222);
+    border-radius: 15px;
+}
+
+.index-family-doctor-list p {
+    color: rgb(101, 98, 90);
+}
+/* index-family-doctor end*/
+
+/* call-doctor start*/
+.call-doctor-p{
+    color: #8f8f94;
+    text-align: center;
+    font-size:0.7rem;
+    padding:0.5rem;
+}
+.call-doctor-choose-class img{
+    width:1.2rem;
+    height:auto;
+    margin-right:0.4rem;
+}
+.time-border {
+    margin: 5rem auto 1rem;
+    border: 3px solid rgb(227, 75, 77);
+    width: 9.25rem;
+    height: 9.25rem;
+    line-height: 9.25rem;
+    border-radius: 50%;
+}
+.call-doctor-timer{
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+.call-doctor-timer p {
+    color: rgb(227, 75, 77);
+    font-size:1.7rem;
+}
+.call-doctor-timer h4 {
+    color: rgb(227, 75, 77);
+    font-size: 1.4rem;
+    padding: 0.5rem 0 0.25rem;
+}
+.call-doctor-timer h2 {
+    color: #9B9B9B;
+    font-size: 1rem;
+    padding: 0.5rem 0 2rem;
+}
+/* call-doctor end*/
+
+/* check-failure start*/
+.check-failure{
+    background: #ffffff;
+    height:100%;
+    text-align: center;
+    padding-top:4rem;
+}
+.check-failure img {
+    display: inline-block;
+    width: 7rem;
+    height:auto;
+}
+.check-failure h2 {
+    color: rgb(199, 199, 199);
+    font-size: 1.5rem;
+    padding: 0.5rem 0 3rem;
+}
+/* check-failure end*/
+
+/* consulting-records start*/
+.consulting-records .item-media-object {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.consulting-records .item-media-body h2{overflow: hidden;}
+.consulting-records .item-media-body h2 span{
+    float: left;
+    line-height: 1.3rem;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+}
+.consulting-records .item-media-body h2 span:nth-child(3) {
+    font-size: 0.65rem;
+    color: #8f8f94;
+    float: right;
+    margin-right:0;
+}
+.consulting-records .item-media-body p {
+    height:2rem;
+    line-height: 2.2rem;
+    position: relative;
+    padding-right: 4rem;
+}
+.consulting-records .item-media-body .pay {
+    text-align: center;
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    width: 3.5rem;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    display: block;
+    border: 1px solid #f00;
+    color: #f00;
+    border-radius: 0.25rem;
+}
+.consulting-records .item-media-body .pay-end {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.5rem;
+    height: 2rem;
+    display: block;
+    background: url("../../img/familyDoctor/bg_wancheng.png") no-repeat center center;
+    background-size: cover;
+}
+
+/* doctor-team start*/
+.doctor-team .item{
+    margin-bottom:0.75rem;
+    border:none;
+}
+.doctor-team .item:last-child{
+    margin-bottom:0;
+}
+/* doctor-team end*/
+
+/* doctor-team-details start*/
+.doctor-team-details-info .tab-control-item.tab-active {
+    color: #333;
+}
+.doctor-team-details-info{
+    background: #ffffff;
+}
+.doctor-team-details .tab-segmented-control{
+    border-bottom:1px solid #ddd;
+}
+.doctor-team-details .tab-control-item.tab-active:after {
+    width: 50%;
+
+}
+.doctor-team-details .tab-control-content div {
+    padding: 20px 0;
+    margin: 0 0 0 15px;
+    overflow: hidden;
+}
+.doctor-team-details-info .tab-control-content  h2{
+    font-size:0.7rem;
+    color: #4a4a4a;
+}
+.doctor-team-details-info .tab-control-content  p{
+    font-size: 0.65rem;
+    padding: 0.5rem 0.5rem 0 0.25rem;
+    color: #999;
+    line-height:1rem;
+}
+/* doctor-team-details end*/
+
+/* has-admissions start*/
+.has-admissions{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.has-admissions .admission {
+    position: relative;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(000,000,000,.1);
+    width: 80%;
+    border-radius: 0.5rem;
+    margin: 2.5rem auto 1rem;
+    background: #fff;
+    text-align: center;
+}
+.has-admissions .admission:before,.has-admissions .admission:after,.has-admissions .admission-t:before,.has-admissions .admission-t:after{
+    position: absolute;
+    top: 6.4rem;
+    content: '';
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #f2f6f9;
+}
+.has-admissions .admission:before {
+    left: -0.75rem;
+    border-radius: 50%;
+    box-shadow: -0.1rem 0.1rem 0.1rem rgba(000,000,000,.1) inset;
+}
+.has-admissions .admission:after {
+    right: -0.75rem;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(000,000,000,.1) inset;
+}
+.has-admissions .admission-t {
+    border-bottom: none;
+    height: 7rem;
+}
+.has-admissions .admission-t:before {
+    left: -1.5rem;
+    z-index: 1;
+}
+.has-admissions .admission-t:after {
+    right: -1.5rem;
+    z-index: 1;
+}
+.has-admissions .admission-t img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-top: -2rem;
+}
+.has-admissions .admission-t h2 span {
+    margin-right: 0.5rem;
+    color: #4A4A4A;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+.has-admissions .admission-t h3{
+    color: #9B9B9B;
+    font-size: 0.7rem;
+    padding:0.25rem 0;
+}
+.has-admissions .admission-t p {
+    color: #F3C542;
+    font-size: 0.8rem;
+}
+.has-admissions .admission-b {
+    border-top: 1px solid rgb(243, 243, 243);
+    height: 5.5rem;
+}
+.has-admissions .admission-b p {
+    padding: 1rem 1.5rem;
+    line-height: 1.3rem;
+}
+.has-admissions .admission .admission-b i {
+    font-size: 0.8rem;
+    color: #F3C542;
+    padding: 0 0.2rem;
+}
+.has-admissions .button-sub{letter-spacing:0;}
+.has-admissions .gocall{
+    text-align: center;
+    display: block;
+    color: #00B6F3;
+}
+/* has-admissions end*/
+
+/* service-process start*/
+
+.service-process {
+    text-align: center;
+    background: #ffffff;
+}
+.service-process .section {
+    font-size: 0.7rem;
+    color: #fff;
+}
+
+.service-process .section article{
+    margin-top:2.5rem!important;
+    position: relative;
+}
+.service-process article img{
+    display:block;
+    width:13rem;
+    height:auto;
+    margin:0 auto;
+}
+.service-process .section strong{
+    display:block;
+    font-size:1rem;
+    font-weight:normal;
+}
+.service-process .click{
+    width:5rem;
+    position: absolute;
+    top:60%;
+    left:50%;
+    -webkit-animation:click 1.5s ease infinite;
+}
+.service-process .click img{
+    width:100%;
+}
+@-webkit-keyframes click{
+    from{
+        -webkit-transform:translate(0,0);
+    }
+    to{
+        -webkit-transform:translate(-20%,-30%);
+    }
+}
+.service-process .section p {
+    position: absolute;
+    left: 200%;
+    font-size:0.8rem;
+    color:#fff;
+    width:14rem;
+    border-radius:0.4rem;
+    background:rgba(0,0,0,.6);
+    top:26%;
+    line-height:1.3rem;
+    text-align: center;
+    padding:0.5rem;
+    -webkit-transform:translate(-50%);
+}
+.service-process section{
+    width:8.3rem;
+    height:1.5rem;
+    margin:0 auto;
+    position:absolute;
+    top:-1.5rem;
+    left:50%;
+    -webkit-transform:translateX(-50%);
+}
+.service-process section span{
+    display:inline-block;
+    width:1rem;
+    height:1rem;
+    font-size:0.6rem;
+    line-height:1rem;
+    background:#ADA7A7;
+    border-radius:50%;
+    margin-right:0.25rem;
+    position: relative;
+}
+.service-process section .on{
+    background:#00b6f3;
+}
+.service-process section i,section em{
+    font-style:normal;
+    display:block;
+    width:1rem;
+    height:1rem;
+    border-radius: 50%;
+    top:0;
+    left:0;
+    position:absolute;
+
+}
+.service-process section i{
+    display:none;
+    background:#ADA7A7;
+}
+.service-process section em{z-index:3;}
+.service-process .section2 p{
+    top:11%;
+    border-radius:0;
+    padding:0.6rem 0;
+    width:13rem;
+}
+.service-process .section2 .p2{
+    top:25%;
+    padding:0.3rem 0;
+}
+.service-process .section2 .p3{
+    top:43%;
+    padding:0.3rem 0;
+}
+/*@media screen and (min-width:375px) {
+    .service-process .section2 p{padding:18px 0;}
+    .service-process .section2 .p2{padding:10px 0;}
+    .service-process .section2 .p3{padding:12px 0;}
+}*/
+
+.service-process .section2 h3{
+    position: absolute;
+    width:13rem;
+    font-size:0.9rem;
+    left:-200%;
+    -webkit-transform:translateX(-50%);
+    bottom:25%;
+    color:red;
+}
+.service-process .section3 p {
+    top:78%;
+    left:50%;
+    display:none;
+}
+.service-process .section3 section i{
+    display:block;
+    clip: rect(0, auto, auto, 0.5rem);
+}
+.service-process .call{
+    width:13rem;
+    position: absolute;
+    top:10%;
+    left:50%;
+    -webkit-transform:translateX(-50%);
+}
+.service-process .section4 p,.service-process .section5 p,.service-process .section6 p,.service-process .section7 p{
+    top:40%;
+    left:50%;
+    display:none;
+}
+.service-process .section6 p{top:22%;}
+.service-process .more{
+    position:fixed;
+    width:100%;
+    bottom:0.25rem;
+    padding:0.25rem 0;
+}
+.service-process .more img{width:20px;height:auto;}
+
+
+/* service-process end*/

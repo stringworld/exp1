@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd" >
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,user-scalable=no"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <link rel="shortcut icon" href="../img/default/favicon.ico" mce_href="../img/default/favicon.ico" type="image/x-icon">
+    <title>健医科技</title>
+    <!-- build:css ../css/common.min.css -->
+    <link rel="stylesheet" type="text/css" href="../css/module/common.css"/>
+    <!-- /build -->
+    <!-- build:css ../css/doctor.min.css -->
+    <link rel="stylesheet" type="text/css" href="../css/module/index.css"/>
+    <!-- /build -->
+</head>
+
+<body >
+<div ng-view class="main view-slide-in animated"></div>
+<script src="../js/core/main-init.js"></script>
+<!-- build:js ../js/doctor.min.js -->
+<script data-main="../js/app/main.js?vid=1.0.9" src="../js/plugins/requirejs/require.js"></script>
+<!-- /build -->
+</body>
+</html>

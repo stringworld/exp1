@@ -1,0 +1,55 @@
+<div class="service-evaluation id="serviceEvaluationSuccess" ng-controller="serviceEvaluationSuccessCtrl" >
+    <div class="scroller">
+        <div class="list">
+            <div class="form-list tip-show">
+                <label class="item item-input">
+                    <span class="input-label spacing2">医&nbsp;&nbsp;生</span>
+                    <span class="right-span">黄新华</span>
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">服务时间</span>
+                    <span class="right-span">8:00-19:00</span>
+                </label>
+            </div>
+
+            <div class="form-list tip-show">
+                <label class="item item-input">
+                    <span class="input-label">咨询问题：</span>
+                    <input type="text" name="name" required test="isName" is-name="true" show-error="咨询问题"
+                           placeholder="请输入咨询问题"
+                           ng-model="option.userName">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">诊断总结：</span>
+                    <input type="text" name="name" required test="isName" is-name="true" show-error="诊断总结"
+                           placeholder="请输入诊断总结"
+                           ng-model="option.userName">
+                </label>
+            </div>
+
+            <div class="form-list tip-show">
+                <label class="item item-input">
+                    <span class="input-label">就诊评价</span>
+                   <span class="right-span">
+                    <image src="../img/pay/icon_star.png"></image>
+                    <image src="../img/pay/icon_star.png"></image>
+                    <image src="../img/pay/icon_star.png"></image>
+                    <image src="../img/pay/icon_star.png"></image>
+                    <image src="../img/pay/icon_star.png"></image>
+                   </span>
+                </label>
+            </div>
+
+            <div class="form-list tip-show">
+                <label class="item item-input">
+                    <p class="success-p">亲，服务满意吗？您的意见是我们前进的动力！</p>
+                 </label>
+            </div>
+
+            <div class="button button-block button-sub bg-blue">
+                <p >评价</p>
+            </div>
+
+        </div>
+    </div>
+</div>

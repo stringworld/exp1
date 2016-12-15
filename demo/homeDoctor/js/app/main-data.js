@@ -1,0 +1,59 @@
+"use strict";
+define([], function () {
+    return {
+        index: "doctor.service-evaluation",
+        alias: {
+            "buy.safeguard-plan": "buy.content",
+            "buy.insurance-terms": "buy.content",
+            "buy.product-statement": "buy.content",
+            "buy.reparation-notice": "buy.content",
+            "buy.city-selector-oneself": "buy.city-selector",
+            "buy.city-selector-for-other": "buy.city-selector"
+        },
+        bodyClass: {
+            "index.login": "body-login"
+        },
+        routeTree: [{
+            path: "index.login",
+            children: [{
+                path: "index.home",
+                children: [{
+                    path: "buy.buy",
+                    children: [{
+                        path: "buy.insured",
+                        children: [{
+                            path: "buy.city-selector-oneself"
+                        }, {
+                            path: "buy.city-selector-for-other"
+                        }]
+                    }, {
+                        path: "buy.safeguard-plan"
+                    }, {
+                        path: "buy.insurance-terms"
+                    }, {
+                        path: "buy.product-statement"
+                    }, {
+                        path: "buy.reparation-notice"
+                    }, {
+                        path: "buy.health-report"
+                    }, {
+                        path: "result.pay-success"
+                    }, {
+                        path: "result.pay-error"
+                    }]
+                }, {
+                    path: "my.my",
+                    children: [{
+                        path: "my.help"
+                    }, {
+                        path: "my.details"
+                    }, {
+                        path: "my.withdraw"
+                    }, {
+                        path: "my.order"
+                    }]
+                }]
+            }]
+        }]
+    };
+});

@@ -1,0 +1,25 @@
+"use strict";
+define(["common-module",
+  //"controller/login/login-auto",
+  "controller/login/login",
+  "controller/login/search-user",
+  "controller/login/registered",
+  "controller/login/market-stores",
+  "controller/login/complete-user",
+  //"controller/market/marketQuery",
+  //"controller/market/marketRecord",
+  //"controller/purchaseCard/purchase-card",
+  //"controller/query/cardList",
+  //"controller/query/experienceCard",
+  //"controller/doctor/index-family-doctor",
+  "controller/doctor/call-doctor",
+  "controller/doctor/check-failure",
+  "controller/doctor/call-docIng",
+  "controller/doctor/consulting-records",
+  "controller/doctor/doctor-team",
+  "controller/doctor/doctor-team-details",
+  "controller/doctor/service-process",
+  //"controller/queryActivation/queryActivation"],
+  function () {
+
+  }]);

@@ -1,0 +1,19 @@
+<ion-view view-title="卡列表" ng-controller="experienceCardCtrl">
+    <ion-content class="experienceCard">
+
+        <div class="experienceCardTop list card">
+            <div class="item item-avatar">
+                <p>您有一张家庭医生卡,<br />可以免费使用一次家庭医生服务!</p>
+            </div>
+            <div class="item item-body">
+                <img class="full-image" src="img/common/ka_pic.png">
+            </div>
+        </div>
+        <h2 class="marked_words">您也可以：</h2>
+        <a class="item item-icon-right experienceCardBuy" on-tap="buyCard()">
+            购买家庭医生卡(年卡)
+            <i class="icon ion-ios-arrow-right"></i>
+        </a>
+        <button class="button button-block button-positive margin-horizontal" ng-click="confirm()">马上体验</button>
+    </ion-content>
+</ion-view>

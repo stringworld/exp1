@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?j1q0j6');
+    src:  url('fonts/icomoon.eot?j1q0j6#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?j1q0j6') format('truetype'),
+    url('fonts/icomoon.woff?j1q0j6') format('woff'),
+    url('fonts/icomoon.svg?j1q0j6#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-angle-right2:before {
+    content: "\e940";
+}
+.icon-radio_button:before {
+    content: "\e941";
+}
+.icon-circle-minus:before {
+    content: "\e96e";
+}
+.icon-circle-plus:before {
+    content: "\e96f";
+}
+.icon-angle-user:before {
+    content: "\e977";
+}
+.icon-angle-search:before {
+    content: "\e9db";
+}
+.icon-angle-left:before {
+    content: "\e629";
+}
+.icon-angle-right:before {
+    content: "\e62a";
+}
+.icon-angle-up:before {
+    content: "\e62b";
+}
+.icon-angle-down:before {
+    content: "\e62c";
+}
+.icon-file-text2:before {
+    content: "\e926";
+}
+.icon-cart:before {
+    content: "\e93a";
+}
+.icon-coin-yen:before {
+    content: "\e93e";
+}
+.icon-credit-card:before {
+    content: "\e93f";
+}
+.icon-phone:before {
+    content: "\e942";
+}
+.icon-location:before {
+    content: "\e947";
+}
+.icon-mobile:before {
+    content: "\e958";
+}
+.icon-bookmark:before {
+    content: "\e9d2";
+}
+.icon-heart:before {
+    content: "\e9da";
+}
+.icon-notification:before {
+    content: "\ea08";
+}
+.icon-info:before {
+    content: "\ea0c";
+}
+

@@ -1,0 +1,68 @@
+/**
+ * å¼€æºä»£ç , æœ‰å…´è¶£çš„å¯ä»¥åœ¨ä¿ç•™å£°æ˜Žçš„å‰æä¸‹å…è´¹ä½¿ç”¨.
+ *********** å£°æ˜Žå¼€å§‹ ***********
+ * @author ideawu@163.com
+ * @link http://www.ideawu.net
+ *********** å£°æ˜Žç»“æŸ ***********
+ *
+ */
+body{
+	color: #000 ;
+	margin: 4px;
+	padding: 0;
+	font-size: 13px;
+	font-family: tahoma, arial;
+	background: #fff;
+}
+
+
+
+a:hover{
+	color: #c00;
+}
+
+p{
+	margin: 10px 0;
+	padding: 0;
+}
+
+pre{
+	padding: 4px;
+	border: 1px solid #99c;
+	background: #eee;
+}
+
+h1{
+	margin: 18px 12px;
+	font-size: 25px;
+}
+
+.textbox{
+	padding: 1px;
+	border: 1px solid #bbb;
+}
+
+.datagrid_meta input{
+	border: 1px solid #ccc;
+}
+
+.title2{
+	margin: 12px 0;
+	padding: 0 6px;
+	font-size: 15px;
+	border-left: 5px solid #333;
+}
+
+.title3{
+	margin: 8px 0;
+	padding: 0;
+	font-size: 13px;
+}
+
+#footer{
+	clear: both;
+	padding: 6px;
+	margin-top: 20px;
+	text-align: center;
+}
+

@@ -1,0 +1,36 @@
+<div class="market-record">
+    <div class="record-header">
+        <p>截至： 2016-9-18 12:10:05</p>
+
+        <div class="section-div">
+            <section class="section-one"><strong>128</strong><br/>销售（张）</section>
+            <section class="section-two"><strong>5120</strong><br/>收入（元）</section>
+        </div>
+    </div>
+    <div class="table-content">
+        <table>
+            <thead>
+            <tr>
+                <th>日期</th>
+                <th>卡号</th>
+                <th>卡面值</th>
+                <th>收入（元）</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>2016.01.15</td>
+                <td>1234353463465654</td>
+                <td>100</td>
+                <td>+50</td>
+            </tr>
+            <tr>
+                <td>2016.01.15</td>
+                <td>1234353463465654</td>
+                <td>100</td>
+                <td>+50</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

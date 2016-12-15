@@ -1,0 +1,38 @@
+<div class="cardList wrapper" id="market-query" ng-controller="marketQueryCtrl">
+    <div class="scroller">
+        <p class="public-p">您的基本信息</p>
+
+        <div class="form-list tip-show">
+            <label class="item item-input">
+                <span class="input-label spacing2">姓&nbsp;&nbsp;名&nbsp;</span>
+                <input type="text" name="name" readonly required test="isName" is-name="true" show-error="姓名" placeholder="张三丰"
+                       ng-model="option.userName">
+            </label>
+            <label class="item item-input">
+                <span class="input-label spacing2">证件号&nbsp;</span>
+                <input type="text" required test="isCardId" readonly is-card-id="true" show-error="证件号" placeholder="6888 8888 7654 6789"
+                       ng-model="option.identity">
+            </label>
+            <label class="item item-input">
+                <span class="input-label spacing2">手机号&nbsp;</span>
+                <input type="password" test="isPassNum" readonly is-pass-num="true" required maxlength="6" show-error="手机号"
+                       placeholder="13765473235" ng-model="option.password">
+            </label>
+            <label class="item item-input">
+                <span class="input-label spacing2">门&nbsp;&nbsp;店&nbsp;</span>
+                <input type="password" test="isPassNum" readonly is-pass-num="true" required maxlength="6" show-error="门店"
+                       placeholder="益丰大药房四分店" ng-model="option.password">
+            </label>
+        </div>
+
+        <p class="public-p">查询专区</p>
+
+        <div class="form-list">
+            <label class="item item-input item-icon-right">
+                <image class="input-label" src="../img/common/shouru_icon.png"></image>
+                <span>&nbsp&nbsp销售记录和收入</span>
+                <i class="icon icon-angle-right"></i>
+            </label>
+        </div>
+    </div>
+</div>

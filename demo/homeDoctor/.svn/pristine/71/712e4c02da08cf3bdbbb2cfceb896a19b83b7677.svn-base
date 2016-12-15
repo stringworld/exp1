@@ -1,0 +1,33 @@
+<ion-view view-title="管理查询" ng-controller="marketQueryCtrl">
+    <ion-content>
+
+        <form name="form" class="marketQuery">
+            <h2 class="marked_words">您的基本信息</h2>
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label spacing2">姓&nbsp;名</span>
+                    <input type="text" required minlength="2" show-error="姓名" readonly ng-model="option.userName">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">证件号</span>
+                    <input type="text" required is-card-id="true" show-error="证件号" readonly ng-model="option.identity">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">手机号</span>
+                    <input name="mobile" type="text" required is-mobile="true" show-error="手机号" readonly ng-model="option.userPhone">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label spacing2">门&nbsp;店</span>
+                    <input type="text" required minlength="2" show-error="门店" readonly ng-model="option.shopName">
+                </label>
+                <h2 class="marked_words">查询专区</h2>
+                <a class="item item-icon-left item-icon-right queryArea" ui-sref="marketRecord">
+                    <i class="icon"></i>
+                    销售记录和收入
+                    <i class="icon ion-ios-arrow-right"></i>
+                </a>
+            </div>
+        </form>
+
+    </ion-content>
+</ion-view>

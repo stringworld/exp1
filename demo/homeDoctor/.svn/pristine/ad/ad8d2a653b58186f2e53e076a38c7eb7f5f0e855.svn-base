@@ -1,0 +1,22 @@
+<div view-title="输入身份证号" ng-controller="SearchUserCtrl" cache-view="false">
+    <div class="text-jumbotron">
+      <div>
+        为了更好的为您提供健康服务 <br>
+        我们需要您的身份信息
+      </div>
+    </div>
+    <form name="form">
+      <div class="list">
+        <div class="form-list">
+          <label class="item item-input">
+            <span class="input-label">证件号</span>
+            <input type="text" required test="isCardId" is-card-id="true" placeholder="请输入身份证号" ng-model="option.identity" show-error="身份证号">
+          </label>
+          <q>*请输入正确的身份证号</q>
+        </div>
+      </div>
+      <button ng-disabled="form.$invalid" class="button button-block button-sub bg-blue"
+              ng-click="confirm()">下一步
+      </button>
+    </form>
+</div>

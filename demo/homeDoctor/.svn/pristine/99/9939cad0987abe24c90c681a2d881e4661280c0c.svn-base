@@ -1,0 +1,30 @@
+<ion-view view-title="销售记录" ng-controller="markedRecord" >
+    <ion-content class="markedRecord">
+        <div class="marketRecordTop">
+            <p>截至: <span ng-model="marketRecordTime">{{marketRecordTime | gDate}}</span> <span>&nbsp;&nbsp;{{ marketRecordTime | gDate2}}</span></p>
+            <div class="grade row">
+                <section class="col"><strong ng-model="gradeNum">{{gradeNum || 0}}</strong>销售(张)</section>
+                <section class="col"><strong ng-model="gradeMoney">{{gradeMoney || 0}}</strong>收入(元)</section>
+            </div>
+        </div>
+        <div class="order_none" id="cancerOrderListzwddfirmedId" ng-if="!edit">
+            <i></i>您还没有销售和收入记录
+        </div>
+        <div class="marketRecordBottom" ng-if="edit">
+            <h2 class="row"><span class="col-30">日期</span><span class="col-35">卡号</span><span class="col-15">卡面值</span><span class="col-20">收入(元)</span></h2>
+            <div class="incomeList">
+                <p class="row" ng-repeat="incomeListInfo in incomeList">
+                    <span class="col-30" ng-bind="incomeListInfo.createTime.time | getLocalTime"></span>
+                    <span class="col-35" ng-bind="incomeListInfo.cardNo"></span>
+                    <span class="col-15" ng-if="incomeListInfo.cardType==1">60</span>
+                    <span class="col-15" ng-if="incomeListInfo.cardType==3">98</span>
+                    <span class="col-15" ng-if="incomeListInfo.cardType==4">188</span>
+                    <span  class="col-20" ng-if="incomeListInfo.status == 1">+{{incomeListInfo.rewardAmount}}</span>
+                    <span  class="col-20 red" ng-if="incomeListInfo.status == 2">{{incomeListInfo.rewardAmount}}</span>
+                    <span class="col-20 yellow" ng-if="incomeListInfo.status == 0">+{{incomeListInfo.rewardAmount}}</span>
+                </p>
+            </div>
+            <ion-infinite-scroll ng-if="moreDataCanBeLoaded()" on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,7 @@
+<div class="key-search">
+    <input type="text" ng-model="jyKey" ng-focus="focus()" ng-blur="blur()"
+           ng-style="{width:center ? '100%':'88%','text-align':center ? 'center':'left'}" placeholder="搜索">
+    <span class="cancel" ng-show="!center" ng-click="cancel()">取消</span>
+    <span class="wechat-icon wechat-icon-search" ng-style="{left:center ? '40%':'0.7rem'}"></span>
+    <span class="wechat-icon wechat-icon-clear" ng-show="jyKey" ng-click="clear()"></span>
+</div>

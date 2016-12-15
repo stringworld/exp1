@@ -1,0 +1,45 @@
+<div view-title="补全信息" ng-controller="CompleteUserCtrl" class="complete-user wrapper">
+    <form name="form" class="complete-user scroller">
+      <div class="list">
+        <h2 class="marked_words">我们需要您的身份信息</h2>
+        <div class="form-list tip-show">
+          <label class="item item-input">
+            <span class="input-label spacing2">姓&nbsp;&nbsp;名</span>
+            <input type="text" test="isName" required is-name="true" show-error="姓名" placeholder="请输入姓名" ng-model="option.userName">
+            <input type="text" ng-if="option2.userName" readonly="readonly" required test="isName" is-name="true" show-error="姓名" placeholder="请输入姓名" ng-model="option.userName">
+          </label>
+          <q>*请输入正确的姓名</q>
+        </div>
+        <div class="form-list">
+          <label class="item item-input">
+            <span class="input-label">身份证号</span>
+            <input type="text" required test="isCardId" is-card-id="true" show-error="身份证号" placeholder="请输入身份证号" ng-model="option.identity">
+            <input type="text" ng-if="option2.identity" readonly="readonly" required test="isCardId" is-card-id="true" show-error="身份证号" placeholder="请输入身份证号" ng-model="option.identity">
+          </label>
+          <q>*请输入正确的身份证号</q>
+        </div>
+        <a class="item selectStores item-icon-right" ng-click="selectStores()">
+          工作门店<span class="pull-right">(如是多个门店选择一个即可)</span>
+          <input class="hide" name="shopId" ng-model="option.shopId" required >
+          <i class="icon icon-angle-right"></i>
+        </a>
+        <div class="form-list">
+          <label class="item item-input">
+            <span class="input-label">手机号码</span>
+            <input name="mobile" type="text" required test="isMobile" is-mobile="true" show-error="手机号码" placeholder="请输入手机号码" ng-model="option.userPhone">
+            <input name="mobile" type="text" ng-if="option2.userPhone" readonly="readonly" required test="isMobile" is-mobile="true" show-error="手机号码" placeholder="请输入手机号码" ng-model="option.userPhone">
+          </label>
+          <q>*请输入正确的手机号码</q>
+        </div>
+        <div class="form-list">
+          <div class="item item-input yzm">
+            <span class="input-label spacing2">验证码</span>
+            <input type="text" test="isYzm"  is-yzm="true" maxlength="4" minlength="4" show-error="验证码" placeholder="请输入验证码" ng-model="option.verifyCode">
+            <button ng-disabled="form.mobile.$invalid" class="button item-button" id="completion-btn" ng-click="sendCode()">发送验证码</button>
+          </div>
+          <q>*请输入4位数字验证码</q>
+        </div>
+      </div>
+      <button class="button button-block button-sub bg-blue" id="completeBtn" ng-disabled="form.$invalid" ng-click="confirm()">确定</button>
+    </form>
+</div>

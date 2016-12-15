@@ -1,0 +1,75 @@
+<div class="call-doctor" ng-controller="CallDoctorCtrl">
+    <div class="wrapper call-doctor-main">
+        <form name="form" id="callDoctorMain" class="scroller" style="display: block;">
+            <ul class="list">
+                <li class="form-list">
+                    <a class="item item-input item-icon-right" id="chooseClass_click">
+                        <span class="input-label">请选择科室<b class="redstars">*</b></span>
+                        <input type="text" class="notes chooseClassValue" readonly/>
+                        <input type="hidden" id="chooseClassValueId"/>
+                        <i class="icon icon-angle-right"></i>
+                    </a>
+                    <q>*请选择科室</q>
+                </li>
+                <li class="form-list">
+                    <a class="item item-input">
+                        <span class="input-label">联系电话<b class="redstars">*</b></span>
+                        <input type="number" placeholder="请输入手机号码" id="callDoctorPhone"/>
+                    </a>
+                    <q>*请输入手机号码</q>
+                </li>
+            </ul>
+            <textarea name="" rows="" cols="" id="callDoctorText" oninput="getnum (event)" maxlength="200" placeholder="请填写性别，年龄，症状,最少11字，最多200字"></textarea>
+            <div class="TextNum"><span id="callDoctorTextNum">0</span>/200</div>
+            <div class="upload">
+                <p>上传图片,检验单等   (最多添加四张)</p>
+                <div id="callDoctorUploadDiv">
+                    <a class="button-select"><i></i><input type="file" id="callDoctorUploadId" value=""/></a>
+                </div>
+                <div class="img-div"><img src="blob:null/70b72718-b8bb-4098-81d2-9328f8d7cafa"><a class="img-del icon-circle-minus"></a></div>
+                <div class="img-div"><img src="blob:null/70b72718-b8bb-4098-81d2-9328f8d7cafa"><a class="img-del icon-circle-minus"></a></div>
+                <div class="img-div"><img src="blob:null/70b72718-b8bb-4098-81d2-9328f8d7cafa"><a class="img-del icon-circle-minus"></a></div>
+                <div class="img-div"><img src="blob:null/70b72718-b8bb-4098-81d2-9328f8d7cafa"><a class="img-del icon-circle-minus"></a></div>
+            </div>
+            <p class="call-doctor-p">
+                医生咨询服务仅为建议，具体诊疗请到医院就诊
+            </p>
+            <a class="button button-block button-sub bg-blue" id="callDoctorSub" onclick="onClickhealthyCod()">呼叫医生</a>
+        </form>
+    </div>
+	<div class="call-doctor-choose-class" id="callDoctorChooseClassId" style="display: none;">
+		<ul class="list" id="chooseClassId">
+            <li class="item item-input item-icon-right">
+                <input type="hidden" value="1">
+                <img src="../img/default/icon_keshi.png" onerror="this.src='../img/default/icon_keshi.png';this.onerror=null">
+                <span>皮肤科</span>
+                <i class="icon icon-angle-right"></i>
+            </li>
+            <li class="item item-input item-icon-right">
+                <input type="hidden" value="1">
+                <img src="../img/default/icon_keshi.png" onerror="this.src='../img/default/icon_keshi.png';this.onerror=null">
+                <span>皮肤科</span>
+                <i class="icon icon-angle-right"></i>
+            </li>
+            <li class="item item-input item-icon-right">
+                <input type="hidden" value="1">
+                <img src="../img/default/icon_keshi.png" onerror="this.src='../img/default/icon_keshi.png';this.onerror=null">
+                <span>皮肤科</span>
+                <i class="icon icon-angle-right"></i>
+            </li>
+            <li class="item item-input item-icon-right">
+                <input type="hidden" value="1">
+                <img src="../img/default/icon_keshi.png" onerror="this.src='../img/default/icon_keshi.png';this.onerror=null">
+                <span>皮肤科</span>
+                <i class="icon icon-angle-right"></i>
+            </li>
+        </ul>
+	</div>
+	<div class="call-doctor-timer" style="display: none;">
+		<div class="time-border">
+			<p id="time">15:20</p>
+		</div>
+		<h4>审核中···</h4>
+		<h2>问题已提交,待审核</h2>
+	</div>
+</div>
