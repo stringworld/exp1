@@ -1,0 +1,5 @@
+@import "./../npm/wepy-com-toast/toast.wxss";
+@import "./../components/list.wxss";
+@import "./../components/panel.wxss";
+@import "./../components/counter.wxss";
+.userinfo{display:flex;flex-direction:column;align-items:center}.userinfo-avatar{width:80rpx;height:80rpx;border-radius:50%}.userinfo-nickname{color:#aaa}.testarea{width:100%;margin-top:20rpx;text-align:left;font-size:12px;padding-top:20rpx;padding-left:50rpx;padding-bottom:20rpx;border:1px solid #ccc}.testarea .testtitle{padding-bottom:20rpx;font-size:14px;font-weight:bold}.testarea .testinfo{padding:15rpx}.testarea .testcounter{margin-top:15rpx;position:absolute}.testarea .counterview{margin-left:120rpx}

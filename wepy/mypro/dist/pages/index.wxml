@@ -1,0 +1,114 @@
+
+    <view class="container">
+        <view class="userinfo" bindtap="handleViewTap">
+            <image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"/>
+            <view class="userinfo-nickname">{{ userInfo.nickName }}</view>
+        </view>
+
+        <view class="testarea">
+            <view class="testtitle">测试数据绑定</view>
+            <text class="testinfo">{{normalTitle}}</text>
+            <text class="testinfo">{{setTimeoutTitle}}</text>
+            <text class="testinfo">{{mixin}}</text>
+        </view>
+        <view class="testarea">
+            <view class="testtitle">测试第三方组件</view>
+            <button bindtap="toast" size="mini"> 点我出现toast </button>
+        </view>
+        <view class="testarea">
+            <view class="testtitle">测试组件通信</view>
+            <button bindtap="communicate" size="mini"> 点我修改组件 </button>
+        </view>
+        <view class="testarea">
+            <view class="testtitle">测试混合</view>
+            <button bindtap="tap" size="mini"> 混合TAP事件 </button>
+        </view>
+        
+        
+        <view class="testarea">
+            <view class="testtitle">测试并发网络请求</view>
+            <view>返回结果: <text>{{netrst}}</text></view>
+            <button bindtap="request" size="mini"> 点我发起10个请求 </button>
+        </view>
+        <view class="testarea">
+            <view class="testtitle">测试组件: </view>
+            <text class="testcounter">计数组件1: </text>
+            <view class="counterview">
+                
+    <view class="counter {{$counter1$style}}">
+        <button bindtap="$counter1$plus" size="mini">  +  </button>
+        <button bindtap="$counter1$minus" size="mini">  -  </button>
+        <text class="count"> {{$counter1$num}} </text>
+    </view>
+
+            </view>
+
+            <text class="testcounter">计数组件2: </text>
+
+            <view class="counterview">
+                
+    <view class="counter {{$counter2$style}}">
+        <button bindtap="$counter2$plus" size="mini">  +  </button>
+        <button bindtap="$counter2$minus" size="mini">  -  </button>
+        <text class="count"> {{$counter2$num}} </text>
+    </view>
+
+            </view>
+
+        </view>
+
+        <view class="testarea">
+            <view class="testtitle">测试组件嵌套: </view>
+            
+    <view class="panel">
+        <label class="checkbox">
+            <button bindtap="$panel$change" size="mini">{{$panel$toggle ? '显示': '隐藏'}}</button>
+        </label>
+        <view hidden="{{!$panel$toggle}}">
+            子组件: 
+    <view class="counter {{$panel$counter1$style}}">
+        <button bindtap="$panel$counter1$plus" size="mini">  +  </button>
+        <button bindtap="$panel$counter1$minus" size="mini">  -  </button>
+        <text class="count"> {{$panel$counter1$num}} </text>
+    </view>
+
+        </view>
+    </view>
+
+        </view>
+
+
+
+        <view class="testarea">
+            <view class="testtitle">测试列表: </view>
+            
+    <view class="list">
+    <view>
+        <button bindtap="$list$add" size="mini">添加列表</button>
+    </view>
+      <block xmlns:wx="" wx:for-items="{{$list$list}}" wx:for-index="index" wx:for-item="item">
+            <view bindtap="$list$tap" class="mylist">
+                <text>{{item.id}}</text>: {{item.title}}
+            </view>
+        </block>
+    </view>
+
+        </view>
+
+        
+    <view class="wetoast {{$toast$reveal ? 'wetoast_show' : ''}}">
+        <view class="wetoast__mask"/>
+        <view class="wetoast__bd" animation="{{$toast$animationData}}">
+            <block wx:if="{{$toast$img}}">
+                <view class="wetoast__bd__img {{$toast$imgClassName || ''}}">
+                    <image class="wetoast__bd__img_desc" src="{{$toast$img}}" mode="{{$toast$imgMode || 'scaleToFill'}}"/>
+                </view>
+            </block>
+            <block wx:if="{{$toast$title}}">
+                <view class="wetoast__bd__title {{$toast$titleClassName || ''}}">{{$toast$title}}</view>
+            </block>
+        </view>
+    </view>
+
+
+    </view>
