@@ -1,0 +1,24 @@
+<div class="paging-component" ng-if="data.count > 0">
+    <nav class="pull-right">
+        <ul class="pagination">
+            <li><a href="javascript:;" ng-click="pageClick(1)">首页</a></li>
+            <li><a href="javascript:;" ng-click="pageClick(data.page - 1)">&laquo;</a></li>
+            <li ng-repeat="i in pageLeft"><a href="javascript:;"  ng-click="pageClick(data.page - i)">{{ data.page - i }}</a></li>
+            <li class="active"><span>{{ data.page }}</span></li>
+            <li ng-repeat="i in pageRight"><a href="javascript:;"  ng-click="pageClick(data.page + i)">{{ data.page + i }}</a></li>
+            <li><a href="javascript:;" ng-click="pageClick(data.page + 1)">&raquo;</a></li>
+            <li><a href="javascript:;" ng-click="pageClick(data.count / data.pageSize)">尾页</a></li>
+        </ul>
+    </nav>
+    <div class="pull-right" style="padding: 20px">
+        <span>每页数量:</span>
+        <div class="btn-group">
+            <select class="form-control select2"
+                    ng-model="data.pageSize"
+                    ng-options="option.value as option.text for option in pagesizeOptions"
+                    ng-change="data.onPageSizeChange()">
+            </select>
+        </div>
+        <span>总数据量 <b>{{ data.count }}</b></span>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="choice-box">
+     <span ng-if="type === 'radio'" ng-repeat="option in datasource" class="radio-box">
+        <input  type="radio" id="{{option.uid}}" name="{{option.name}}" ng-model="option.radioValue" value="{{option.value}}" ng-change="change(option.uid, option.value)">
+        <label for="{{option.uid}}"></label>{{option.text}}
+    </span>
+    <span ng-if="type === 'checkbox'" ng-repeat="option in datasource" class="check-box">
+        <input type="checkbox" id="{{option.uid}}" ng-model="option.checkboxValue" value="{{option.value}}" ng-change="change(option.uid, option.value)">
+        <label for="{{option.uid}}"></label>{{option.text}}
+    </span>
+</div>

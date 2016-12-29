@@ -1,0 +1,87 @@
+<div ng-controller="taskdetail" id="taskdetail" class="detail">
+    <div>
+        <h5 class="bs-callout bs-callout-info">用户信息</h5>
+        <dl class="userInfo">
+            <dt></dt>
+            <dd>姓名:{{userinfo.residentsName}}</dd>
+            <dd>性别:{{userinfo.sex}}</dd>
+            <dd>年龄:{{userinfo.age}}</dd>
+            <dd>文化程度:{{userinfo.culturalDegree}}</dd>
+
+            <dd>电话:<b ng-repeat="phone in userinfo.loginPhone" style="margin: 0 6px 0 0">{{phone}}</b></dd>
+            <dd>地区:{{userinfo.area}}</dd>
+            <dd>居委:{{userinfo.committees}}</dd>
+            <dd>住址:{{userinfo.address}}</dd>
+            <dd>医院信息:{{userinfo.hospitalInfo}}</dd>
+            <dd>签约医生:{{userinfo.signingDoctorName}}</dd>
+            <dd>签约时间:{{userinfo.signingTime}}</dd>
+            <dd>医生性别:{{userinfo.doctorSex}}</dd>
+            <dd>医生科室:{{userinfo.doctorDepatment}}</dd>
+            <dd>医生擅长:{{userinfo.projectGoods}}</dd>
+        </dl>
+    </div>
+    <div ng-hide="stateParams.status || 0 == stateParams.callnumber">
+        <div>
+            <h5 class="bs-callout bs-callout-info">问卷信息</h5>
+            <dl ng-repeat="questionnaire in questionnaireinfo">
+                <dt>{{questionnaire.questionNum}} <span>{{questionnaire.questionName}}</span></dt>
+                <dd ng-repeat="radiolist in questionnaire.answerContent">
+                    <label ng-if="questionnaire.type == 1">
+                        <input type="checkbox" name="checkbox{{ questionnaire.questionId }}"
+                               ng-model="radiolist.checked"/>{{radiolist.value}}
+                    </label>
+                    <label ng-if="questionnaire.type == 0">
+                        <input type="radio" name="radio{{ questionnaire.questionId }}" ng-model="radiolist.checked"
+                               ng-value="radiolist.value"/>{{radiolist.value}}
+                    </label>
+                </dd>
+            </dl>
+        </div>
+        <h5 class="bs-callout bs-callout-info">回访状态</h5>
+        <form class="form-inline " role="form" ng-show="stateParams.edit">
+            <label><input type="checkbox" name="checkbox" ng-model="isFinished"/> 完成</label>
+            <div class="btn-group">
+                未完成原因:
+                <select class="form-control select2" ng-model="undoneReason.selected"
+                        ng-options="option.text as option.value for option in undoneReason.options ">
+                    <option value="">请选择</option>
+                </select>
+            </div>
+        </form>
+        <dl ng-show="!stateParams.edit">
+            <dd ng-show="userinfo.status == 0">已完成</dd>
+            <dd ng-show="!userinfo.status == 0">未完成原因：{{userinfo.undone}}</dd>
+        </dl>
+    </div>
+    <div class="remark">
+        <h5 class="bs-callout bs-callout-info">备注信息：</h5>
+        <div ng-show="stateParams.edit">
+            <textarea name="" id="" rows="5" placeholder="如有效电话核实后的记录等" class="form-control"
+                      ng-model="remark"></textarea>
+        </div>
+        <div ng-show="!stateParams.edit">{{userinfo.remark}}</div>
+    </div>
+    <button ng-show="stateParams.edit" class="btn btn-primary pull-right" ng-click="saveResult()">保存</button>
+    <div class="pull-right" ng-show="stateParams.returnvisit">
+        <span ng-click="openTab()">录音记录</span>
+        <button class="btn btn-danger" ng-show="stateParams.returnvisit" ng-click="rejectBtn()">驳回</button>
+    </div>
+    <div class="shade" ng-show="shade">
+        <div class="popup" ng-show="grouping">
+            <p>填写驳回理由</p>
+            <div>
+                <input type="text" maxlength="20" placeholder="填写驳回理由" class="form-control" ng-model="reason"/>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-primary" ng-click="reject()">驳回</button>
+            </div>
+        </div>
+        <div class="popup" ng-show="issuccess">
+            <p>驳回完成！</p>
+            <p>此任务已回到此坐席未完成任务中，请提醒坐席完成任务。</p>
+            <p>3秒后自动关闭提示</p>
+        </div>
+    </div>
+    <button class="btn btn-primary" ng-show="edit" ng-click="onSubmit()">提交</button>
+</div>

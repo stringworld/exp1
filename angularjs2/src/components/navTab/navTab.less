@@ -1,0 +1,35 @@
+@import "~common/css/vars.less";
+.tag-name:nth-child(1){
+    span{
+        display: none;
+    }
+}
+.tag-tab {
+    margin-top: 15px;
+    width: 100%;
+    border-bottom: 2px solid @primary-bg;
+    overflow: hidden;
+    .tag-name {
+        float: left;
+        a {
+            display: inline-block;
+            padding: 0px 20px;
+            height: 46px;
+            line-height: 46px;
+            border: 1px solid @tag-tab-color;
+            border-bottom: 1px solid #fff;
+            background: #fff;
+            color: @tag-tab-color;
+            font-size: 16px;
+            span {
+                font-size: 20px;
+                padding-left: 8px;
+            }
+        }
+    }
+    .on a {
+        background: @primary-bg;
+        color: #fff;
+        border-color: @primary-bg
+    }
+}

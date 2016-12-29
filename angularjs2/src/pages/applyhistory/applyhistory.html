@@ -1,0 +1,79 @@
+<div ng-controller="applyhistory">
+    <form class="form-inline screen-bar" role="form">
+        <div class="form-group">
+            <p class="form-control-static">筛选条件:</p>
+        </div>
+        <!-- Single button -->
+        <div class="btn-group"  ng-show="!mine">
+            <select class="form-control select2" ng-model="customerId.selected"
+                    ng-options="option.userId  as option.name  for option in customerId">
+                <option value="">坐席</option>
+            </select>
+        </div>
+        <div style="width:220px;display: inline-block;">
+            <div class="input-group input-daterange">
+                <input type="date" class="form-control" ng-model="applyDate" placeholder="日期">
+            </div>
+        </div>
+        <div class="btn-group">
+            <select name="" id="" class="form-control select2" ng-model="isRead.selected"
+            ng-options="option.value as option.text for option in isRead.options">
+                <option value="">状态</option>
+            </select>
+        </div>
+        <button type="button" class="btn btn-primary" ng-click="search()">查询</button>
+    </form>
+
+    <div>
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>编号</th>
+                <th>坐席</th>
+                <th>申请内容</th>
+                <th>时间</th>
+                <th>是否已读</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="tablerow in tablecontent">
+                <td>{{tablerow.id}}</td>
+                <td>{{tablerow.userName}}</td>
+                <td>{{tablerow.note}}</td>
+                <td>{{tablerow.updated | date:'yyyy-MM-dd HH:mm:ss' }}</td>
+                <td>{{ tablerow.isRead == '0' ? '未读' :'已读' }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <form class="form-inline screen-bar" role="form">
+        <div class="pull-left">
+            <div class="form-group">
+                <p class="form-control-static">每页数量:</p>
+            </div>
+            <div class="btn-group">
+                <select class="form-control select2"
+                        ng-model="pagesize.selected"
+                        ng-options="option.value as option.text for option in pagesize.options"
+                        ng-change="changePagesize()">
+                </select>
+            </div>
+            <span>总数据量 <b>{{pagecount || 0 }}</b></span>
+        </div>
+
+        <nav class="pull-right">
+            <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </nav>
+
+    </form>
+
+</div>

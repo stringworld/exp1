@@ -1,0 +1,91 @@
+<section id="section-format" ng-controller="tableCtrl" class="task-main">
+    <div class="table-container">
+        <div class="batch-count">
+            <div class="btn-group pull-left" ng-if="levelRouteText===levels.TASK">
+                <span>分配数量:</span>
+                <span class="all-checked" ng-click="allChecked()">
+                    <img ng-src="http://7xso1h.com2.z0.glb.clouddn.com/img-{{allCheckStatus}}.png">
+                    全选(100)
+                </span>
+                <input type="text" placeholder="输入数量" class="form-control" ng-model="amount">
+                <button ng-click="getChecked(amount)" class="task-btn btn-primary ">分配</button>
+            </div>
+            <!--所有任务-->
+            <div class="btn-group pull-left" ng-if="levelRouteText===levels.ALLTASK||levelRouteText===levels.MYTASK">
+                <label>姓名</label>
+                <input type="text" placeholder="姓名" class="form-control" ng-model="username">
+                <label>电话</label>
+                <input type="text" placeholder="电话" class="form-control" ng-model="usertel">
+                <label>签约医生</label>
+                <input type="text" placeholder="签约医生" class="form-control" ng-model="userdoc">
+                <button class="task-btn btn-primary" ng-click="seachTask(username,usertel,userdoc)">搜索</button>
+            </div>
+            <div class="btn-group pull-right" ng-if="levelRouteText===levels.MYTASK">
+                <button class="task-btn pull-right btn-primary">超额申请</button>
+                <button class="task-btn pull-right btn-primary">历史记录</button>
+            </div>
+            <div class="btn-group pull-right" ng-if="levelRouteText===levels.ALLTASK">
+                <button class="task-btn pull-right btn-primary" ng-click="openTab()">超额申请历史记录</button>
+            </div>
+        </div>
+        <div class="allot-box" ng-if="showAllotBox">
+            <div class="allot-child">
+                <div class="allot-close" ng-click="closeAllotBox()"></div>
+                <div class="allot-select" ng-if="allotSelect">
+                    <p class="allot-title">选择坐席或者公共池</p>
+                    <p>
+                        <select class="slide-down allot-selected" ng-options="x for x in allotGroup" ng-model="defaultTxt" ng-change="groupOnChange(defaultTxt)"></select>
+                        <select ng-if="allotGroupId" class="slide-down allot-selected" ng-options="x for x in allotGroupId" ng-model="defaultId" ng-change="groupIdOnChange(defaultId)"></select>
+                        <span class="allot-confirm" ng-click="allotConfirm()">确定分配</span>
+                    </p>
+                </div>
+                <div class="allot-success" ng-if="!allotSelect">
+                    <p class="allot-title">分配成功！</p>
+                    <p class="allot-txt">分配成功，分配给了<span>{{selectedId}}</span>座席<span ng-if="assignCount.amount">{{assignCount.amount}}个</span>任务。</p>
+                </div>
+            </div>
+        </div>
+        <table st-table="rowCollection" class="table">
+            <caption>客户列表</caption>
+            <thead>
+                <tr ng-repeat="fieldName in rowfieldName">
+                    <th ng-if="levelRouteText===levels.TASK">{{fieldName.selectText}}</th>
+                    <th>{{fieldName.taskId}}</th>
+                    <th ng-if="fieldName.seatNo">{{fieldName.seatNo}}</th>
+                    <th>{{fieldName.registerPhoneNo}}</th>
+                    <th>{{fieldName.residentName}}</th>
+                    <th>{{fieldName.address}}</th>
+                    <th ng-if="fieldName.phoneString">{{fieldName.phoneString}}</th>
+                    <th>{{fieldName.neighborhood}}</th>
+                    <th>{{fieldName.signedHospital}}</th>
+                    <th>{{fieldName.signedDoctorName}}</th>
+                    <th ng-if="fieldName.detail">{{fieldName.detail}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr st-select-row="row" st-select-mode="multiple" ng-repeat="row in rowCollection track by $index" ng-init="numId=row.isSelected">
+                    <td ng-if="levelRouteText===levels.TASK" on-select="row"></td>
+                    <td>{{row.taskId}}</td>
+                    <td ng-if="row.seatNo">{{row.seatNo}}</td>
+                    <td>{{row.registerPhoneNo}}</td>
+                    <td>{{row.residentName}}</td>
+                    <td>{{row.address}}</td>
+                    <td ng-if="row.phoneString===levels.MYTASK">
+                        <span class="task-call-tel task-tel-layout"></span>
+                        <ul class="show-tel-num popover">
+                            <li class="tel-num-item" ng-click="taskCallTel($event,row.registerPhoneNo)">{{row.registerPhoneNo}}</li>
+                        </ul>
+                    </td>
+                    <td>{{row.neighborhood}}</td>
+                    <td>{{row.signedHospital}}</td>
+                    <td>{{row.signedDoctorName}}</td>
+                    <td ng-if="levelRouteText!==levels.TASK"><span class="item-detail" ng-click="gotoDeTail($event,row.taskId)">{{row.detail}}</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--分页-->
+    <div>
+        <split-page page="pageData" changepage="splitpage(current,itemsPerPage)"></split-page>
+    </div>
+</section>

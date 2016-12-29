@@ -1,0 +1,116 @@
+@basic-color: #52C9FB;
+@radio-bg: #3FABDF;
+@radio-check-bg: #fff;
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+body {
+    overflow: hidden;
+}
+
+.slide-down {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: solid 1px @basic-color;
+    background: url(../img/select.png) no-repeat right;
+}
+
+.radio-box, .check-box {
+    position: relative;
+}
+
+.radio-box label, .check-box label {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: @radio-bg;
+    cursor: pointer;
+    background: @radio-bg;
+}
+
+.radio-box label {
+    border-radius: 50%;
+}
+
+.radio-box input:checked + label:after, .check-box input:checked + label:after {
+    content: '';
+    width: 12px;
+    height: 7px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    border: 2px solid @radio-check-bg;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    opacity: 1;
+    border-top: none;
+    border-right: none;
+}
+
+.check-box label {
+    border-radius: 2px;
+}
+
+.task-call-tel {
+    background: url('../img/callTel.png') no-repeat right;
+    background-size: contain;
+}
+
+.task-call-out {
+    background: url('../img/telOut.png') no-repeat right;
+    background-size: contain;
+}
+
+//操作菜单
+.menu-catalog {
+    background: url('../img/catalog.png') no-repeat right;
+    background-size: contain;
+}
+
+//任务管理
+.menu-task-manage {
+    background: url('../img/taskManage.png') no-repeat right;
+    background-size: contain;
+}
+
+//录音管理
+.menu-record-manage {
+    background: url('../img/recordManage.png') no-repeat right;
+    background-size: contain;
+}
+
+//坐席管理
+.menu-seat-manage {
+    background: url('../img/seatManage.png') no-repeat right;
+    background-size: contain;
+}
+
+//问卷管理
+.menu-questionnaire-m {
+    background: url('../img/questionnaireManage.png') no-repeat right;
+    background-size: contain;
+}
+
+//项目管理
+.menu-project-manage {
+    background: url('../img/projectManage.png') no-repeat right;
+    background-size: contain;
+}
+
+//系统设置
+.menu-sys-set {
+    background: url('../img/sysSet.png') no-repeat right;
+    background-size: contain;
+}

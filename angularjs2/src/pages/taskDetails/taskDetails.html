@@ -1,0 +1,60 @@
+<div class="task-details" ng-controller="details">
+    <div>
+        <h5>编辑客户资料</h5>
+        <ul class="edit-customer-data">
+            <li>姓名：{{customerDetails.residentName}}</li>
+            <li>文化程度：
+                <span ng-if="isAllTask">{{customerDetails.degreeString}}</span>
+                <select ng-model="teachBackground.num" ng-options="x.num as x.education for x in educationBackground" ng-show="isMyTask" class="slide-down education"></select>
+            </li>
+            <li>性别：{{customerDetails.gender}}</li>
+            <li>电话：{{customerDetails.registerPhoneNo}}</li>
+            <li>出生日期：{{customerDetails.birthday | date:"yyyy-MM-dd"}}</li>
+            <li>居民识别码：{{customerDetails.residentIdNumber}}</li><br>
+            <li class="cls">签约医生姓名：{{customerDetails.signedDoctorName}}</li>
+            <li>医生性别：{{customerDetails.doctorGender}}</li>
+            <li>签约医院：{{customerDetails.signedHospital}}</li>
+            <li>医生科室：{{customerDetails.doctorDept}}</li>
+            <li>医生擅长：{{customerDetails.doctorSkills}}</li><br>
+            <li class="cls">所在居委会：{{customerDetails.neighborhood}}</li>
+            <li>签约时间：{{customerDetails.signDate | date:"yyyy-MM-dd"}}</li>
+            <li>详细地址：{{customerDetails.address}}</li>
+            <li>医院信息：{{customerDetails.hospitalInfo}}</li>
+            <li>所属项目：{{customerDetails.projectName}}</li><br>
+        </ul>
+    </div>
+    <div class="cls sign-survey">
+        <h5>居民签约调研</h5>
+        <p class="error-msg">{{errorMsg}}</p>
+        <ol ng-if="isAllTask">
+            <li ng-repeat="item in items">{{item.problemContent}}<span class="problemAnswer" ng-repeat="problem in item.problemAnswer">{{problem.answer}}</span></li>
+        </ol>
+        <form action="" ng-if="isMyTask">
+            <ol>
+                <li ng-repeat="problem in problems" >{{problem.problemContent}}
+                    <choice-box type="problem.type" datasource="problem.data" changes="change(id, value)"></choice-box>
+                </li>
+                <li>回访状态:
+                    <span class="radio-box sign-survey-form">
+                        <input  type="radio" id="finished" name="finished" value="true"  ng-model="postData.isFinished">
+                        <label for="finished"></label>完成
+                    </span>
+                    <span class="radio-box sign-survey-form">
+                        <input type="radio" id="unfinished" name="finished" value="false"  ng-model="postData.isFinished">
+                        <label for="unfinished"></label>未完成
+                    </span>
+                </li>
+            </ol>
+            <p  class="error-msg">{{isfinishedMsg}}</p>
+        </form>
+    </div>
+    <div>
+        <h5>备注信息</h5>
+        <textarea placeholder="备注信息" class="note" ng-model="postData.remark" ng-disabled="isAllTask"></textarea>
+    </div>
+    <input  ng-if="isAllTask" type="button" value="返回" class="btn" ng-click="goBack()">
+    <div ng-if="isMyTask">
+        <input type="button" value="保存" class="btn submit-btn" ng-click="submitForm()" ng-disabled="isDisabled">
+        <input type="button" value="取消" class="btn cancel-btn" ng-click="cancelForm()">
+    </div>
+</div>

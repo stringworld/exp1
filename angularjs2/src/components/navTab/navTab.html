@@ -1,0 +1,8 @@
+<nav class="tag-tab">
+    <div ng-repeat="tab in navtab.list track by $index" route='{{tab.route}}' params='{{tab.params}}' class="tag-name" ng-class="{on:(tab.route | includedByState)}">
+        <a ng-click="$root.$state.go(tab.route,tab.params)">
+                    {{tab.name}}
+             <span ng-click="removeTab($index,$event)">x</span>
+        </a>
+    </div>
+</nav>

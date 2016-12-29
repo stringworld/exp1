@@ -1,0 +1,63 @@
+<main ng-controller="index" ng-class="{'nav-closed': hideMenu}">
+    <div class="top">
+        <h1 class="logo">
+            <img src="./images/logo.png" alt="logo"> 呼叫中心
+        </h1>
+        <div class="login-list pull-right">
+            <div class="pull-left">
+                <dl>
+                    <dt>状态:</dt>
+                    <dd>空闲</dd>
+                </dl>
+                <dl>
+                    <dt>账号:</dt>
+                    <dd>{{userId}}</dd>
+                </dl>
+            </div>
+
+            <button ng-click="loginOut()">退出系统</button>
+        </div>
+        <call-out callout="callOutData"></call-out>
+    </div>
+
+    <div class="main-left">
+        <menu-List></menu-List>
+    </div>
+
+    <div class="main-right">
+        <!--控制台列表-->
+        <div class="admin-worktable" ng-show="false">
+            <ul>
+                <li>
+                    <p>问卷数量:<a href="#">3</a></p>
+                </li>
+                <li>
+                    <p>项目数量:<a href="#">3</a></p>
+                </li>
+                <li>
+                    <p>坐席数量:<a href="#">3</a></p>
+                </li>
+            </ul>
+        </div>
+
+        <!--主页面的view-->
+        <nav-tab navtab='navTab'></nav-tab>
+        <h1 class="welcome" ng-show="isShow">欢迎使用米喜呼叫中心系统</h1>
+
+        <div>
+            <div ng-repeat="view in viewList" ui-view="{{view.name}}" class="{{pageClass.index}}" ng-show="'{{view.parentRoute}}.{{view.name}}' | includedByState"></div>
+        </div>
+    </div>
+    <div class="suspension" ng-show="false" style="display: none;">
+        <h6>超额申请</h6>
+        <p>xxx坐席申请</p>
+        <p>申请内容申请内容申请内容</p>
+        <span class="btn btn-s btn-primary">已读</span>
+    </div>
+    <div class="shade" ng-show="false" style="display: none;">
+        <div class="popup">
+            <p>转接成功!</p>
+            <p>3秒后自动关闭提示</p>
+        </div>
+    </div>
+</main>
